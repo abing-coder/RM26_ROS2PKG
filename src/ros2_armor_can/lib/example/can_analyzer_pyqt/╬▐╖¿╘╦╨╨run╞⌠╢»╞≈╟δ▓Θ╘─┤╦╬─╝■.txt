@@ -1,0 +1,5 @@
+本上位机例程使用pyqt5编写，在启动运行之前，请执行以下命令：
+pip install pyqt5 -i https://pypi.tuna.tsinghua.edu.cn/simple
+在linux下如果提示找不到pip，请运行：sudo apt-get install python3-pip
+在linux下如果提示Could not load the Qt platform plugin "xcb"，请运行：sudo apt-get install libxcb-xinerama0
+在linux下如果找不到已插入的BUSMUST设备，请使用sudo运行run启动器

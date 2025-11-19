@@ -1,0 +1,74 @@
+1.10.2.30 [20240304]
+1. 新增multichannel_logger例程，额外演示了如何同时将多个通道捕获的报文录制到一个ASC文件中（此ASC可稍后在Busmaster或者CANoe等软件中打开查看分析）
+2. 修复BM_ReadMultiple和BM_ReadMultipleCanMessage在某些场景下无法通过nmessages参数获取已经接收到的报文数量的bug
+3. 优化BM_ReadMultiple和BM_ReadMultipleCanMessage的返回值定义：当发生异常情况时，返回异常码；当指定时间内未接收到指定的报文数量时，返回BM_ERROR_BUSTIMEOUT；否则返回正常值BM_ERROR_OK。
+4. 消除BM_OpenEx在linux的额外调试打印信息
+5. 修复BM_Enumerate在linux下反复多次枚举时（例如在python-can环境下）会重复枚举已经打开的设备，导致程序概率性崩溃的问题
+6. 修复multichannel_bmapi_demo.py例程收到报文后抛出BM_ERROR_QRCVEMPTY异常的问题
+
+1.10.1.29 [20231231]
+1. 新增bmapi_cyclic_tx_task例程，用于演示如何使用BUSMUST特有的TXTASK API来进行周期性报文发送（例如网络管理报文）
+2. 新增multichannel_isotp_txrx_cpp例程，额外演示了如何同时通过多个通道来进行ISOTP（ISO15765）通信，例如通过UDS36服务来实现多通道并行刷写（需要使用不同的命令行参数启动两个实例来执行对发）
+3. 新增对python-can-4.0.0的支持（理论上支持更高的4.x.x版本）
+4. 新增python-can-xxxx/examples/ecu_uds_simulator例程，用于模拟一个ECU的UDS服务（是模拟ECU而不是模拟诊断仪）
+5. 新增若干API，用于支持离线配置/记录/回放相关功能，具体请查看BMAPI.CHM（需要X2R/X4R等新款设备的硬件支持）
+6. 小幅优化若干BMAPI的内部实现，提升稳定性，增加调试能力，优化效率
+
+1.9.0.23 [20220722]
+1. 新增对VB.Net语言框架的支持，包括用于库导入的头文件，以及can_analyzer_vb例程，该例程的界面功能与can_analyzer_csharp等工程一致
+2. 恢复对Mingw编译器的支持，在Window系统下进行二次开发时，bin/mingw32及lib/mingw32文件夹用于mingw编译器，而bin/win32及lib/win32文件夹用于MSVC编译器
+3. 优化C#.Net以及VB.Net的若干库导入声明，包括BM_OpenEx/BM_SetRxFilters/BM_SetTxTasks，使这些API支持多个rxfilter/txtask对象实例，
+（请注意这几个API在升级后与1.8版本稍有不兼容，仅影响C#.Net和VB.Net，且所需改动不大，具体请参考对应的example）
+4. 修复C#.Net的example点击Close无法真正关闭对应的硬件设备的问题
+
+1.8.1.22 [20220708]
+1. 新增BM_ResetDevice API，用于重启整个USB设备，相当于重新插拔USB，请在阅读API文档后按需慎用
+2. 修复can_analyzer_csharp例程在未选中任何通道时点击Open按钮时报错的问题
+3. 封装新的GetName()函数，修复can_analyzer_csharp例程（以及其他调用BMAPI.cs的客户C#程序）通过BM_Enumerate获取到的通道名称尾部有乱码的问题
+
+1.8.0.21 [20220530]
+1. 支持最新的八通道硬件设备X8PI
+2. 增加若干新的API，支持最新的支持离线报文录制播放的设备X4R，X2R
+3. 新增C++多通道并行接收例程multichannel_rx_cpp，演示如何进行高效率的报文接收
+4. 新增x8pi_spi_test例程，演示如何通过树莓派的40Pin接口来控制X8PI设备
+5. BMAPI在linux上部分重构，CPU占用率大幅降低，对外接口保持不变
+6. 若干小问题修复
+
+1.7.1.20 [20220216]
+1. 支持Python2.7.18
+2. Python-can新增send_multiple API以及对应的example，可以达到与C API一致的超高发送帧率，但是请注意这个API在python-can标准版本中并不存在
+3. 更新raspbian64平台的各个二进制文件
+4. 在python-can中自带了aenum package，避免新手第一次运行时出现找不到aenum的情况
+5. 更新udsoncan的download_hex_file例程，现已支持加载CANoe格式的security DLL来自动进行27解锁
+
+1.7.0.19
+1. Qt/C#/pyqt示例程序从此版本起支持多通道操作了，可在通道下拉列表中勾选需要的通道，同时可以通过独立的下拉框选择发送通道
+2. 新增演示基础接收操作的C/C++例程: bmapi_receive_only
+3. 新增演示基础发送操作的C/C++例程: bmapi_transmit_only
+4. 修复Unix系统下，同时打开多通道时，使用非首个通道发送数据时的卡死问题
+5. 修复udsoncan例程的UDS36服务实现中，首个请求的序号未从01开始的错误
+6. 优化python-can对多平台兼容性的自适应能力
+7. 增加在udsoncan中使用CANoe DLL进行UDS 27解锁的演示操作
+
+1.6.0.18
+1. 修复1.5.4版本引入的远程帧无法实时发送的问题
+2. Python-can创建bus对象时允许指定采样点位置（未指定则默认最常见的75%）
+3. BM_ReadIsotp支持同时侦听指定的UDS Request ID和功能寻址地址
+4. BM_ReadIsotp在上一次ISOTP会话意外中断时，尽量不影响下一次ISOTP的发起
+5. 修复BM_Reset在多线程环境频繁创建销毁的情况下句柄资源没有正确释放的问题
+（仍然建议您在BM_OpenEx/BM_Close/BM_Reset时确保没有其他后台线程正在读写报文）
+
+1.6.0.17 [Alpha]
+1. 新增BM_GetVersion接口，用于获取动态库（*.dll|*.so）的实际编译版本
+2. 新增BM_GetLogLevel和BM_SetLogLevel接口，用于配置动态库在Linux下的命令行调试信息输出等级，默认仅打印BM_LOG_ERR及更高，可通过配置为BM_LOG_NONE禁用全部调试信息输出用于量产环境
+
+1.5.4.16 [20210813]
+1. 针对X1PRO和X1设备修正了BM_OpenEx时正在接收报文导致设备无法正确配置的bug
+2. 修正Debian下BM_ClearBuffer递归锁导致程序阻塞的问题
+3. udsoncan增加example.run.sh作为启动器，客户朋友如需发布自己的程序也可基于此启动器简单修改
+4. 暂时移除问题较多的python-can的asyncio demo，待优化后重新发布
+5. 修正BM_WriteIsotp和BM_ReadIsotp的首个CF帧的序列号不对的问题
+
+---------------------------------------
+1.5.4.16以前的历史版本，变更记录位于Busmaster上位机安装包的changelist中。
+---------------------------------------

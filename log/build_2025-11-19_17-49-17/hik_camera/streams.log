@@ -1,0 +1,3 @@
+[0.017s] Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14
+[0.065s] [ 50%] Built target hik_camera
+[0.067s] [100%] Built target hik_camera_node

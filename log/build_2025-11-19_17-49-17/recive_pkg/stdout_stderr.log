@@ -1,0 +1,7 @@
+[31mCMake Error at CMakeLists.txt:52:
+  Parse error.  Expected a newline, got identifier with text "ik".
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/ubuntu/桌面/RM26/build/recive_pkg/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:483：cmake_check_build_system] 错误 1

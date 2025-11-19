@@ -1,0 +1,11 @@
+[0.017s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.057s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/main.cpp.o[0m
+[0.061s] [ 22%] [32mBuilding CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o[0m
+[0.064s] [ 33%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[2.149s] [ 44%] [32m[1mLinking CXX executable detection[0m
+[2.577s] /usr/bin/ld: CMakeFiles/detection.dir/src/yolo_detection.cpp.o: in function `detection::DetectionArmor::run()':
+[2.578s] yolo_detection.cpp:(.text+0x2c1f): undefined reference to `detection::DetectionArmor::showImage()'
+[2.613s] collect2: error: ld returned 1 exit status
+[2.614s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:264：detection] 错误 1
+[2.614s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[2.614s] gmake: *** [Makefile:91：all] 错误 2

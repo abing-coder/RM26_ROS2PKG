@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main -DCMAKE_INSTALL_PREFIX=/home/ubuntu/桌面/RM26/install/hik_camera
+Invoked command in '/home/ubuntu/桌面/RM26/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main -DCMAKE_INSTALL_PREFIX=/home/ubuntu/桌面/RM26/install/hik_camera
+Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14
+Invoked command in '/home/ubuntu/桌面/RM26/build/hik_camera' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14

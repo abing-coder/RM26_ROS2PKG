@@ -1,0 +1,3 @@
+/home/ubuntu/桌面/detection/build/CMakeFiles/detection.dir
+/home/ubuntu/桌面/detection/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/桌面/detection/build/CMakeFiles/rebuild_cache.dir

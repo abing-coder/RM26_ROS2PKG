@@ -1,0 +1,326 @@
+[0.048s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.048s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=14, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73dfc98eb730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73dfc9a2c9d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73dfc9a2c9d0>>)
+[0.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.111s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/桌面/RM26'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/recive_pkg) by extension 'ros'
+[0.119s] DEBUG:colcon.colcon_core.package_identification:Package 'src/recive_pkg' with type 'ros.ament_cmake' and name 'recive_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['ignore', 'ignore_ament_install']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'ignore'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'ros'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['cmake', 'python']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'cmake'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'python'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['python_setup_py']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'python_setup_py'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'ignore_ament_install'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extensions ['colcon_pkg']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'colcon_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extensions ['colcon_meta']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'colcon_meta'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extensions ['ros']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'ros'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extensions ['cmake', 'python']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'cmake'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/detection) by extension 'python'
+[0.122s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_auto_aim/detection' with type 'cmake' and name 'detection'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_armor_can) by extension 'ros'
+[0.122s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_armor_can' with type 'ros.catkin' and name 'ros2_armor_can'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_hik_camera-main) by extension 'ros'
+[0.123s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_hik_camera-main' with type 'ros.ament_cmake' and name 'hik_camera'
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.134s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'cmake_target' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/桌面/RM26/build/detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/桌面/RM26/install/detection', 'merge_install': False, 'path': '/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection', 'symlink_install': False, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'hik_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'hik_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/桌面/RM26/build/hik_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/桌面/RM26/install/hik_camera', 'merge_install': False, 'path': '/home/ubuntu/桌面/RM26/src/ros2_hik_camera-main', 'symlink_install': False, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'recive_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'recive_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/桌面/RM26/build/recive_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/桌面/RM26/install/recive_pkg', 'merge_install': False, 'path': '/home/ubuntu/桌面/RM26/src/recive_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'ros2_armor_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_armor_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/桌面/RM26/build/ros2_armor_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/桌面/RM26/install/ros2_armor_can', 'merge_install': False, 'path': '/home/ubuntu/桌面/RM26/src/ros2_armor_can', 'symlink_install': False, 'test_result_base': None}
+[0.157s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.158s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.158s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection'
+[0.159s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.159s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.159s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.161s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/桌面/RM26/src/ros2_hik_camera-main' with build type 'ament_cmake'
+[0.161s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/桌面/RM26/src/ros2_hik_camera-main'
+[0.161s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.161s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.162s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/桌面/RM26/src/recive_pkg' with build type 'ament_cmake'
+[0.162s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/桌面/RM26/src/recive_pkg'
+[0.162s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.162s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.163s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/ubuntu/桌面/RM26/src/ros2_armor_can' with build type 'catkin'
+[0.164s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/桌面/RM26/src/ros2_armor_can'
+[0.164s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.164s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14
+[0.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/ros2_armor_can -- -j14 -l14
+[0.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[0.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14
+[0.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/hik_camera
+[0.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/ros2_armor_can -- -j14 -l14
+[0.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can': /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/ros2_armor_can
+[0.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hik_camera)
+[0.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/hik_camera
+[0.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera' for CMake module files
+[0.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera' for CMake config files
+[0.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('hik_camera', 'cmake_prefix_path')
+[0.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/cmake_prefix_path.ps1'
+[0.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/cmake_prefix_path.dsv'
+[0.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/cmake_prefix_path.sh'
+[0.255s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/lib'
+[0.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('hik_camera', 'ld_library_path_lib')
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/ld_library_path_lib.ps1'
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/ld_library_path_lib.dsv'
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/ld_library_path_lib.sh'
+[0.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/bin'
+[0.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/lib/pkgconfig/hik_camera.pc'
+[0.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/lib/python3.10/site-packages'
+[0.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/bin'
+[0.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.ps1'
+[0.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.dsv'
+[0.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.sh'
+[0.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.bash'
+[0.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.zsh'
+[0.258s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/桌面/RM26/install/hik_camera/share/colcon-core/packages/hik_camera)
+[0.258s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hik_camera)
+[0.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera' for CMake module files
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera' for CMake config files
+[0.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('hik_camera', 'cmake_prefix_path')
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/cmake_prefix_path.ps1'
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/cmake_prefix_path.dsv'
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/cmake_prefix_path.sh'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/lib'
+[0.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('hik_camera', 'ld_library_path_lib')
+[0.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/ld_library_path_lib.ps1'
+[0.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/ld_library_path_lib.dsv'
+[0.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/hook/ld_library_path_lib.sh'
+[0.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/bin'
+[0.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/lib/pkgconfig/hik_camera.pc'
+[0.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/lib/python3.10/site-packages'
+[0.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/hik_camera/bin'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.ps1'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.dsv'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.sh'
+[0.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.bash'
+[0.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.zsh'
+[0.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/桌面/RM26/install/hik_camera/share/colcon-core/packages/hik_camera)
+[0.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can' returned '0': /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/ros2_armor_can
+[0.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_armor_can', 'ros_package_path')
+[0.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/ros_package_path.ps1'
+[0.265s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/ros_package_path.dsv'
+[0.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/ros_package_path.sh'
+[0.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_armor_can', 'pkg_config_path')
+[0.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/pkg_config_path.ps1'
+[0.266s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/pkg_config_path.dsv'
+[0.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/pkg_config_path.sh'
+[0.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_armor_can', 'pkg_config_path_multiarch')
+[0.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/pkg_config_path_multiarch.ps1'
+[0.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/pkg_config_path_multiarch.dsv'
+[0.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/pkg_config_path_multiarch.sh'
+[0.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_armor_can)
+[0.269s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can' for CMake module files
+[0.269s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can' for CMake config files
+[0.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_armor_can', 'cmake_prefix_path')
+[0.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/cmake_prefix_path.ps1'
+[0.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/cmake_prefix_path.dsv'
+[0.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/hook/cmake_prefix_path.sh'
+[0.270s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can/lib'
+[0.270s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can/bin'
+[0.270s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/pkgconfig/ros2_armor_can.pc'
+[0.270s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/python3.10/site-packages'
+[0.271s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/ros2_armor_can/bin'
+[0.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.ps1'
+[0.271s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.dsv'
+[0.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.sh'
+[0.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.bash'
+[0.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.zsh'
+[0.272s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/桌面/RM26/install/ros2_armor_can/share/colcon-core/packages/ros2_armor_can)
+[2.784s] WARNING:colcon.colcon_cmake.task.cmake.build:Could not run installation step for package 'detection' because it has no 'install' target
+[2.784s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detection)
+[2.784s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/detection' for CMake module files
+[2.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/detection' for CMake config files
+[2.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/detection/bin'
+[2.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/detection/lib/pkgconfig/detection.pc'
+[2.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/detection/lib/python3.10/site-packages'
+[2.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/detection/bin'
+[2.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/detection/share/detection/package.ps1'
+[2.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/桌面/RM26/install/detection/share/detection/package.dsv'
+[2.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[2.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/detection/share/detection/package.sh'
+[2.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/detection/share/detection/package.bash'
+[2.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/detection/share/detection/package.zsh'
+[2.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/桌面/RM26/install/detection/share/colcon-core/packages/detection)
+[3.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[3.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/recive_pkg
+[3.206s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(recive_pkg)
+[3.206s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg' for CMake module files
+[3.206s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg' for CMake config files
+[3.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('recive_pkg', 'cmake_prefix_path')
+[3.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/hook/cmake_prefix_path.ps1'
+[3.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/hook/cmake_prefix_path.dsv'
+[3.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/recive_pkg
+[3.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/hook/cmake_prefix_path.sh'
+[3.209s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/lib'
+[3.209s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/bin'
+[3.209s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/lib/pkgconfig/recive_pkg.pc'
+[3.209s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/lib/python3.10/site-packages'
+[3.209s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/bin'
+[3.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.ps1'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.dsv'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.sh'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.bash'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.zsh'
+[3.210s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/桌面/RM26/install/recive_pkg/share/colcon-core/packages/recive_pkg)
+[3.211s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(recive_pkg)
+[3.211s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg' for CMake module files
+[3.211s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg' for CMake config files
+[3.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('recive_pkg', 'cmake_prefix_path')
+[3.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/hook/cmake_prefix_path.ps1'
+[3.212s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/hook/cmake_prefix_path.dsv'
+[3.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/hook/cmake_prefix_path.sh'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/lib'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/bin'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/lib/pkgconfig/recive_pkg.pc'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/lib/python3.10/site-packages'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/桌面/RM26/install/recive_pkg/bin'
+[3.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.ps1'
+[3.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.dsv'
+[3.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.sh'
+[3.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.bash'
+[3.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.zsh'
+[3.214s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/桌面/RM26/install/recive_pkg/share/colcon-core/packages/recive_pkg)
+[3.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.215s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.219s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.219s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.219s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.231s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.231s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/桌面/RM26/install/local_setup.ps1'
+[3.232s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/桌面/RM26/install/_local_setup_util_ps1.py'
+[3.233s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/桌面/RM26/install/setup.ps1'
+[3.233s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/桌面/RM26/install/local_setup.sh'
+[3.234s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/桌面/RM26/install/_local_setup_util_sh.py'
+[3.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/桌面/RM26/install/setup.sh'
+[3.235s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/桌面/RM26/install/local_setup.bash'
+[3.235s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/桌面/RM26/install/setup.bash'
+[3.235s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/桌面/RM26/install/local_setup.zsh'
+[3.236s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/桌面/RM26/install/setup.zsh'

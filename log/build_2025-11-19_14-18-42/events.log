@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000231] (-) JobUnselected: {'identifier': 'detection'}
+[0.000351] (-) JobUnselected: {'identifier': 'hik_camera'}
+[0.000367] (-) JobUnselected: {'identifier': 'recive_pkg'}
+[0.000381] (ros2_armor_can) JobQueued: {'identifier': 'ros2_armor_can', 'dependencies': OrderedDict()}
+[0.000512] (ros2_armor_can) JobStarted: {'identifier': 'ros2_armor_can'}
+[0.008644] (ros2_armor_can) JobProgress: {'identifier': 'ros2_armor_can', 'progress': 'cmake'}
+[0.009363] (ros2_armor_can) JobProgress: {'identifier': 'ros2_armor_can', 'progress': 'build'}
+[0.009865] (ros2_armor_can) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/桌面/RM26/build/ros2_armor_can', '--', '-j14', '-l14'], 'cwd': '/home/ubuntu/桌面/RM26/build/ros2_armor_can', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ubuntu'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0/nls.messages.json","corruptMarkerFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0","_corruptedFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('TBB_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib/cmake/TBB'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'cursor.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/桌面/RM26'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-91260982-2.0.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64'), ('MANAGERPID', '2940'), ('SYSTEMD_EXEC_PID', '3258'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19206'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:20296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-NUC15CRKU5:@/tmp/.ICE-unix/3235,unix/ubuntu-NUC15CRKU5:/tmp/.ICE-unix/3235'), ('INVOCATION_ID', '0a3e94d332864eea93d96ca68446d699'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '2715e959bf7c4ca8942991f9a94f0dae'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/桌面/RM26/build/ros2_armor_can'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ubuntu/.config/Cursor/CachedData/ba90f2f88e4911312761abab9492c42442117cf0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('OpenVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake'), ('VSCODE_PID', '19206'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.055883] (ros2_armor_can) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/armor_send_node.dir/src/armor_send.cpp.o\n'}
+[0.056057] (ros2_armor_can) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/armor_send_node.dir/src/bmcan_bus.cpp.o\n'}
+[0.056648] (ros2_armor_can) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/test_send_node.dir/src/bmcan_bus.cpp.o\n'}
+[0.099580] (-) TimerEvent: {}
+[0.200012] (-) TimerEvent: {}
+[0.300508] (-) TimerEvent: {}
+[0.379206] (ros2_armor_can) StdoutLine: {'line': b'[ 66%] Linking CXX executable test_send_node\n'}
+[0.400702] (-) TimerEvent: {}
+[0.454856] (ros2_armor_can) StdoutLine: {'line': b'[ 83%] Built target test_send_node\n'}
+[0.500813] (-) TimerEvent: {}
+[0.601009] (-) TimerEvent: {}
+[0.705193] (-) TimerEvent: {}
+[0.805383] (-) TimerEvent: {}
+[0.908000] (-) TimerEvent: {}
+[1.008253] (-) TimerEvent: {}
+[1.109062] (-) TimerEvent: {}
+[1.209295] (-) TimerEvent: {}
+[1.308534] (ros2_armor_can) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/ros2_armor_can/src/armor_send.cpp: In member function \xe2\x80\x98void ArmorSend::send_motor_cmd(int16_t, int16_t, int16_t, int16_t)\xe2\x80\x99:\n'}
+[1.310272] (-) TimerEvent: {}
+[1.310317] (ros2_armor_can) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/ros2_armor_can/src/armor_send.cpp:80:65: warning: unused parameter \xe2\x80\x98motor3\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.310436] (ros2_armor_can) StderrLine: {'line': b'   80 |     void send_motor_cmd(int16_t motor1, int16_t motor2, int16_t motor3, int16_t motor4) {\n'}
+[1.310517] (ros2_armor_can) StderrLine: {'line': b'      |                                                         ~~~~~~~~^~~~~~\n'}
+[1.310588] (ros2_armor_can) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/ros2_armor_can/src/armor_send.cpp:80:81: warning: unused parameter \xe2\x80\x98motor4\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.310655] (ros2_armor_can) StderrLine: {'line': b'   80 |     void send_motor_cmd(int16_t motor1, int16_t motor2, int16_t motor3, int16_t motor4) {\n'}
+[1.310724] (ros2_armor_can) StderrLine: {'line': b'      |                                                                         ~~~~~~~~^~~~~~\n'}
+[1.310789] (ros2_armor_can) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/ros2_armor_can/src/armor_send.cpp: In member function \xe2\x80\x98void ArmorSend::delta_callback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)\xe2\x80\x99:\n'}
+[1.310859] (ros2_armor_can) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/ros2_armor_can/src/armor_send.cpp:120:68: warning: unused parameter \xe2\x80\x98msg\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.310926] (ros2_armor_can) StderrLine: {'line': b'  120 |     void delta_callback(const geometry_msgs::msg::Point::SharedPtr msg) {\n'}
+[1.310990] (ros2_armor_can) StderrLine: {'line': b'      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[1.410394] (-) TimerEvent: {}
+[1.510642] (-) TimerEvent: {}
+[1.610887] (-) TimerEvent: {}
+[1.711269] (-) TimerEvent: {}
+[1.811605] (-) TimerEvent: {}
+[1.911985] (-) TimerEvent: {}
+[2.012421] (-) TimerEvent: {}
+[2.112872] (-) TimerEvent: {}
+[2.213256] (-) TimerEvent: {}
+[2.313506] (-) TimerEvent: {}
+[2.413740] (-) TimerEvent: {}
+[2.514092] (-) TimerEvent: {}
+[2.614976] (-) TimerEvent: {}
+[2.715207] (-) TimerEvent: {}
+[2.815486] (-) TimerEvent: {}
+[2.915701] (-) TimerEvent: {}
+[3.015945] (-) TimerEvent: {}
+[3.118177] (-) TimerEvent: {}
+[3.218395] (-) TimerEvent: {}
+[3.318601] (-) TimerEvent: {}
+[3.419501] (-) TimerEvent: {}
+[3.520556] (-) TimerEvent: {}
+[3.620959] (-) TimerEvent: {}
+[3.721342] (-) TimerEvent: {}
+[3.822546] (-) TimerEvent: {}
+[3.925173] (-) TimerEvent: {}
+[4.025357] (-) TimerEvent: {}
+[4.125551] (-) TimerEvent: {}
+[4.225757] (-) TimerEvent: {}
+[4.326148] (-) TimerEvent: {}
+[4.426595] (-) TimerEvent: {}
+[4.526962] (-) TimerEvent: {}
+[4.627422] (-) TimerEvent: {}
+[4.727864] (-) TimerEvent: {}
+[4.828478] (-) TimerEvent: {}
+[4.931107] (-) TimerEvent: {}
+[5.033491] (-) TimerEvent: {}
+[5.133714] (-) TimerEvent: {}
+[5.234059] (-) TimerEvent: {}
+[5.334560] (-) TimerEvent: {}
+[5.434865] (-) TimerEvent: {}
+[5.535121] (-) TimerEvent: {}
+[5.610716] (ros2_armor_can) StdoutLine: {'line': b'[100%] Linking CXX executable armor_send_node\n'}
+[5.635247] (-) TimerEvent: {}
+[5.735565] (-) TimerEvent: {}
+[5.835790] (-) TimerEvent: {}
+[5.915765] (ros2_armor_can) StdoutLine: {'line': b'[100%] Built target armor_send_node\n'}
+[5.933377] (ros2_armor_can) CommandEnded: {'returncode': 0}
+[5.933757] (ros2_armor_can) JobProgress: {'identifier': 'ros2_armor_can', 'progress': 'install'}
+[5.935860] (-) TimerEvent: {}
+[5.940029] (ros2_armor_can) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/桌面/RM26/build/ros2_armor_can'], 'cwd': '/home/ubuntu/桌面/RM26/build/ros2_armor_can', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ubuntu'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0/nls.messages.json","corruptMarkerFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0","_corruptedFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('TBB_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib/cmake/TBB'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'cursor.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/桌面/RM26'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-91260982-2.0.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64'), ('MANAGERPID', '2940'), ('SYSTEMD_EXEC_PID', '3258'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19206'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:20296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-NUC15CRKU5:@/tmp/.ICE-unix/3235,unix/ubuntu-NUC15CRKU5:/tmp/.ICE-unix/3235'), ('INVOCATION_ID', '0a3e94d332864eea93d96ca68446d699'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '2715e959bf7c4ca8942991f9a94f0dae'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/桌面/RM26/build/ros2_armor_can'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ubuntu/.config/Cursor/CachedData/ba90f2f88e4911312761abab9492c42442117cf0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('OpenVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake'), ('VSCODE_PID', '19206'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[5.945267] (ros2_armor_can) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.945387] (ros2_armor_can) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node\n'}
+[5.950209] (ros2_armor_can) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node" to ""\n'}
+[5.950331] (ros2_armor_can) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/lib/ros2_armor_can/test_send_node\n'}
+[5.950594] (ros2_armor_can) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/lib/ros2_armor_can/test_send_node" to ""\n'}
+[5.950663] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can//launch\n'}
+[5.950711] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__\n'}
+[5.950743] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__/motor_all.launch.cpython-310.pyc\n'}
+[5.950774] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/test.launch.py\n'}
+[5.950804] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/motor_all.launch.py\n'}
+[5.950835] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ament_index/resource_index/package_run_dependencies/ros2_armor_can\n'}
+[5.950866] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ament_index/resource_index/parent_prefix_path/ros2_armor_can\n'}
+[5.950897] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.sh\n'}
+[5.950933] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.dsv\n'}
+[5.950964] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/path.sh\n'}
+[5.950994] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/path.dsv\n'}
+[5.951026] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.bash\n'}
+[5.951056] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.sh\n'}
+[5.951085] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.zsh\n'}
+[5.951121] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.dsv\n'}
+[5.951152] (ros2_armor_can) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/package.dsv\n'}
+[5.951182] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ament_index/resource_index/packages/ros2_armor_can\n'}
+[5.951212] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig.cmake\n'}
+[5.951244] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig-version.cmake\n'}
+[5.951278] (ros2_armor_can) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/ros2_armor_can/share/ros2_armor_can/package.xml\n'}
+[5.951789] (ros2_armor_can) CommandEnded: {'returncode': 0}
+[5.961959] (ros2_armor_can) JobEnded: {'identifier': 'ros2_armor_can', 'rc': 0}
+[5.962159] (-) EventReactorShutdown: {}

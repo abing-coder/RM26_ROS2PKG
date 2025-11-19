@@ -1,0 +1,29 @@
+[0.021s] Invoking command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/ros2_armor_can -- -j14 -l14
+[0.058s] [ 50%] Built target armor_send_node
+[0.063s] [100%] Built target test_send_node
+[0.076s] Invoked command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/ros2_armor_can -- -j14 -l14
+[0.077s] Invoking command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can': /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/ros2_armor_can
+[0.087s] -- Install configuration: ""
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/ros2_armor_can/test_send_node
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__/motor_all.launch.cpython-310.pyc
+[0.087s] -- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/test.launch.py
+[0.087s] -- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/motor_all.launch.py
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ament_index/resource_index/package_run_dependencies/ros2_armor_can
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ament_index/resource_index/parent_prefix_path/ros2_armor_can
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.sh
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.dsv
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/path.sh
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/path.dsv
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.bash
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.sh
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.zsh
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.dsv
+[0.087s] -- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.dsv
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ament_index/resource_index/packages/ros2_armor_can
+[0.087s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig.cmake
+[0.088s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig-version.cmake
+[0.088s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.xml
+[0.100s] Invoked command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can' returned '0': /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/ros2_armor_can

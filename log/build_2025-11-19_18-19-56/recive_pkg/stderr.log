@@ -1,0 +1,22 @@
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:191:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  191 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+      |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::infer()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:318:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  318 |     for (int valid_index = 0; [01;35m[Kvalid_index < indices.size()[m[K; ++valid_index)
+      |                               [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawTracks(cv::Mat&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:366:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcolor[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  366 |             Scalar [01;35m[Kcolor[m[K = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:369:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktl[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  369 |             Point [01;35m[Ktl[m[K = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:370:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbr[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  370 |             Point [01;35m[Kbr[m[K = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::format_print_data_test()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:446:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  446 |     for (auto [01;35m[Kd[m[K : getdata())
+      |               [01;35m[K^[m[K
