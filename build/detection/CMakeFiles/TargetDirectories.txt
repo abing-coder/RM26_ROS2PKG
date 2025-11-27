@@ -1,3 +1,0 @@
-/home/ubuntu/桌面/RM26/build/detection/CMakeFiles/detection.dir
-/home/ubuntu/桌面/RM26/build/detection/CMakeFiles/edit_cache.dir
-/home/ubuntu/桌面/RM26/build/detection/CMakeFiles/rebuild_cache.dir

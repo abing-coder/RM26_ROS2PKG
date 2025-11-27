@@ -1,9 +1,0 @@
-[0.023s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
-[0.035s] [31mCMake Error at CMakeLists.txt:52:
-[0.035s]   Parse error.  Expected a newline, got identifier with text "ik".
-[0.035s] 
-[0.035s] [0m
-[0.035s] -- Configuring incomplete, errors occurred!
-[0.035s] See also "/home/ubuntu/桌面/RM26/build/recive_pkg/CMakeFiles/CMakeOutput.log".
-[0.036s] gmake: *** [Makefile:483：cmake_check_build_system] 错误 1
-[0.039s] Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14

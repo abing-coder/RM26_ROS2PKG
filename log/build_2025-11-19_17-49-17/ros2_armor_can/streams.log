@@ -1,3 +1,0 @@
-[0.026s] Invoking command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/ros2_armor_can -- -j14 -l14
-[0.089s] [ 50%] Built target armor_send_node
-[0.089s] [100%] Built target test_send_node
