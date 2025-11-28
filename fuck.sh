@@ -4,6 +4,16 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKSPACE_DIR="$SCRIPT_DIR"
 
+# 先执行增量编译
+echo "正在执行增量编译..."
+bash "$WORKSPACE_DIR/incremental_build.sh"
+
+# 检查编译是否成功
+if [ $? -ne 0 ]; then
+    echo "编译失败，停止启动节点"
+    exit 1
+fi
+
 # 检查 setup.bash 是否存在
 SETUP_FILE="$WORKSPACE_DIR/install/setup.bash"
 if [ ! -f "$SETUP_FILE" ]; then

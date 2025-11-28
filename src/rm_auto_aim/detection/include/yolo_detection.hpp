@@ -7,6 +7,7 @@
 #include "timeCounter.hpp"
 #include "traditional_detector.hpp"
 #include "armor.hpp"
+#include "openvino_profiler.hpp"
 
 #define __TEST__
 #define GUN_CAM_DISTANCE_X 0  
@@ -63,8 +64,10 @@ namespace detection
 
 
     // 当前帧的装甲板数据
-    vector<ArmorData> armorsDatas; 
+    vector<ArmorData> armorsDatas;
 
+    // 性能分析器（在程序退出时自动写入日志）
+    OpenVINOProfiler profiler_;
 
 
     public:

@@ -125,12 +125,27 @@ CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp -o CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.s
 
+CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o: CMakeFiles/recive_pkg.dir/flags.make
+CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp
+CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o: CMakeFiles/recive_pkg.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o -MF CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o.d -o CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp
+
+CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp > CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.i
+
+CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp -o CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.s
+
 # Object files for target recive_pkg
 recive_pkg_OBJECTS = \
 "CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o" \
 "CMakeFiles/recive_pkg.dir/main.cpp.o" \
 "CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o" \
-"CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o"
+"CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o" \
+"CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o"
 
 # External object files for target recive_pkg
 recive_pkg_EXTERNAL_OBJECTS =
@@ -139,6 +154,7 @@ recive_pkg: CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o
 recive_pkg: CMakeFiles/recive_pkg.dir/main.cpp.o
 recive_pkg: CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o
 recive_pkg: CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o
+recive_pkg: CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o
 recive_pkg: CMakeFiles/recive_pkg.dir/build.make
 recive_pkg: /opt/ros/humble/lib/librclcpp.so
 recive_pkg: /opt/ros/humble/lib/libcv_bridge.so
@@ -227,7 +243,7 @@ recive_pkg: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 recive_pkg: /opt/ros/humble/lib/librcpputils.so
 recive_pkg: /opt/ros/humble/lib/librcutils.so
 recive_pkg: CMakeFiles/recive_pkg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable recive_pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable recive_pkg"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/recive_pkg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o"
+  "CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o.d"
   "CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o"
   "CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o.d"
   "CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o"

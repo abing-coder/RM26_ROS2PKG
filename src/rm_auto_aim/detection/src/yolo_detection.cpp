@@ -1,21 +1,22 @@
 #include "yolo_detection.hpp"
+#include <iomanip>
 
 using namespace detection;
 
 int detection::DetectionArmor::detect_color = 0; // 0: 红色，1: 蓝色
 
 DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string video_path)
-    : ifCountTime(ifcountTime), fps(0.0)
+    : ifCountTime(ifcountTime), fps(0.0), profiler_("openvino_performance.log")
 {
     cap = VideoCapture(video_path);
 
     ov::AnyMap config = {
-        {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)}, // 设置性能模式为延迟优化
-        {ov::inference_num_threads(20)}, // 使用4个线程进行推理
-        {ov::num_streams(1)}, // 允许同时执行1个推理流
-        {ov::hint::enable_hyper_threading(true)}, // 关闭超线程
-        {ov::hint::enable_cpu_pinning(true)}, // 关闭CPU固定
-        {ov::hint::inference_precision(ov::element::f16)} // 设置推理精度为FP16
+        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)}, // 吞吐量模式，充分利用多核
+        {ov::inference_num_threads(14)}, // 使用14个线程匹配CPU核心数
+        {ov::num_streams(ov::streams::AUTO)}, // 自动优化推理流数量
+        {ov::hint::enable_hyper_threading(true)}, // 启用超线程
+        {ov::hint::enable_cpu_pinning(true)}, // 启用CPU固定，减少线程迁移开销
+        {ov::enable_profiling(true)} // 启用性能分析
     };
 
     auto network = core.read_model(model_path);
@@ -24,22 +25,19 @@ DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string vide
     input_port = compiled.input();
 
     input_blob = Mat(640, 640, CV_32F, Scalar(0)); // 初始化输入blob
-
-
-    // armorsDatas = new ArmorData[20]; // 最多装20个装甲板
 }
 
 DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime)
-    : ifCountTime(ifcountTime), fps(0.0)
+    : ifCountTime(ifcountTime), fps(0.0), profiler_("openvino_performance.log")
 {
 
     ov::AnyMap config = {
-        {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)}, // 设置性能模式为延迟优化
-        {ov::inference_num_threads(4)}, // 使用4个线程进行推理
-        {ov::num_streams(1)}, // 允许同时执行1个推理流
-        {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 性能核心绑定
-        {ov::hint::enable_hyper_threading(true)}, // 关闭超线程
-        {ov::hint::enable_cpu_pinning(true)}, // 关闭CPU固定
+        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)}, // 吞吐量模式，充分利用多核
+        {ov::inference_num_threads(14)}, // 使用14个线程匹配CPU核心数
+        {ov::num_streams(ov::streams::AUTO)}, // 自动优化推理流数量
+        {ov::hint::enable_hyper_threading(true)}, // 启用超线程
+        {ov::hint::enable_cpu_pinning(true)}, // 启用CPU固定，减少线程迁移开销
+        {ov::enable_profiling(true)} // 启用性能分析
     };
 
     auto network = core.read_model(model_path);
@@ -203,7 +201,11 @@ void DetectionArmor::infer()
     // 固定八股
     Tensor input_tensor(input_port.get_element_type(), input_port.get_shape(), input_blob.data);
     infer_request.set_input_tensor(input_tensor);
-    infer_request.infer();    
+    infer_request.infer();
+
+    // 收集性能数据（不影响原有逻辑）
+    profiler_.collectProfilingData(infer_request);
+
     auto outputs = compiled.outputs();
     Tensor output = infer_request.get_tensor(outputs[0]);
     ov::Shape output_shape = output.get_shape();

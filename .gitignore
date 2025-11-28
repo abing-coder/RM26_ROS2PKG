@@ -1,0 +1,94 @@
+# ROS2 Build Files
+build/
+install/
+log/
+.colcon/
+
+# ROS2 Package Build Artifacts
+**/build/
+**/install/
+**/log/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+*.egg
+
+# C/C++
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Logs
+*.log
+
+# Bag files (ROS data recordings)
+*.bag
+*.db3
+*.db3-shm
+*.db3-wal
+
+# Generated documentation
+doc/html/
+doc/latex/
+*.dox
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# System files
+.directory
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Dependencies
+devel/
+devel_isolated/
+
+# Catkin (ROS1 compatibility)
+build_isolated/
+devel_isolated/
+
+# Custom ignore patterns
+*.user
+*.autosave

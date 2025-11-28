@@ -166,6 +166,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/openvino_profiler.o: src/openvino_profiler.cpp.o
+.PHONY : src/openvino_profiler.o
+
+# target to build an object file
+src/openvino_profiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/openvino_profiler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o
+.PHONY : src/openvino_profiler.cpp.o
+
+src/openvino_profiler.i: src/openvino_profiler.cpp.i
+.PHONY : src/openvino_profiler.i
+
+# target to preprocess a source file
+src/openvino_profiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/openvino_profiler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.i
+.PHONY : src/openvino_profiler.cpp.i
+
+src/openvino_profiler.s: src/openvino_profiler.cpp.s
+.PHONY : src/openvino_profiler.s
+
+# target to generate assembly for a file
+src/openvino_profiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/openvino_profiler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.s
+.PHONY : src/openvino_profiler.cpp.s
+
 src/traditional_detector.o: src/traditional_detector.cpp.o
 .PHONY : src/traditional_detector.o
 
@@ -257,6 +284,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/openvino_profiler.o"
+	@echo "... src/openvino_profiler.i"
+	@echo "... src/openvino_profiler.s"
 	@echo "... src/traditional_detector.o"
 	@echo "... src/traditional_detector.i"
 	@echo "... src/traditional_detector.s"
