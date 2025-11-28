@@ -76,8 +76,7 @@ namespace detection
         double fps;
         DetectionArmor() = default; //默认构造函数
         DetectionArmor(const DetectionArmor&) = delete; // 禁止拷贝
-        DetectionArmor(string& model_path, bool ifCountTime, string video_path);
-        DetectionArmor(string& model_path, bool ifCountTime);
+        DetectionArmor(string& model_path, bool ifCountTime, string video_path = "");
         ~DetectionArmor();
 
 

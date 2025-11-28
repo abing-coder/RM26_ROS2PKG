@@ -1,5 +1,6 @@
 #include "yolo_detection.hpp"
 #include <iomanip>
+#include <thread>
 
 using namespace detection;
 
@@ -8,40 +9,23 @@ int detection::DetectionArmor::detect_color = 0; // 0: 红色，1: 蓝色
 DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string video_path)
     : ifCountTime(ifcountTime), fps(0.0), profiler_("openvino_performance.log")
 {
-    cap = VideoCapture(video_path);
-
+    // 如果提供了视频路径，则初始化视频捕获
+    if (!video_path.empty()) {
+        cap = VideoCapture(video_path);
+    }
+    
+    // 统一使用优化的配置参数
     ov::AnyMap config = {
-        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)}, // 吞吐量模式，充分利用多核
-        {ov::inference_num_threads(14)}, // 使用14个线程匹配CPU核心数
-        {ov::num_streams(ov::streams::AUTO)}, // 自动优化推理流数量
-        {ov::hint::enable_hyper_threading(true)}, // 启用超线程
+        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)}, // 吞吐量模式，提高帧率
+        {ov::inference_num_threads(14)}, // 动态线程配置
+        {ov::num_streams(1)}, // 多流推理，提高并行性
         {ov::hint::enable_cpu_pinning(true)}, // 启用CPU固定，减少线程迁移开销
-        {ov::enable_profiling(true)} // 启用性能分析
+        {ov::hint::execution_mode(ov::hint::ExecutionMode::PERFORMANCE)}, // 性能执行模式
+        {ov::log::level(ov::log::Level::WARNING)} // 减少日志输出，提高性能
     };
 
     auto network = core.read_model(model_path);
     compiled = core.compile_model(network, "CPU", config);
-    infer_request = compiled.create_infer_request();
-    input_port = compiled.input();
-
-    input_blob = Mat(640, 640, CV_32F, Scalar(0)); // 初始化输入blob
-}
-
-DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime)
-    : ifCountTime(ifcountTime), fps(0.0), profiler_("openvino_performance.log")
-{
-
-    ov::AnyMap config = {
-        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)}, // 吞吐量模式，充分利用多核
-        {ov::inference_num_threads(14)}, // 使用14个线程匹配CPU核心数
-        {ov::num_streams(ov::streams::AUTO)}, // 自动优化推理流数量
-        {ov::hint::enable_hyper_threading(true)}, // 启用超线程
-        {ov::hint::enable_cpu_pinning(true)}, // 启用CPU固定，减少线程迁移开销
-        {ov::enable_profiling(true)} // 启用性能分析
-    };
-
-    auto network = core.read_model(model_path);
-    compiled = core.compile_model(network, "CPU", config);  
     infer_request = compiled.create_infer_request();
     input_port = compiled.input();
 
@@ -100,46 +84,41 @@ void get_roi(Mat& image,vector<Point>& points,Mat& ROI)
 void DetectionArmor::drawObject(Mat& image, vector<ArmorData>& datas)
 {
     // 绘制装甲板的边界框
-    //std::vector<Point> points = {d.p1, d.p2, d.p3, d.p4};
     // 计算并绘制光心点（图像中心）
     cv::Point optical_center(image.cols / 2, image.rows / 2);
+
     for (ArmorData& d : datas)
     {
-        cv::Point lt = cv::Point(d.p1.x-20, d.p1.y-20);  // 左上角
-        cv::Point rb = cv::Point(d.p3.x+20, d.p3.y+20);  // 右下角
-        cv::Point lb = cv::Point(d.p2.x-20, d.p2.y+20);  // 左下角
-        cv::Point rt = cv::Point(d.p4.x+20, d.p4.y-20);  // 右上角
-        std::vector<Point> points = {lt, rt, rb, lb};
-        Mat ROI;
-        get_roi(image,points,ROI);
-        // cv::imshow("ROI", ROI);
-        detector.detect(ROI);   
-        cv::Point2f detected_center;
-        detector.drawResults(image, detected_center);
-        d.center_point = detected_center;
-        std::cout << "Detected center: (" << detected_center.x << ", " << detected_center.y << ")" << std::endl;
+        // 使用YOLO检测的中心点，不要覆盖它！
+        // d.center_point 已经在 infer() 中计算好了
+
         d.optical_center = optical_center;
         d.delta_x = (d.center_point.x - d.optical_center.x) + GUN_CAM_DISTANCE_X;
         d.delta_y = (d.optical_center.y - d.center_point.y) + GUN_CAM_DISTANCE_Y;
 
+        // 绘制四个角点
+        std::vector<Point> armor_points = {d.p1, d.p2, d.p3, d.p4};
+        cv::polylines(image, armor_points, true, Scalar(0, 255, 0), 2);
+
+        // 绘制中心点
+        cv::circle(image, d.center_point, 3, Scalar(0, 0, 255), -1);
 
         // 调试信息
-        cv::circle(image, optical_center, 5, Scalar(255, 0, 0), -1); 
+        cv::circle(image, optical_center, 5, Scalar(255, 0, 0), -1);
         std::string delta_text = "dx:" + std::to_string(static_cast<int>(d.delta_x)) +
                                  " dy:" + std::to_string(static_cast<int>(d.delta_y));
-        cv::putText(image, delta_text, rt, cv::FONT_HERSHEY_SIMPLEX, 0.5,
+        cv::putText(image, delta_text, d.p1, cv::FONT_HERSHEY_SIMPLEX, 0.5,
                     Scalar(0, 255, 0), 1);
-        cv::putText(image,"fps"+to_string(fps),cv::Point(10, 30),cv::FONT_HERSHEY_SIMPLEX,1,
-                    Scalar(0, 255, 0),1);
-                    
 
+        std::string id_text = "ID:" + std::to_string(d.ID);
+        cv::putText(image, id_text, cv::Point(d.p1.x, d.p1.y - 10),
+                    cv::FONT_HERSHEY_SIMPLEX, 0.5, Scalar(255, 255, 0), 1);
     }
-    
+
+    cv::putText(image,"fps:"+to_string(static_cast<int>(fps)),cv::Point(10, 30),
+                cv::FONT_HERSHEY_SIMPLEX,1, Scalar(0, 255, 0),2);
 
     cv::imshow("Detection", image);
-
-    // cv::rectangle(image, lt, rb, Scalar(0, 255, 0), 2);
-
 }
 
 inline double DetectionArmor::sigmoid(double x) 
@@ -201,11 +180,7 @@ void DetectionArmor::infer()
     // 固定八股
     Tensor input_tensor(input_port.get_element_type(), input_port.get_shape(), input_blob.data);
     infer_request.set_input_tensor(input_tensor);
-    infer_request.infer();
-
-    // 收集性能数据（不影响原有逻辑）
-    profiler_.collectProfilingData(infer_request);
-
+    infer_request.infer();    
     auto outputs = compiled.outputs();
     Tensor output = infer_request.get_tensor(outputs[0]);
     ov::Shape output_shape = output.get_shape();
@@ -303,8 +278,7 @@ void DetectionArmor::infer()
 
         d.center_point.x = (d.p1.x + d.p2.x + d.p3.x + d.p4.x) / 4;
         d.center_point.y = (d.p1.y + d.p2.y + d.p3.y + d.p4.y) / 4;
-        // d.length = boxes[indices[valid_index]].width;
-        // d.width = boxes[indices[valid_index]].height;
+
         d.ID = num_class[indices[valid_index]];
 
         int color = color_class[indices[valid_index]];
@@ -313,8 +287,6 @@ void DetectionArmor::infer()
         else { d.color = Color::NONE; }
 
         armorsDatas.push_back(d);
-
-        
     }
 }
 
