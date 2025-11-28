@@ -4,11 +4,7 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <openvino/openvino.hpp>
-#include <thread>
-#include <atomic>
 #include "timeCounter.hpp"
-#include <shared_mutex>
-#include "BYTETracker.h"
 #include "traditional_detector.hpp"
 #include "armor.hpp"
 
@@ -69,20 +65,7 @@ namespace detection
     // 当前帧的装甲板数据
     vector<ArmorData> armorsDatas; 
 
-    std::vector<Object> detection_objects; // 要在容器里面存检测对象
-    std::vector<STrack> tracks_objects;
 
-    // 整个推理的线程
-    thread infer_thread;
-
-    // 一个用来保护识别到的装甲板的数据的锁 （不知道要不要用到）
-    std::mutex _mtx;
-    
-    // 控制run线程的原子变量
-    std::atomic<bool> isRunning{false};
-
-    //数据就绪状态
-    std::atomic<bool> data_ready{false};
 
     public:
         // 指定识别的颜色
@@ -94,7 +77,6 @@ namespace detection
         DetectionArmor(string& model_path, bool ifCountTime);
         ~DetectionArmor();
 
-        BYTETracker tracker = BYTETracker(10, 10); // 初始化BYTETracker
 
         void drawObject(Mat& image, vector<ArmorData>& datas);
         static double sigmoid(double x);
@@ -103,7 +85,6 @@ namespace detection
         void start_detection(const cv::Mat& input_image);
         
 
-        // 外部线程可以开一个循环连续调用此成员函数以实时获取实时装甲板的检测结果
         vector<ArmorData>& getdata();
 
         void __TEST__ format_print_data_test();
@@ -111,7 +92,6 @@ namespace detection
         // 开启识别
         void run();
 
-        void drawTracks(Mat& image);
 
         // 显示图像
         void __TEST__ showImage();

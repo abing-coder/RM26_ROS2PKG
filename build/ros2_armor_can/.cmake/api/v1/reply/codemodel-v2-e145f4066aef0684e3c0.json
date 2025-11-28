@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ab73899d4bed6b60a118.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ros2_armor_can",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "armor_send_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armor_send_node-7e1bb05e1f13622fcd4d.json",
+					"name" : "armor_send_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_armor_can_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_armor_can_uninstall-c9af42b2a23736b8bce4.json",
+					"name" : "ros2_armor_can_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_send_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_send_node-d9174191303299c0c419.json",
+					"name" : "test_send_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f3e4c7c75a732423789a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/\u684c\u9762/Robomaster/RM26_ROS2PKG/build/ros2_armor_can",
+		"source" : "/home/ubuntu/\u684c\u9762/Robomaster/RM26_ROS2PKG/src/ros2_armor_can"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

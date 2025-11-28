@@ -16,13 +16,8 @@ set(OpenVINO_DIR /opt/intel/openvino_2024.6.0/cmake)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SRC 
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/traditional_detector.cpp
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerSource/utils.cpp
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerSource/lapjv.cpp
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerSource/STrack.cpp
-      /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerSource/kalmanFilter.cpp)
+      /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp
+      /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -33,22 +28,17 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui videoio dnn)
 find_package(cv_bridge REQUIRED)
-find_package(Eigen3 REQUIRED) 
 
 
 # Include directories
-include_directories(${EIGEN3_INCLUDE_DIRS}
-                    ${CMAKE_CURRENT_SOURCE_DIR}/include  
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include  
                     ${OpenCV_INCLUDE_DIRS}
-                    ${EIGEN3_INCLUDE_DIRS}
                     ${sensor_msgs_INCLUDE_DIRS}
                     ${geometry_msgs_INCLUDE_DIRS}
                     ${std_msgs_INCLUDE_DIRS}
-                    /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include
-                    /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen
-                    /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerHeader
-                    /home/ubuntu/桌面/RM26/src/recive_pkg/include
-                    /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TimeCounter
+                    /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/include
+                    /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/recive_pkg/include
+                    /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/TimeCounter
                     )
 
 

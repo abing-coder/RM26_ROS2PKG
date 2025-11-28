@@ -1,0 +1,12 @@
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:167:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  167 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+      |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::infer()[m[K’:
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:293:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  293 |     for (int valid_index = 0; [01;35m[Kvalid_index < indices.size()[m[K; ++valid_index)
+      |                               [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::format_print_data_test()[m[K’:
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:372:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  372 |     for (auto [01;35m[Kd[m[K : getdata())
+      |               [01;35m[K^[m[K

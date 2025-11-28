@@ -1,0 +1,32 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection
+[35m[1mConsolidate compiler generated dependencies of target detection[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o[0m
+[ 62%] Built target detection
+[ 75%] [32mBuilding CXX object CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o[0m
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:8:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilesystem[m[K’ is not a namespace-name; did you mean ‘[01m[Ksystem[m[K’?
+    8 | namespace fs = std::[01;31m[Kfilesystem[m[K;
+      |                     [01;31m[K^~~~~~~~~~[m[K
+      |                     [32m[Ksystem[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:13:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   13 |     std::string current_path = [01;31m[Kfs[m[K::current_path().string();
+      |                                [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   21 |     if (![01;31m[Kfs[m[K::exists(video_dir)) {
+      |          [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:28:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   28 |     for (const auto& entry : [01;31m[Kfs[m[K::directory_iterator(video_dir)) {
+      |                              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:44:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   44 |         std::cout << "  " << i + 1 << ". " << [01;31m[Kfs[m[K::path(video_files[i]).filename().string() << std::endl;
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:61:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   61 |     if (![01;31m[Kfs[m[K::exists(model_path)) {
+      |          [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/test_aim_node.dir/build.make:76：CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:111：CMakeFiles/test_aim_node.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

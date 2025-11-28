@@ -11,7 +11,7 @@
 int main(int argc, char** argv)
 {
     std::string video_path = "/home/ubuntu/桌面/RM26_DETECTION-main/video/2.mp4";
-    std::string model_path = "/home/ubuntu/桌面/RM26_DETECTION-main/model/new.onnx";
+    std::string model_path = "/home/ubuntu/桌面/RM26_DETECTION-main/model/0526.onnx";
     detection::DetectionArmor detectionArmor(model_path, true,video_path);
 
     // detectionArmor.start_detection();

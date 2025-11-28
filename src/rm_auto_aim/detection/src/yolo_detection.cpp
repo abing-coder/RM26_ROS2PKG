@@ -4,30 +4,6 @@ using namespace detection;
 
 int detection::DetectionArmor::detect_color = 0; // 0: 红色，1: 蓝色
 
-bool setThreadPriority(std::thread& thread, int priority) {
-    pthread_t pthread = thread.native_handle();
-    
-    // 获取当前调度策略
-    int policy;
-    struct sched_param param;
-    if (pthread_getschedparam(pthread, &policy, &param) != 0) {
-        std::cerr << "获取线程调度参数失败" << std::endl;
-        return false;
-    }
-    
-    // 设置新优先级（macOS 和 Linux 通用）
-    // 注意：优先级范围通常为 1-99，值越大优先级越高
-    param.sched_priority = priority;
-    
-    // 应用新参数（使用 SCHED_RR 实时调度策略）
-    if (pthread_setschedparam(pthread, SCHED_RR, &param) != 0) {
-        std::cerr << "设置线程优先级失败，可能需要 root 权限" << std::endl;
-        return false;
-    }
-    
-    return true;
-}
-
 DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string video_path)
     : ifCountTime(ifcountTime), fps(0.0)
 {
@@ -35,11 +11,11 @@ DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string vide
 
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)}, // 设置性能模式为延迟优化
-        {ov::inference_num_threads(8)}, // 使用4个线程进行推理
+        {ov::inference_num_threads(20)}, // 使用4个线程进行推理
         {ov::num_streams(1)}, // 允许同时执行1个推理流
-        {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 性能核心绑定
-        {ov::hint::enable_hyper_threading(false)}, // 关闭超线程
-        {ov::hint::enable_cpu_pinning(false)} // 关闭CPU固定
+        {ov::hint::enable_hyper_threading(true)}, // 关闭超线程
+        {ov::hint::enable_cpu_pinning(true)}, // 关闭CPU固定
+        {ov::hint::inference_precision(ov::element::f16)} // 设置推理精度为FP16
     };
 
     auto network = core.read_model(model_path);
@@ -49,7 +25,6 @@ DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string vide
 
     input_blob = Mat(640, 640, CV_32F, Scalar(0)); // 初始化输入blob
 
-    //tracker = BYTETracker(10, 10); // 初始化BYTETracker
 
     // armorsDatas = new ArmorData[20]; // 最多装20个装甲板
 }
@@ -60,11 +35,11 @@ DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime)
 
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)}, // 设置性能模式为延迟优化
-        {ov::inference_num_threads(8)}, // 使用4个线程进行推理
+        {ov::inference_num_threads(4)}, // 使用4个线程进行推理
         {ov::num_streams(1)}, // 允许同时执行1个推理流
         {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 性能核心绑定
-        {ov::hint::enable_hyper_threading(false)}, // 关闭超线程
-        {ov::hint::enable_cpu_pinning(false)} // 关闭CPU固定
+        {ov::hint::enable_hyper_threading(true)}, // 关闭超线程
+        {ov::hint::enable_cpu_pinning(true)}, // 关闭CPU固定
     };
 
     auto network = core.read_model(model_path);
@@ -207,7 +182,6 @@ void DetectionArmor::run()
 
         if (cv::waitKey(1) == 27)
         {
-            isRunning = false; // 设置线程停止标志
             clearHeap();
             break;
         } // 按下ESC键退出
@@ -338,53 +312,10 @@ void DetectionArmor::infer()
 
         armorsDatas.push_back(d);
 
-        // // 创建对象用于跟踪器
-        // Object dog;
-        // dog.rect = cv::Rect_<float>(
-        //     boxes[indices[valid_index]].x,
-        //     boxes[indices[valid_index]].y,
-
-        //     boxes[indices[valid_index]].width,
-        //     boxes[indices[valid_index]].height
-        // );
-        // dog.label = num_class[indices[valid_index]];  //从类别里面取
-        // dog.prob = confidences[indices[valid_index]];
-        // detection_objects.push_back(dog);
-
         
     }
-
-    // tracks_objects = tracker.update(detection_objects);
-    detection_objects.clear();
 }
 
-void DetectionArmor::drawTracks(Mat& image)
-{
-    // 绘制跟踪轨迹
-    for (const auto& track : tracks_objects) {
-        if (track.is_activated) {  // 绘制已激活的轨迹
-            auto tlwh = track.tlwh;
-            Scalar color = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
-            
-            // 绘制跟踪框
-            Point tl = Point(tlwh[0], tlwh[1]); // 左上角   1
-            Point br = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
-
-            Point center = Point(tlwh[0] + tlwh[2] / 2, tlwh[1] + tlwh[3] / 2);
-
-            circle(image, center, 5, Scalar(0,255,0), -1);
-
-            //rectangle(image, tl, br, color, 2);
-            //rectangle(image, tl, br,Scalar(0, 255, 0), 2);
-            
-            // 绘制跟踪ID
-            // putText(image, 
-            //     "Track " + to_string(track.track_id), 
-            //     Point(tlwh[0], tlwh[1] - 5), 
-            //     FONT_HERSHEY_SIMPLEX, 0.6, color, 2);
-        }
-    }
-}
 
 
 inline vector<ArmorData>& DetectionArmor::getdata()
@@ -394,14 +325,11 @@ inline vector<ArmorData>& DetectionArmor::getdata()
 
 void DetectionArmor::start_detection()
 {
-    this->isRunning = true; // 设置线程运行标志
     run();
-
 }
 
 void DetectionArmor::start_detection(const cv::Mat& input_image)
 {
-    this->isRunning = true; // 设置线程运行标志
     if (input_image.empty())
     {
         armorsDatas.clear();
@@ -432,13 +360,10 @@ void __TEST__ DetectionArmor::showImage()
     {
         std::cout << getdata().size() << std::endl;
         drawObject(img, getdata());
-        //drawTracks(img); // 绘制跟踪轨迹
 
         //cv::imshow("Detection Armor", img); // 显示图像
         // format_print_data_test();
     }
-
-    // std::lock_guard<std::mutex> lock(_mtx);
 }
 
 void __TEST__ DetectionArmor::format_print_data_test()

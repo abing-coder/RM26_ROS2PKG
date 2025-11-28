@@ -1,0 +1,8 @@
+[0.023s] Invoking command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection -- -j14 -l14
+[0.058s] [ 12%] [32mBuilding CXX object CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o[0m
+[0.059s] [ 25%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[1.968s] [ 37%] [32m[1mLinking CXX executable detection[0m
+[1.990s] [ 50%] [32m[1mLinking CXX executable test_aim_node[0m
+[2.322s] [ 75%] Built target detection
+[2.331s] [100%] Built target test_aim_node
+[2.342s] Invoked command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection -- -j14 -l14

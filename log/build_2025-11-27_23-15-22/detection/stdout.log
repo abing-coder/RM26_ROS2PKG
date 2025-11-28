@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target test_aim_node[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o[0m
+[ 62%] Built target detection
+[ 75%] [32m[1mLinking CXX executable test_aim_node[0m
+[100%] Built target test_aim_node
