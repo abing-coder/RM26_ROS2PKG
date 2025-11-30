@@ -14,29 +14,13 @@ constexpr float NMS_THRESHOLD = 0.4f;
 constexpr int INFERENCE_THREADS = 14;
 
 DetectionArmor::DetectionArmor(std::string& model_path, bool if_count_time, std::string video_path)
-    : m_if_count_time(if_count_time), fps(0.0), m_profiler("openvino_performance.log")
+    : m_inference_engine(model_path, INPUT_SIZE, INFERENCE_THREADS), 
+      m_if_count_time(if_count_time), fps(0.0), m_profiler("openvino_performance.log")
 {
     // 如果提供了视频路径，则初始化视频捕获
     if (!video_path.empty()) {
         m_cap = cv::VideoCapture(video_path);
     }
-    
-    // 统一使用优化的配置参数
-    ov::AnyMap config = {
-        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)},  // 吞吐量模式，提高帧率
-        {ov::inference_num_threads(INFERENCE_THREADS)},                       // 动态线程配置
-        {ov::num_streams(1)},                                                 // 多流推理，提高并行性
-        {ov::hint::enable_cpu_pinning(true)},                                 // 启用CPU固定，减少线程迁移开销
-        {ov::hint::execution_mode(ov::hint::ExecutionMode::PERFORMANCE)},     // 性能执行模式
-        {ov::log::level(ov::log::Level::WARNING)}                             // 减少日志输出，提高性能
-    };
-
-    auto network = m_core.read_model(model_path);
-    m_compiled = m_core.compile_model(network, "CPU", config);
-    m_infer_request = m_compiled.create_infer_request();
-    m_input_port = m_compiled.input();
-
-    m_input_blob = cv::Mat(INPUT_SIZE, INPUT_SIZE, CV_32F, cv::Scalar(0));  // 初始化输入blob
 }
 
 /**
@@ -196,20 +180,8 @@ void DetectionArmor::infer()
 {
     Timer t(m_counter);
 
-    // 归一化
-    m_input_blob = cv::dnn::blobFromImage(
-        m_img, 
-        1 / 255.0
-    );
-
-    // 固定八股
-    ov::Tensor input_tensor(m_input_port.get_element_type(), m_input_port.get_shape(), m_input_blob.data);
-    m_infer_request.set_input_tensor(input_tensor);
-    m_infer_request.infer();    
-    auto outputs = m_compiled.outputs();
-    ov::Tensor output = m_infer_request.get_tensor(outputs[0]);
-    ov::Shape output_shape = output.get_shape();
-    cv::Mat output_buffer(output_shape[1], output_shape[2], CV_32F, output.data());
+    // 使用推理引擎执行推理
+    cv::Mat output_buffer = m_inference_engine.infer(m_img);
     
     // 存储临时结果
     std::vector<cv::Rect> boxes;

@@ -42,7 +42,7 @@ namespace armor_detection
             // 转为 OpenCV 格式
             cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
             cv::Mat image = cv_ptr->image;
-           detectionArmor_.start_detection(image);
+            detectionArmor_.start_detection(image);
 
             std::vector<detection::ArmorData> armors = detectionArmor_.getdata();
 

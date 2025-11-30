@@ -3,11 +3,11 @@
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include <openvino/openvino.hpp>
 #include "timeCounter.hpp"
 #include "traditional_detector.hpp"
 #include "armor.hpp"
 #include "openvino_profiler.hpp"
+#include "inference_engine.hpp"
 
 // 测试模式宏定义
 #define TEST_MODE
@@ -122,23 +122,15 @@ namespace detection
         void run();
 
     private:
-        /// OpenVINO核心对象
-        ov::Core m_core;
+        /// 推理引擎
+        InferenceEngine m_inference_engine;
         /// 视频捕获对象
         cv::VideoCapture m_cap;
-        /// 编译后的模型
-        ov::CompiledModel m_compiled;
-        /// 推理请求
-        ov::InferRequest m_infer_request;
-        /// 输入端口
-        ov::Output<const ov::Node> m_input_port;
 
         /// 原始帧
         cv::Mat m_frame;
         /// 处理后的图像
         cv::Mat m_img;
-        /// 输入blob
-        cv::Mat m_input_blob;
 
         /// 计时器
         timeCounter m_counter = timeCounter("run a frame");
