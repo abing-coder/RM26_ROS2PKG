@@ -166,6 +166,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/inference_engine.o: src/inference_engine.cpp.o
+.PHONY : src/inference_engine.o
+
+# target to build an object file
+src/inference_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/inference_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o
+.PHONY : src/inference_engine.cpp.o
+
+src/inference_engine.i: src/inference_engine.cpp.i
+.PHONY : src/inference_engine.i
+
+# target to preprocess a source file
+src/inference_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/inference_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.i
+.PHONY : src/inference_engine.cpp.i
+
+src/inference_engine.s: src/inference_engine.cpp.s
+.PHONY : src/inference_engine.s
+
+# target to generate assembly for a file
+src/inference_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/inference_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.s
+.PHONY : src/inference_engine.cpp.s
+
 src/openvino_profiler.o: src/openvino_profiler.cpp.o
 .PHONY : src/openvino_profiler.o
 
@@ -284,6 +311,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/inference_engine.o"
+	@echo "... src/inference_engine.i"
+	@echo "... src/inference_engine.s"
 	@echo "... src/openvino_profiler.o"
 	@echo "... src/openvino_profiler.i"
 	@echo "... src/openvino_profiler.s"

@@ -92,3 +92,23 @@ devel_isolated/
 # Custom ignore patterns
 *.user
 *.autosave
+
+# Build cache
+.build_cache/
+
+# Compiled executables (keep source, ignore binaries)
+**/detection/build/detection
+**/recive_pkg/recive_pkg
+**/test_aim_node
+
+# CMake API files
+**/.cmake/
+
+# Compile commands
+compile_commands.json
+
+# Shell environment files
+*.sh.env
+
+# CTest files
+CTestTestfile.cmake

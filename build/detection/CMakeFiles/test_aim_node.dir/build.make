@@ -83,10 +83,24 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_aim_node.dir/test_aim_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp -o CMakeFiles/test_aim_node.dir/test_aim_node.cpp.s
 
+CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o: CMakeFiles/test_aim_node.dir/flags.make
+CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp
+CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o: CMakeFiles/test_aim_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o -MF CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o.d -o CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp
+
+CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp > CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.i
+
+CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp -o CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.s
+
 CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o: CMakeFiles/test_aim_node.dir/flags.make
 CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp
 CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o: CMakeFiles/test_aim_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o -MF CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o.d -o CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp
 
 CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.s: cmake_force
 CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o: CMakeFiles/test_aim_node.dir/flags.make
 CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp
 CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o: CMakeFiles/test_aim_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o -MF CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o.d -o CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp
 
 CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.s: cmake_force
 CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o: CMakeFiles/test_aim_node.dir/flags.make
 CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp
 CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o: CMakeFiles/test_aim_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o -MF CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o.d -o CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp
 
 CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.s: cmake_force
 # Object files for target test_aim_node
 test_aim_node_OBJECTS = \
 "CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o" \
+"CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o" \
 "CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o" \
 "CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o" \
 "CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o"
@@ -136,6 +151,7 @@ test_aim_node_OBJECTS = \
 test_aim_node_EXTERNAL_OBJECTS =
 
 test_aim_node: CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o
+test_aim_node: CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o
 test_aim_node: CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o
 test_aim_node: CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o
 test_aim_node: CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o
@@ -196,7 +212,7 @@ test_aim_node: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 test_aim_node: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 test_aim_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 test_aim_node: CMakeFiles/test_aim_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test_aim_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_aim_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_aim_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

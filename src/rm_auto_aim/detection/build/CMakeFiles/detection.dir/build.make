@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/桌面/detection
+CMAKE_SOURCE_DIR = /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/桌面/detection/build
+CMAKE_BINARY_DIR = /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/detection.dir/depend.make
@@ -72,123 +72,78 @@ include CMakeFiles/detection.dir/flags.make
 CMakeFiles/detection.dir/main.cpp.o: CMakeFiles/detection.dir/flags.make
 CMakeFiles/detection.dir/main.cpp.o: ../main.cpp
 CMakeFiles/detection.dir/main.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detection.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/main.cpp.o -MF CMakeFiles/detection.dir/main.cpp.o.d -o CMakeFiles/detection.dir/main.cpp.o -c /home/ubuntu/桌面/detection/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detection.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/main.cpp.o -MF CMakeFiles/detection.dir/main.cpp.o.d -o CMakeFiles/detection.dir/main.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/main.cpp
 
 CMakeFiles/detection.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/main.cpp > CMakeFiles/detection.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/main.cpp > CMakeFiles/detection.dir/main.cpp.i
 
 CMakeFiles/detection.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/main.cpp -o CMakeFiles/detection.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/main.cpp -o CMakeFiles/detection.dir/main.cpp.s
 
-CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o: CMakeFiles/detection.dir/flags.make
-CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o: ../TrackerSource/BYTETracker.cpp
-CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o -MF CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o.d -o CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o -c /home/ubuntu/桌面/detection/TrackerSource/BYTETracker.cpp
+CMakeFiles/detection.dir/src/inference_engine.cpp.o: CMakeFiles/detection.dir/flags.make
+CMakeFiles/detection.dir/src/inference_engine.cpp.o: ../src/inference_engine.cpp
+CMakeFiles/detection.dir/src/inference_engine.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detection.dir/src/inference_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/src/inference_engine.cpp.o -MF CMakeFiles/detection.dir/src/inference_engine.cpp.o.d -o CMakeFiles/detection.dir/src/inference_engine.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp
 
-CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/TrackerSource/BYTETracker.cpp > CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.i
+CMakeFiles/detection.dir/src/inference_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/src/inference_engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp > CMakeFiles/detection.dir/src/inference_engine.cpp.i
 
-CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/TrackerSource/BYTETracker.cpp -o CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.s
+CMakeFiles/detection.dir/src/inference_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/src/inference_engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp -o CMakeFiles/detection.dir/src/inference_engine.cpp.s
 
-CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o: CMakeFiles/detection.dir/flags.make
-CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o: ../TrackerSource/STrack.cpp
-CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o -MF CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o.d -o CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o -c /home/ubuntu/桌面/detection/TrackerSource/STrack.cpp
+CMakeFiles/detection.dir/src/openvino_profiler.cpp.o: CMakeFiles/detection.dir/flags.make
+CMakeFiles/detection.dir/src/openvino_profiler.cpp.o: ../src/openvino_profiler.cpp
+CMakeFiles/detection.dir/src/openvino_profiler.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detection.dir/src/openvino_profiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/src/openvino_profiler.cpp.o -MF CMakeFiles/detection.dir/src/openvino_profiler.cpp.o.d -o CMakeFiles/detection.dir/src/openvino_profiler.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp
 
-CMakeFiles/detection.dir/TrackerSource/STrack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/TrackerSource/STrack.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/TrackerSource/STrack.cpp > CMakeFiles/detection.dir/TrackerSource/STrack.cpp.i
+CMakeFiles/detection.dir/src/openvino_profiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/src/openvino_profiler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp > CMakeFiles/detection.dir/src/openvino_profiler.cpp.i
 
-CMakeFiles/detection.dir/TrackerSource/STrack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/TrackerSource/STrack.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/TrackerSource/STrack.cpp -o CMakeFiles/detection.dir/TrackerSource/STrack.cpp.s
-
-CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o: CMakeFiles/detection.dir/flags.make
-CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o: ../TrackerSource/kalmanFilter.cpp
-CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o -MF CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o.d -o CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o -c /home/ubuntu/桌面/detection/TrackerSource/kalmanFilter.cpp
-
-CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/TrackerSource/kalmanFilter.cpp > CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.i
-
-CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/TrackerSource/kalmanFilter.cpp -o CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.s
-
-CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o: CMakeFiles/detection.dir/flags.make
-CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o: ../TrackerSource/lapjv.cpp
-CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o -MF CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o.d -o CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o -c /home/ubuntu/桌面/detection/TrackerSource/lapjv.cpp
-
-CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/TrackerSource/lapjv.cpp > CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.i
-
-CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/TrackerSource/lapjv.cpp -o CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.s
-
-CMakeFiles/detection.dir/TrackerSource/utils.cpp.o: CMakeFiles/detection.dir/flags.make
-CMakeFiles/detection.dir/TrackerSource/utils.cpp.o: ../TrackerSource/utils.cpp
-CMakeFiles/detection.dir/TrackerSource/utils.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/detection.dir/TrackerSource/utils.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/TrackerSource/utils.cpp.o -MF CMakeFiles/detection.dir/TrackerSource/utils.cpp.o.d -o CMakeFiles/detection.dir/TrackerSource/utils.cpp.o -c /home/ubuntu/桌面/detection/TrackerSource/utils.cpp
-
-CMakeFiles/detection.dir/TrackerSource/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/TrackerSource/utils.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/TrackerSource/utils.cpp > CMakeFiles/detection.dir/TrackerSource/utils.cpp.i
-
-CMakeFiles/detection.dir/TrackerSource/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/TrackerSource/utils.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/TrackerSource/utils.cpp -o CMakeFiles/detection.dir/TrackerSource/utils.cpp.s
+CMakeFiles/detection.dir/src/openvino_profiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/src/openvino_profiler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp -o CMakeFiles/detection.dir/src/openvino_profiler.cpp.s
 
 CMakeFiles/detection.dir/src/traditional_detector.cpp.o: CMakeFiles/detection.dir/flags.make
 CMakeFiles/detection.dir/src/traditional_detector.cpp.o: ../src/traditional_detector.cpp
 CMakeFiles/detection.dir/src/traditional_detector.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/src/traditional_detector.cpp.o -MF CMakeFiles/detection.dir/src/traditional_detector.cpp.o.d -o CMakeFiles/detection.dir/src/traditional_detector.cpp.o -c /home/ubuntu/桌面/detection/src/traditional_detector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/src/traditional_detector.cpp.o -MF CMakeFiles/detection.dir/src/traditional_detector.cpp.o.d -o CMakeFiles/detection.dir/src/traditional_detector.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp
 
 CMakeFiles/detection.dir/src/traditional_detector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/src/traditional_detector.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/src/traditional_detector.cpp > CMakeFiles/detection.dir/src/traditional_detector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp > CMakeFiles/detection.dir/src/traditional_detector.cpp.i
 
 CMakeFiles/detection.dir/src/traditional_detector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/src/traditional_detector.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/src/traditional_detector.cpp -o CMakeFiles/detection.dir/src/traditional_detector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp -o CMakeFiles/detection.dir/src/traditional_detector.cpp.s
 
 CMakeFiles/detection.dir/src/yolo_detection.cpp.o: CMakeFiles/detection.dir/flags.make
 CMakeFiles/detection.dir/src/yolo_detection.cpp.o: ../src/yolo_detection.cpp
 CMakeFiles/detection.dir/src/yolo_detection.cpp.o: CMakeFiles/detection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/src/yolo_detection.cpp.o -MF CMakeFiles/detection.dir/src/yolo_detection.cpp.o.d -o CMakeFiles/detection.dir/src/yolo_detection.cpp.o -c /home/ubuntu/桌面/detection/src/yolo_detection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detection.dir/src/yolo_detection.cpp.o -MF CMakeFiles/detection.dir/src/yolo_detection.cpp.o.d -o CMakeFiles/detection.dir/src/yolo_detection.cpp.o -c /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp
 
 CMakeFiles/detection.dir/src/yolo_detection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/src/yolo_detection.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/detection/src/yolo_detection.cpp > CMakeFiles/detection.dir/src/yolo_detection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp > CMakeFiles/detection.dir/src/yolo_detection.cpp.i
 
 CMakeFiles/detection.dir/src/yolo_detection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/src/yolo_detection.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/detection/src/yolo_detection.cpp -o CMakeFiles/detection.dir/src/yolo_detection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp -o CMakeFiles/detection.dir/src/yolo_detection.cpp.s
 
 # Object files for target detection
 detection_OBJECTS = \
 "CMakeFiles/detection.dir/main.cpp.o" \
-"CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o" \
-"CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o" \
-"CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o" \
-"CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o" \
-"CMakeFiles/detection.dir/TrackerSource/utils.cpp.o" \
+"CMakeFiles/detection.dir/src/inference_engine.cpp.o" \
+"CMakeFiles/detection.dir/src/openvino_profiler.cpp.o" \
 "CMakeFiles/detection.dir/src/traditional_detector.cpp.o" \
 "CMakeFiles/detection.dir/src/yolo_detection.cpp.o"
 
@@ -196,11 +151,8 @@ detection_OBJECTS = \
 detection_EXTERNAL_OBJECTS =
 
 detection: CMakeFiles/detection.dir/main.cpp.o
-detection: CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o
-detection: CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o
-detection: CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o
-detection: CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o
-detection: CMakeFiles/detection.dir/TrackerSource/utils.cpp.o
+detection: CMakeFiles/detection.dir/src/inference_engine.cpp.o
+detection: CMakeFiles/detection.dir/src/openvino_profiler.cpp.o
 detection: CMakeFiles/detection.dir/src/traditional_detector.cpp.o
 detection: CMakeFiles/detection.dir/src/yolo_detection.cpp.o
 detection: CMakeFiles/detection.dir/build.make
@@ -239,7 +191,7 @@ detection: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
-detection: /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/lib/intel64/libopenvino.so.2024.6.0
+detection: /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/lib/intel64/libopenvino.so.2025.0.0
 detection: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
@@ -260,7 +212,7 @@ detection: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 detection: CMakeFiles/detection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/桌面/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable detection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable detection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -272,6 +224,6 @@ CMakeFiles/detection.dir/clean:
 .PHONY : CMakeFiles/detection.dir/clean
 
 CMakeFiles/detection.dir/depend:
-	cd /home/ubuntu/桌面/detection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/桌面/detection /home/ubuntu/桌面/detection /home/ubuntu/桌面/detection/build /home/ubuntu/桌面/detection/build /home/ubuntu/桌面/detection/build/CMakeFiles/detection.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles/detection.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection.dir/depend
 

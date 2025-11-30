@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/桌面/detection
+CMAKE_SOURCE_DIR = /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/桌面/detection/build
+CMAKE_BINARY_DIR = /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/桌面/detection/build/CMakeFiles /home/ubuntu/桌面/detection/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/桌面/detection/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,125 +129,18 @@ detection/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/build
 .PHONY : detection/fast
 
-TrackerSource/BYTETracker.o: TrackerSource/BYTETracker.cpp.o
-.PHONY : TrackerSource/BYTETracker.o
+#=============================================================================
+# Target rules for targets named test_aim_node
 
-# target to build an object file
-TrackerSource/BYTETracker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o
-.PHONY : TrackerSource/BYTETracker.cpp.o
+# Build rule for target.
+test_aim_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_aim_node
+.PHONY : test_aim_node
 
-TrackerSource/BYTETracker.i: TrackerSource/BYTETracker.cpp.i
-.PHONY : TrackerSource/BYTETracker.i
-
-# target to preprocess a source file
-TrackerSource/BYTETracker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.i
-.PHONY : TrackerSource/BYTETracker.cpp.i
-
-TrackerSource/BYTETracker.s: TrackerSource/BYTETracker.cpp.s
-.PHONY : TrackerSource/BYTETracker.s
-
-# target to generate assembly for a file
-TrackerSource/BYTETracker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.s
-.PHONY : TrackerSource/BYTETracker.cpp.s
-
-TrackerSource/STrack.o: TrackerSource/STrack.cpp.o
-.PHONY : TrackerSource/STrack.o
-
-# target to build an object file
-TrackerSource/STrack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o
-.PHONY : TrackerSource/STrack.cpp.o
-
-TrackerSource/STrack.i: TrackerSource/STrack.cpp.i
-.PHONY : TrackerSource/STrack.i
-
-# target to preprocess a source file
-TrackerSource/STrack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/STrack.cpp.i
-.PHONY : TrackerSource/STrack.cpp.i
-
-TrackerSource/STrack.s: TrackerSource/STrack.cpp.s
-.PHONY : TrackerSource/STrack.s
-
-# target to generate assembly for a file
-TrackerSource/STrack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/STrack.cpp.s
-.PHONY : TrackerSource/STrack.cpp.s
-
-TrackerSource/kalmanFilter.o: TrackerSource/kalmanFilter.cpp.o
-.PHONY : TrackerSource/kalmanFilter.o
-
-# target to build an object file
-TrackerSource/kalmanFilter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o
-.PHONY : TrackerSource/kalmanFilter.cpp.o
-
-TrackerSource/kalmanFilter.i: TrackerSource/kalmanFilter.cpp.i
-.PHONY : TrackerSource/kalmanFilter.i
-
-# target to preprocess a source file
-TrackerSource/kalmanFilter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.i
-.PHONY : TrackerSource/kalmanFilter.cpp.i
-
-TrackerSource/kalmanFilter.s: TrackerSource/kalmanFilter.cpp.s
-.PHONY : TrackerSource/kalmanFilter.s
-
-# target to generate assembly for a file
-TrackerSource/kalmanFilter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.s
-.PHONY : TrackerSource/kalmanFilter.cpp.s
-
-TrackerSource/lapjv.o: TrackerSource/lapjv.cpp.o
-.PHONY : TrackerSource/lapjv.o
-
-# target to build an object file
-TrackerSource/lapjv.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o
-.PHONY : TrackerSource/lapjv.cpp.o
-
-TrackerSource/lapjv.i: TrackerSource/lapjv.cpp.i
-.PHONY : TrackerSource/lapjv.i
-
-# target to preprocess a source file
-TrackerSource/lapjv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.i
-.PHONY : TrackerSource/lapjv.cpp.i
-
-TrackerSource/lapjv.s: TrackerSource/lapjv.cpp.s
-.PHONY : TrackerSource/lapjv.s
-
-# target to generate assembly for a file
-TrackerSource/lapjv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.s
-.PHONY : TrackerSource/lapjv.cpp.s
-
-TrackerSource/utils.o: TrackerSource/utils.cpp.o
-.PHONY : TrackerSource/utils.o
-
-# target to build an object file
-TrackerSource/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/utils.cpp.o
-.PHONY : TrackerSource/utils.cpp.o
-
-TrackerSource/utils.i: TrackerSource/utils.cpp.i
-.PHONY : TrackerSource/utils.i
-
-# target to preprocess a source file
-TrackerSource/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/utils.cpp.i
-.PHONY : TrackerSource/utils.cpp.i
-
-TrackerSource/utils.s: TrackerSource/utils.cpp.s
-.PHONY : TrackerSource/utils.s
-
-# target to generate assembly for a file
-TrackerSource/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/TrackerSource/utils.cpp.s
-.PHONY : TrackerSource/utils.cpp.s
+# fast build rule for target.
+test_aim_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/build
+.PHONY : test_aim_node/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -273,12 +166,67 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/inference_engine.o: src/inference_engine.cpp.o
+.PHONY : src/inference_engine.o
+
+# target to build an object file
+src/inference_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/inference_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o
+.PHONY : src/inference_engine.cpp.o
+
+src/inference_engine.i: src/inference_engine.cpp.i
+.PHONY : src/inference_engine.i
+
+# target to preprocess a source file
+src/inference_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/inference_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.i
+.PHONY : src/inference_engine.cpp.i
+
+src/inference_engine.s: src/inference_engine.cpp.s
+.PHONY : src/inference_engine.s
+
+# target to generate assembly for a file
+src/inference_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/inference_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.s
+.PHONY : src/inference_engine.cpp.s
+
+src/openvino_profiler.o: src/openvino_profiler.cpp.o
+.PHONY : src/openvino_profiler.o
+
+# target to build an object file
+src/openvino_profiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/openvino_profiler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o
+.PHONY : src/openvino_profiler.cpp.o
+
+src/openvino_profiler.i: src/openvino_profiler.cpp.i
+.PHONY : src/openvino_profiler.i
+
+# target to preprocess a source file
+src/openvino_profiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/openvino_profiler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.i
+.PHONY : src/openvino_profiler.cpp.i
+
+src/openvino_profiler.s: src/openvino_profiler.cpp.s
+.PHONY : src/openvino_profiler.s
+
+# target to generate assembly for a file
+src/openvino_profiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/openvino_profiler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.s
+.PHONY : src/openvino_profiler.cpp.s
+
 src/traditional_detector.o: src/traditional_detector.cpp.o
 .PHONY : src/traditional_detector.o
 
 # target to build an object file
 src/traditional_detector.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/traditional_detector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o
 .PHONY : src/traditional_detector.cpp.o
 
 src/traditional_detector.i: src/traditional_detector.cpp.i
@@ -287,6 +235,7 @@ src/traditional_detector.i: src/traditional_detector.cpp.i
 # target to preprocess a source file
 src/traditional_detector.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/traditional_detector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.i
 .PHONY : src/traditional_detector.cpp.i
 
 src/traditional_detector.s: src/traditional_detector.cpp.s
@@ -295,6 +244,7 @@ src/traditional_detector.s: src/traditional_detector.cpp.s
 # target to generate assembly for a file
 src/traditional_detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/traditional_detector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.s
 .PHONY : src/traditional_detector.cpp.s
 
 src/yolo_detection.o: src/yolo_detection.cpp.o
@@ -303,6 +253,7 @@ src/yolo_detection.o: src/yolo_detection.cpp.o
 # target to build an object file
 src/yolo_detection.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/yolo_detection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o
 .PHONY : src/yolo_detection.cpp.o
 
 src/yolo_detection.i: src/yolo_detection.cpp.i
@@ -311,6 +262,7 @@ src/yolo_detection.i: src/yolo_detection.cpp.i
 # target to preprocess a source file
 src/yolo_detection.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/yolo_detection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.i
 .PHONY : src/yolo_detection.cpp.i
 
 src/yolo_detection.s: src/yolo_detection.cpp.s
@@ -319,7 +271,32 @@ src/yolo_detection.s: src/yolo_detection.cpp.s
 # target to generate assembly for a file
 src/yolo_detection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection.dir/build.make CMakeFiles/detection.dir/src/yolo_detection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.s
 .PHONY : src/yolo_detection.cpp.s
+
+test_aim_node.o: test_aim_node.cpp.o
+.PHONY : test_aim_node.o
+
+# target to build an object file
+test_aim_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o
+.PHONY : test_aim_node.cpp.o
+
+test_aim_node.i: test_aim_node.cpp.i
+.PHONY : test_aim_node.i
+
+# target to preprocess a source file
+test_aim_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/test_aim_node.cpp.i
+.PHONY : test_aim_node.cpp.i
+
+test_aim_node.s: test_aim_node.cpp.s
+.PHONY : test_aim_node.s
+
+# target to generate assembly for a file
+test_aim_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_aim_node.dir/build.make CMakeFiles/test_aim_node.dir/test_aim_node.cpp.s
+.PHONY : test_aim_node.cpp.s
 
 # Help Target
 help:
@@ -330,30 +307,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... detection"
-	@echo "... TrackerSource/BYTETracker.o"
-	@echo "... TrackerSource/BYTETracker.i"
-	@echo "... TrackerSource/BYTETracker.s"
-	@echo "... TrackerSource/STrack.o"
-	@echo "... TrackerSource/STrack.i"
-	@echo "... TrackerSource/STrack.s"
-	@echo "... TrackerSource/kalmanFilter.o"
-	@echo "... TrackerSource/kalmanFilter.i"
-	@echo "... TrackerSource/kalmanFilter.s"
-	@echo "... TrackerSource/lapjv.o"
-	@echo "... TrackerSource/lapjv.i"
-	@echo "... TrackerSource/lapjv.s"
-	@echo "... TrackerSource/utils.o"
-	@echo "... TrackerSource/utils.i"
-	@echo "... TrackerSource/utils.s"
+	@echo "... test_aim_node"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/inference_engine.o"
+	@echo "... src/inference_engine.i"
+	@echo "... src/inference_engine.s"
+	@echo "... src/openvino_profiler.o"
+	@echo "... src/openvino_profiler.i"
+	@echo "... src/openvino_profiler.s"
 	@echo "... src/traditional_detector.o"
 	@echo "... src/traditional_detector.i"
 	@echo "... src/traditional_detector.s"
 	@echo "... src/yolo_detection.o"
 	@echo "... src/yolo_detection.i"
 	@echo "... src/yolo_detection.s"
+	@echo "... test_aim_node.o"
+	@echo "... test_aim_node.i"
+	@echo "... test_aim_node.s"
 .PHONY : help
 
 

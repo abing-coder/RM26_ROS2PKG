@@ -149,6 +149,44 @@ namespace detection
         void infer();
 
         /**
+         * @brief 解析检测结果
+         * @param output_buffer 网络输出buffer
+         * @param boxes 输出边界框
+         * @param num_class 输出数字类别
+         * @param color_class 输出颜色类别
+         * @param confidences 输出置信度
+         * @param fourPointModel 输出四点坐标
+         */
+        void parseDetections(const cv::Mat& output_buffer,
+                           std::vector<cv::Rect>& boxes,
+                           std::vector<int>& num_class,
+                           std::vector<int>& color_class,
+                           std::vector<float>& confidences,
+                           std::vector<std::vector<cv::Point>>& fourPointModel);
+
+        /**
+         * @brief 应用非极大值抑制
+         * @param boxes 边界框
+         * @param confidences 置信度
+         * @param indices 输出有效索引
+         */
+        void applyNMS(const std::vector<cv::Rect>& boxes,
+                     const std::vector<float>& confidences,
+                     std::vector<int>& indices);
+
+        /**
+         * @brief 构建装甲板数据
+         * @param indices NMS后的有效索引
+         * @param fourPointModel 四点坐标
+         * @param num_class 数字类别
+         * @param color_class 颜色类别
+         */
+        void buildArmorData(const std::vector<int>& indices,
+                          const std::vector<std::vector<cv::Point>>& fourPointModel,
+                          const std::vector<int>& num_class,
+                          const std::vector<int>& color_class);
+
+        /**
          * @brief 清理堆内存
          */
         void clearHeap();

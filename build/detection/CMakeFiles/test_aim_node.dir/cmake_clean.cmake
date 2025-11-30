@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o"
+  "CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o.d"
   "CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o"
   "CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o.d"
   "CMakeFiles/test_aim_node.dir/src/traditional_detector.cpp.o"

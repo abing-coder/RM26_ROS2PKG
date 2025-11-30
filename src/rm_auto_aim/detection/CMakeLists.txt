@@ -16,9 +16,9 @@ include_directories(
 include_directories(./include)
 include_directories(./TimeCounter)
 
-file(GLOB_RECURSE HEADERS "src/*.cpp")
-add_executable(${PROJECT_NAME} main.cpp ${HEADERS})
-add_executable(test_aim_node test_aim_node.cpp ${HEADERS})
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+add_executable(${PROJECT_NAME} main.cpp ${SOURCES})
+add_executable(test_aim_node test_aim_node.cpp ${SOURCES})
 # message(${SOURCES})
 
 

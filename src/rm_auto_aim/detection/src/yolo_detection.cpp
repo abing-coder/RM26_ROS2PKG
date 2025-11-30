@@ -176,25 +176,15 @@ void DetectionArmor::run()
     }
 }
 
-void DetectionArmor::infer()
+void DetectionArmor::parseDetections(const cv::Mat& output_buffer,
+                                    std::vector<cv::Rect>& boxes,
+                                    std::vector<int>& num_class,
+                                    std::vector<int>& color_class,
+                                    std::vector<float>& confidences,
+                                    std::vector<std::vector<cv::Point>>& fourPointModel)
 {
-    Timer t(m_counter);
-
-    // 使用推理引擎执行推理
-    cv::Mat output_buffer = m_inference_engine.infer(m_img);
-    
-    // 存储临时结果
-    std::vector<cv::Rect> boxes;
-    std::vector<int> num_class;
-    std::vector<int> color_class;
-    std::vector<float> confidences;     
-    std::vector<int> indices;
-
-    // 临时的四点
-    std::vector<std::vector<cv::Point>> fourPointModel;
-
     // 遍历所有的网络输出
-    for (int i = 0; i < output_buffer.rows; ++i) 
+    for (int i = 0; i < output_buffer.rows; ++i)
     {
         // 获取当前的置信度
         float confidence = output_buffer.at<float>(i, 8);
@@ -203,7 +193,7 @@ void DetectionArmor::infer()
         confidence = sigmoid(confidence);
 
         // 过滤低置信度检测框
-        if (confidence < CONFIDENCE_THRESHOLD) continue;  
+        if (confidence < CONFIDENCE_THRESHOLD) continue;
 
         // 检查出颜色和数字的类别
         cv::Mat color_scores = output_buffer.row(i).colRange(9, 13);   // 颜色概率（红/蓝等）
@@ -211,76 +201,116 @@ void DetectionArmor::infer()
         cv::Point class_id, color_id;
         cv::minMaxLoc(classes_scores, nullptr, nullptr, nullptr, &class_id);
         cv::minMaxLoc(color_scores, nullptr, nullptr, nullptr, &color_id);
+
         // 加入预测出来的数字和颜色
         num_class.push_back(class_id.x);
         color_class.push_back(color_id.x);
 
-        // 检测颜色
+        // 检测颜色过滤
         if ((detect_color == 0 && color_id.x == 1) || (detect_color == 1 && color_id.x == 0)) continue;
-        
+
         // 获取第一个输出向量的指针
-        float* f_ptr = output_buffer.ptr<float>(i);
+        const float* f_ptr = output_buffer.ptr<float>(i);
 
+        // 提取四个角点
         std::vector<cv::Point> box_point(4);
-
         box_point[0].x = f_ptr[0];
         box_point[0].y = f_ptr[1];
-
         box_point[1].x = f_ptr[2];
         box_point[1].y = f_ptr[3];
-
         box_point[2].x = f_ptr[4];
         box_point[2].y = f_ptr[5];
-
         box_point[3].x = f_ptr[6];
         box_point[3].y = f_ptr[7];
 
         fourPointModel.push_back(box_point);
 
-        // 创建rect
+        // 创建边界矩形
         cv::Rect rect(
             f_ptr[0], // x
             f_ptr[1], // y
             f_ptr[4] - f_ptr[0], // width
             f_ptr[5] - f_ptr[1]  // height
         );
-        
-        // 加入
+
         boxes.push_back(rect);
         confidences.push_back(confidence);
     }
+}
 
-    // 非极大值抑制
+void DetectionArmor::applyNMS(const std::vector<cv::Rect>& boxes,
+                             const std::vector<float>& confidences,
+                             std::vector<int>& indices)
+{
     cv::dnn::NMSBoxes(
-        boxes,                // 输入边界框（std::vector<cv::Rect>）
-        confidences,          // 输入置信度（std::vector<float>）
+        boxes,                // 输入边界框
+        confidences,          // 输入置信度
         CONFIDENCE_THRESHOLD, // 得分阈值
         NMS_THRESHOLD,        // NMS 阈值
-        indices               // 输出索引（必须传入引用）
+        indices               // 输出索引
     );
+}
 
+void DetectionArmor::buildArmorData(const std::vector<int>& indices,
+                                   const std::vector<std::vector<cv::Point>>& fourPointModel,
+                                   const std::vector<int>& num_class,
+                                   const std::vector<int>& color_class)
+{
     // 保留最终的数据
-    for (int valid_index = 0; valid_index < indices.size(); ++valid_index) 
+    for (int valid_index = 0; valid_index < indices.size(); ++valid_index)
     {
         ArmorData d;
 
+        // 设置四个角点
         d.p1 = fourPointModel[indices[valid_index]][0];
         d.p2 = fourPointModel[indices[valid_index]][1];
         d.p3 = fourPointModel[indices[valid_index]][2];
         d.p4 = fourPointModel[indices[valid_index]][3];
 
+        // 计算中心点
         d.center_point.x = (d.p1.x + d.p2.x + d.p3.x + d.p4.x) / 4;
         d.center_point.y = (d.p1.y + d.p2.y + d.p3.y + d.p4.y) / 4;
 
+        // 设置ID
         d.ID = num_class[indices[valid_index]];
 
+        // 设置颜色
         int color = color_class[indices[valid_index]];
-        if (color == 0){ d.color = Color::RED; }
-        else if (color == 1){ d.color = Color::BLUE; }
-        else { d.color = Color::NONE; }
+        if (color == 0) {
+            d.color = Color::RED;
+        } else if (color == 1) {
+            d.color = Color::BLUE;
+        } else {
+            d.color = Color::NONE;
+        }
 
         m_armors_datas.push_back(d);
     }
+}
+
+void DetectionArmor::infer()
+{
+    Timer t(m_counter);
+
+    // 1. 使用推理引擎执行推理
+    cv::Mat output_buffer = m_inference_engine.infer(m_img);
+
+    // 2. 存储临时结果
+    std::vector<cv::Rect> boxes;
+    std::vector<int> num_class;
+    std::vector<int> color_class;
+    std::vector<float> confidences;
+    std::vector<int> indices;
+    std::vector<std::vector<cv::Point>> fourPointModel;
+
+    // 3. 解析检测结果
+    parseDetections(output_buffer, boxes, num_class, color_class, confidences, fourPointModel);
+
+    // 4. 应用非极大值抑制
+    applyNMS(boxes, confidences, indices);
+
+    // 5. 构建装甲板数据
+    buildArmorData(indices, fourPointModel, num_class, color_class);
 }
 
 
