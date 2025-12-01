@@ -5,6 +5,8 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <chrono>
+#include <iomanip>
 #include "yolo_detection.hpp"
 
 // 检查文件或目录是否存在
@@ -111,13 +113,65 @@ int main(int argc, char** argv)
         // 创建检测器实例
         std::cout << "初始化检测器..." << std::endl;
         detection::DetectionArmor detectionArmor(model_path, true, selected_video);
-        
+
         std::cout << "开始目标检测..." << std::endl;
         std::cout << "按 'q' 键退出，按 'n' 键切换到下一个视频" << std::endl;
-        
-        // 开始检测
-        detectionArmor.start_detection();
-        
+
+        // 帧率计算变量
+        int frame_count = 0;
+        auto start_time = std::chrono::high_resolution_clock::now();
+
+        // 打开视频
+        cv::VideoCapture cap(selected_video);
+        if (!cap.isOpened()) {
+            std::cerr << "错误: 无法打开视频文件" << std::endl;
+            return -1;
+        }
+
+        cv::Mat frame;
+        while (true) {
+            // 读取帧
+            cap >> frame;
+            if (frame.empty()) {
+                std::cout << "视频播放完毕" << std::endl;
+                break;
+            }
+
+            // 执行检测
+            detectionArmor.start_detection(frame);
+
+            // 帧数计数
+            frame_count++;
+
+            // 每100帧计算一次平均帧率
+            if (frame_count % 100 == 0) {
+                auto end_time = std::chrono::high_resolution_clock::now();
+                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
+                double avg_fps = 100.0 / (duration / 1000.0);
+
+                std::cout << "已处理 " << frame_count << " 帧，最近100帧平均帧率: "
+                          << std::fixed << std::setprecision(2) << avg_fps << " FPS" << std::endl;
+
+                // 重置计时器
+                start_time = std::chrono::high_resolution_clock::now();
+            }
+
+            // 显示结果
+            #ifdef TEST_MODE
+            detectionArmor.showImage();
+            #endif
+
+            // 检查按键
+            int key = cv::waitKey(1);
+            if (key == 'q' || key == 'Q') {
+                std::cout << "用户退出" << std::endl;
+                break;
+            }
+        }
+
+        // 输出总体统计
+        std::cout << "\n总共处理帧数: " << frame_count << std::endl;
+
     } catch (const std::exception& e) {
         std::cerr << "错误: " << e.what() << std::endl;
         return -1;

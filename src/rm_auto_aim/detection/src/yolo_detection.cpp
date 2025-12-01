@@ -354,9 +354,8 @@ void DetectionArmor::start_detection(const cv::Mat& input_image)
 #ifdef TEST_MODE
 void DetectionArmor::showImage()
 {
-    if (!m_img.empty()) 
+    if (!m_img.empty())
     {
-        std::cout << getdata().size() << std::endl;
         drawObject(m_img, getdata());
     }
 }

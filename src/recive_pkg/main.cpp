@@ -5,7 +5,7 @@ int main(int argc, char **argv)
     rclcpp::init(argc, argv);
     
     // 修改5：通过参数传递模型路径
-     const std::string model_path = "/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/model/new.onnx";
+     const std::string model_path = "/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/model/new2.onnx";
     // const bool debug_mode = true;  // 可从参数读取
    
     

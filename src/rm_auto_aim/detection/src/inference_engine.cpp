@@ -32,7 +32,7 @@ void InferenceEngine::initialize_model(const std::string& model_path, int infere
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)},  // 低延迟模式，适合实时推理
         {ov::hint::execution_mode(ov::hint::ExecutionMode::PERFORMANCE)},
-        {ov::inference_num_threads(8)},  // 使用优化后的线程数
+        {ov::inference_num_threads(10)},  // 使用优化后的线程数
         {ov::num_streams(1)},  // 单流模式，避免多流开销
         {ov::hint::enable_cpu_pinning(true)},
         {ov::log::level(ov::log::Level::WARNING)}
