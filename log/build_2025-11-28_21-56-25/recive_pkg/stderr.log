@@ -1,0 +1,18 @@
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::run()’:
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:204:25: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  204 |         if (frame_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT)))
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::drawTracks(cv::Mat&)’:
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:379:20: warning: variable ‘color’ set but not used [-Wunused-but-set-variable]
+  379 |             Scalar color = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    ^~~~~
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:382:19: warning: variable ‘tl’ set but not used [-Wunused-but-set-variable]
+  382 |             Point tl = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   ^~
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:383:19: warning: variable ‘br’ set but not used [-Wunused-but-set-variable]
+  383 |             Point br = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   ^~
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::format_print_data_test()’:
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:459:15: warning: variable ‘d’ set but not used [-Wunused-but-set-variable]
+  459 |     for (auto d : getdata())
+      |               ^

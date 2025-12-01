@@ -36,6 +36,7 @@ namespace detection
         float delta_y;             // 目标中心点与光心点的y差值
         // float length;   //长度
         // float width;    //宽度
+        int flag; //判断是否有装甲板
 
         cv::Point p1; // 左上
         cv::Point p2; // 右上

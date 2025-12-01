@@ -2772,35 +2772,35 @@ CMakeFiles/detection.dir/main.cpp.o: /home/ubuntu/桌面/RM26/src/rm_auto_aim/de
   /usr/include/opencv4/opencv2/video.hpp \
   /usr/include/opencv4/opencv2/video/tracking.hpp \
   /usr/include/opencv4/opencv2/video/background_segm.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/openvino.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/any.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/any.hpp \
   /usr/include/c++/11/typeindex \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core_visibility.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/visibility.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/except.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/deprecated.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_vector.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rtti.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_names.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_set.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_vector.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/shape.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core_visibility.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/visibility.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/except.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/deprecated.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_vector.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rtti.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_names.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_set.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_vector.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/shape.hpp \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/strides.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/dimension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/interval.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/symbol.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_mask.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/graph_util.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/strides.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/dimension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/interval.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/symbol.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_mask.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/bits/fs_path.h \
@@ -2811,69 +2811,69 @@ CMakeFiles/detection.dir/main.cpp.o: /home/ubuntu/桌面/RM26/src/rm_auto_aim/de
   /usr/include/c++/11/bits/stl_stack.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/model.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/model.hpp \
   /usr/include/c++/11/atomic \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/partial_shape.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rank.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float16.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/tensor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/allocator.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_output.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_input.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/assign.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/sink.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/op.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/parameter.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/layout.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/read_value.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/result.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/serialize.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/opsets/opset.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass_config.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rt_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/version.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/runtime.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/core.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/op_extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/common.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/properties.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/partial_shape.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rank.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float16.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/allocator.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_output.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_input.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/assign.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/sink.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/op.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/parameter.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/layout.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/read_value.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/result.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/serialize.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/opsets/opset.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass_config.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rt_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/version.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/runtime.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/core.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/op_extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/common.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/properties.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -3497,35 +3497,35 @@ CMakeFiles/detection.dir/src/traditional_detector.cpp.o: /home/ubuntu/桌面/RM2
   /usr/include/opencv4/opencv2/video/background_segm.hpp \
   /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include/armor.hpp \
   /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include/yolo_detection.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/openvino.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/any.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/any.hpp \
   /usr/include/c++/11/typeindex \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core_visibility.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/visibility.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/except.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/deprecated.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_vector.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rtti.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_names.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_set.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_vector.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/shape.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core_visibility.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/visibility.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/except.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/deprecated.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_vector.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rtti.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_names.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_set.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_vector.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/shape.hpp \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/strides.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/dimension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/interval.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/symbol.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_mask.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/graph_util.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/strides.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/dimension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/interval.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/symbol.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_mask.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/bits/fs_path.h \
@@ -3536,69 +3536,69 @@ CMakeFiles/detection.dir/src/traditional_detector.cpp.o: /home/ubuntu/桌面/RM2
   /usr/include/c++/11/bits/stl_stack.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/model.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/model.hpp \
   /usr/include/c++/11/atomic \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/partial_shape.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rank.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float16.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/tensor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/allocator.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_output.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_input.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/assign.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/sink.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/op.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/parameter.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/layout.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/read_value.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/result.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/serialize.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/opsets/opset.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass_config.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rt_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/version.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/runtime.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/core.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/op_extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/common.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/properties.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/partial_shape.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rank.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float16.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/allocator.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_output.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_input.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/assign.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/sink.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/op.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/parameter.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/layout.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/read_value.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/result.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/serialize.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/opsets/opset.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass_config.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rt_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/version.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/runtime.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/core.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/op_extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/common.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/properties.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -4215,35 +4215,35 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
   /usr/include/opencv4/opencv2/video.hpp \
   /usr/include/opencv4/opencv2/video/tracking.hpp \
   /usr/include/opencv4/opencv2/video/background_segm.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/openvino.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/any.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/any.hpp \
   /usr/include/c++/11/typeindex \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core_visibility.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/visibility.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/except.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/deprecated.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_vector.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rtti.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_names.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_set.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_vector.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/shape.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core_visibility.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/visibility.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/except.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/deprecated.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_vector.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rtti.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_names.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_set.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_vector.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/shape.hpp \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/strides.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/dimension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/interval.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/symbol.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_mask.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/graph_util.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/strides.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/dimension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/interval.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/symbol.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_mask.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/bits/fs_path.h \
@@ -4254,69 +4254,69 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
   /usr/include/c++/11/bits/stl_stack.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/model.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/model.hpp \
   /usr/include/c++/11/atomic \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/partial_shape.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rank.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float16.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/tensor.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/allocator.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_output.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_input.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/assign.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/sink.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/op.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/parameter.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/layout.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/read_value.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/result.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/serialize.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/opsets/opset.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass_config.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rt_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/version.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/runtime.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/core.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/op_extension.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/common.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/properties.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
-  /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/partial_shape.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rank.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float16.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/tensor.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/allocator.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_output.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_input.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/assign.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/sink.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/op.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/parameter.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/layout.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/read_value.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/result.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/serialize.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/opsets/opset.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass_config.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rt_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/version.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/runtime.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/core.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/op_extension.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/common.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/properties.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
+  /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -4522,11 +4522,11 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
   /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include/armor.hpp
 
 
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
 
 /usr/include/c++/11/random:
-
-/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include/traditional_detector.hpp:
 
 /usr/include/c++/11/shared_mutex:
 
@@ -4536,79 +4536,69 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/thread:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_context.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/profiling_info.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/profiling_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/infer_request.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/common.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/compiled_model.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/op_extension.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/common.hpp:
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include/traditional_detector.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/op_extension.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/runtime.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/version.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass_config.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rt_info.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/opsets/opset.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/result.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/serialize.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/read_value_base.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/result.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/op.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/read_value.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/sink.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/parameter.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/assign.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_extension.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_value.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/op.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/tensor.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_input.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_output.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/output.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float16.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/allocator.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/bfloat16.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/tensor.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/attr_types.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rank.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float16.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/bfloat16.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/attr_types.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/partial_shape.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/model.hpp:
 
 /usr/include/c++/11/unordered_set:
 
@@ -4624,49 +4614,47 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/fs_fwd.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/graph_util.hpp:
+/usr/include/c++/11/filesystem:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/symbol.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/dimension.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_mask.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate_diff.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/symbol.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/strides.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/interval.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate_diff.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/strides.hpp:
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp:
-
 /usr/include/c++/11/numeric:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/shape.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/coordinate.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_vector.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_set.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_set.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rtti.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rtti.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/node_vector.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/deprecated.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/runtime_attribute.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/except.hpp:
 
-/usr/include/c++/11/filesystem:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/visibility.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/deprecated.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core_visibility.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/visibility.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_visitor.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp:
 
 /usr/include/c++/11/typeindex:
-
-/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_adapter.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/main.cpp:
 
@@ -4682,11 +4670,15 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/opsets/opset.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Eigenvalues/EigenSolver.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Eigenvalues/RealSchur.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/Eigenvalues:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Geometry/arch/Geometry_SIMD.h:
 
@@ -4696,13 +4688,13 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/std_thread.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/input.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Geometry/AlignedBox.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Geometry/ParametrizedLine.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Geometry/Hyperplane.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Geometry/Transform.h:
 
@@ -4730,9 +4722,9 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/QR/FullPivHouseholderQR.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/rank.hpp:
-
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/QR/HouseholderQR.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Householder/BlockHouseholder.h:
 
@@ -4834,8 +4826,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/cerrno:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_names.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/stdio.h:
@@ -4876,6 +4866,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/shape.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/11/debug/assertions.h:
@@ -4885,8 +4877,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/plugins/BlockMethods.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/assign.hpp:
 
 /usr/include/ctype.h:
 
@@ -4912,8 +4902,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/stl_vector.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp:
-
 /usr/include/c++/11/cstddef:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -4932,6 +4920,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/stdint.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/output.hpp:
+
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/opencv4/opencv2/photo.hpp:
@@ -4939,8 +4929,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/EigenBase.h:
 
 /usr/include/c++/11/typeinfo:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/extension.hpp:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
@@ -4950,8 +4938,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/codecvt.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/variable_state.hpp:
-
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/c++/11/bits/hashtable.h:
@@ -4960,13 +4946,13 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/cmath:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/core_visibility.hpp:
-
 /usr/include/c++/11/bits/allocator.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Assign.h:
 
 /usr/include/c++/11/cctype:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_extension.hpp:
 
 /usr/include/opencv4/opencv2/flann/linear_index.h:
 
@@ -5008,9 +4994,11 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/sched.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/interval.hpp:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/assign_base.hpp:
 
 /usr/include/opencv4/opencv2/stitching.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_vector.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -5028,9 +5016,9 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass.hpp:
-
 /usr/include/c++/11/bits/functexcept.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_context.hpp:
 
 /usr/include/c++/11/bits/concept_check.h:
 
@@ -5048,13 +5036,9 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/stl_algo.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/element_type.hpp:
-
 /usr/include/features.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/products/SelfadjointRank2Update.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/model.hpp:
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
@@ -5070,6 +5054,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/videoio.hpp:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_input.hpp:
+
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/opencv4/opencv2/ml.hpp:
@@ -5077,6 +5063,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Reshaped.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/properties.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
@@ -5092,11 +5080,11 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/layout.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Geometry/Translation.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp:
 
 /usr/include/c++/11/bits/memoryfwd.h:
 
@@ -5118,6 +5106,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rt_info.hpp:
+
 /usr/include/opencv4/opencv2/core/version.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/LU/FullPivLU.h:
@@ -5136,21 +5126,19 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/infer_request.hpp:
+
 /usr/include/opencv4/opencv2/core/types.hpp:
 
 /usr/include/c++/11/bits/stl_deque.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/layout.hpp:
-
 /usr/include/c++/11/type_traits:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/11/bits/std_function.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/except.hpp:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
@@ -5166,11 +5154,7 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp:
-
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/properties.hpp:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -5182,17 +5166,11 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/enum_mask.hpp:
-
 /usr/include/pthread.h:
 
 /usr/include/c++/11/limits:
 
 /usr/include/opencv4/opencv2/core/base.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/assign_base.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -5205,6 +5183,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/serialize.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -5242,13 +5222,13 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/products/Parallelizer.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp:
-
 /usr/include/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/opencv4/opencv2/flann/sampling.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/version.hpp:
 
 /usr/include/c++/11/system_error:
 
@@ -5306,6 +5286,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/unique_lock.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/partial_shape.hpp:
+
 /usr/include/c++/11/tuple:
 
 /usr/include/c++/11/tr1/exp_integral.tcc:
@@ -5322,15 +5304,13 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/flann/miniflann.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp:
-
 /usr/include/c++/11/bit:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/extension.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/DenseBase.h:
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/axis_vector.hpp:
 
 /usr/include/c++/11/bits/std_mutex.h:
 
@@ -5367,8 +5347,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/opencv4/opencv2/core/cuda.inl.hpp:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/sink.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -5426,8 +5404,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/climits:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/openvino.hpp:
-
 /usr/include/opencv4/opencv2/core/cvdef.h:
 
 /usr/include/c++/11/bits/sstream.tcc:
@@ -5472,6 +5448,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_output.hpp:
+
 /usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/c++/11/iosfwd:
@@ -5494,6 +5472,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/core/check.hpp:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/arch/Default/TypeCasting.h:
 
 /usr/include/opencv4/opencv2/core/traits.hpp:
@@ -5506,6 +5486,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/core/fast_math.hpp:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Swap.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
@@ -5513,6 +5495,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /usr/include/opencv4/opencv2/core/mat.inl.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Eigenvalues/ComplexSchur.h:
 
@@ -5530,6 +5514,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/locale_classes.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/parameter.hpp:
+
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
@@ -5539,6 +5525,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/ArithmeticSequence.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/variable_state.hpp:
 
 /usr/include/c++/11/streambuf:
 
@@ -5553,6 +5541,10 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/c++/11/ostream:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/DenseCoeffsBase.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
@@ -5580,21 +5572,19 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/opencv4/opencv2/calib3d.hpp:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/core.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Random.h:
 
 /usr/include/opencv4/opencv2/features2d.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Array.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/variable_value.hpp:
-
 /usr/include/opencv4/opencv2/flann/defines.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
 /usr/include/opencv4/opencv2/flann/config.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/pass/pass_config.hpp:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -5617,6 +5607,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/opencv4/opencv2/dnn/version.hpp:
 
 /usr/include/c++/11/map:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/dimension.hpp:
 
 /usr/include/c++/11/bits/stl_tree.h:
 
@@ -5664,6 +5656,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/set:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/read_value.hpp:
+
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
@@ -5683,8 +5677,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/opencv4/opencv2/flann/heap.h:
 
 /usr/include/opencv4/opencv2/flann/allocator.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/runtime/core.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/misc/Image.h:
 
@@ -5722,6 +5714,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/products/GeneralMatrixVector.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/runtime.hpp:
+
 /usr/include/opencv4/opencv2/flann/timer.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/StlIterators.h:
@@ -5751,6 +5745,10 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
 /usr/include/opencv4/opencv2/ml/ml.inl.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/compiled_model.hpp:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_names.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/util/Meta.h:
 
@@ -5786,8 +5784,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /usr/include/c++/11/bits/deque.tcc:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/descriptor/input.hpp:
-
 /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/BandMatrix.h:
@@ -5802,8 +5798,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/TrackerHeader/dataType.h:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/op/util/read_value_base.hpp:
-
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/StableNorm.h:
 
 /usr/include/c++/11/stdexcept:
@@ -5816,15 +5810,17 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/util/ConfigureVectorization.h:
 
-/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/util/MKL_support.h:
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_adapter.hpp:
 
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp:
+/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/util/MKL_support.h:
 
 /usr/include/c++/11/cassert:
 
 /usr/include/c++/11/chrono:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/util/Constants.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/any.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
@@ -5852,6 +5848,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/arch/Default/BFloat16.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include/yolo_detection.hpp:
 
 /usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
@@ -5859,6 +5857,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/arch/SSE/PacketMath.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/arch/Default/Settings.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
@@ -5880,6 +5880,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/allocator.hpp:
+
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/AssignEvaluator.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
@@ -5891,8 +5893,6 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/ReturnByValue.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Matrix.h:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/attribute_visitor.hpp:
 
 /usr/include/c++/11/bits/basic_ios.h:
 
@@ -5925,6 +5925,8 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/VectorBlock.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/Transpose.h:
+
+/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/runtime_attribute.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/DiagonalMatrix.h:
 
@@ -5959,7 +5961,5 @@ CMakeFiles/detection.dir/src/yolo_detection.cpp.o: /home/ubuntu/桌面/RM26/src/
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/src/Core/ArrayWrapper.h:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/Dense:
-
-/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include/openvino/core/any.hpp:
 
 /home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/Eigen/LU:

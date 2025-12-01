@@ -1,0 +1,4 @@
+[0.013s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
+[0.067s] [100%] Built target detection
+[0.079s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14

@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[0.059s] [ 10%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o[0m
+[6.682s] [ 20%] [32m[1mLinking CXX executable recive_pkg[0m
+[7.405s] [100%] Built target recive_pkg
+[7.421s] Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[7.421s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/recive_pkg
+[7.426s] -- Install configuration: ""
+[7.426s] -- Installing: /home/ubuntu/桌面/RM26/install/recive_pkg/lib/recive_pkg/recive_pkg
+[7.431s] -- Set runtime path of "/home/ubuntu/桌面/RM26/install/recive_pkg/lib/recive_pkg/recive_pkg" to ""
+[7.431s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/ament_index/resource_index/package_run_dependencies/recive_pkg
+[7.431s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/ament_index/resource_index/parent_prefix_path/recive_pkg
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.sh
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.dsv
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/path.sh
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/path.dsv
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.bash
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.sh
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.zsh
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.dsv
+[7.432s] -- Installing: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.dsv
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/ament_index/resource_index/packages/recive_pkg
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig.cmake
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig-version.cmake
+[7.432s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.xml
+[7.434s] Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/recive_pkg

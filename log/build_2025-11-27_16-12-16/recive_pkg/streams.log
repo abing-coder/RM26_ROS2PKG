@@ -1,0 +1,44 @@
+[0.013s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[0.076s] [ 10%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp.o[0m
+[1.344s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[1.344s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:192:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.344s]   192 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+[1.344s]       |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.351s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawTracks(cv::Mat&)[m[K’:
+[1.351s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:367:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcolor[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.351s]   367 |             Scalar [01;35m[Kcolor[m[K = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+[1.351s]       |                    [01;35m[K^~~~~[m[K
+[1.351s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:370:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktl[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.352s]   370 |             Point [01;35m[Ktl[m[K = Point(tlwh[0], tlwh[1]); // 左上角   1
+[1.352s]       |                   [01;35m[K^~[m[K
+[1.352s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:371:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbr[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.352s]   371 |             Point [01;35m[Kbr[m[K = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+[1.352s]       |                   [01;35m[K^~[m[K
+[1.354s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::format_print_data_test()[m[K’:
+[1.354s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:447:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.355s]   447 |     for (auto [01;35m[Kd[m[K : getdata())
+[1.355s]       |               [01;35m[K^[m[K
+[2.069s] [ 20%] [32m[1mLinking CXX executable recive_pkg[0m
+[2.822s] [100%] Built target recive_pkg
+[2.838s] Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[2.840s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/recive_pkg
+[2.849s] -- Install configuration: ""
+[2.852s] -- Installing: /home/ubuntu/桌面/RM26/install/recive_pkg/lib/recive_pkg/recive_pkg
+[2.858s] -- Set runtime path of "/home/ubuntu/桌面/RM26/install/recive_pkg/lib/recive_pkg/recive_pkg" to ""
+[2.858s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/ament_index/resource_index/package_run_dependencies/recive_pkg
+[2.858s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/ament_index/resource_index/parent_prefix_path/recive_pkg
+[2.858s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.sh
+[2.858s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.dsv
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/path.sh
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/environment/path.dsv
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.bash
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.sh
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.zsh
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/local_setup.dsv
+[2.859s] -- Installing: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.dsv
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/ament_index/resource_index/packages/recive_pkg
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig.cmake
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig-version.cmake
+[2.859s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/recive_pkg/share/recive_pkg/package.xml
+[2.862s] Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/recive_pkg

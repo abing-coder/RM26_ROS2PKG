@@ -1,0 +1,4 @@
+/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp: In member function ‘void ArmorSend::delta_callback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)’:
+/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:123:68: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  123 |     void delta_callback(const geometry_msgs::msg::Point::SharedPtr msg) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~

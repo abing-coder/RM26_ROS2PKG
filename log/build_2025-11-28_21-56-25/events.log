@@ -1,0 +1,281 @@
+[0.000000] (-) TimerEvent: {}
+[0.000075] (-) JobUnselected: {'identifier': 'detection'}
+[0.000113] (-) JobUnselected: {'identifier': 'hik_camera'}
+[0.000144] (-) JobUnselected: {'identifier': 'ros2_armor_can'}
+[0.000173] (recive_pkg) JobQueued: {'identifier': 'recive_pkg', 'dependencies': OrderedDict()}
+[0.000346] (recive_pkg) JobStarted: {'identifier': 'recive_pkg'}
+[0.005634] (recive_pkg) JobProgress: {'identifier': 'recive_pkg', 'progress': 'cmake'}
+[0.006136] (recive_pkg) JobProgress: {'identifier': 'recive_pkg', 'progress': 'build'}
+[0.008380] (recive_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/桌面/RM26/build/recive_pkg', '--', '-j14', '-l14'], 'cwd': '/home/ubuntu/桌面/RM26/build/recive_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ubuntu'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0/nls.messages.json","corruptMarkerFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0","_corruptedFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('TBB_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib/cmake/TBB'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'cursor.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/桌面/RM26'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-91260982-2.0.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64'), ('MANAGERPID', '3346'), ('SYSTEMD_EXEC_PID', '3757'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '73504'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:14813'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-NUC15CRKU5:@/tmp/.ICE-unix/3734,unix/ubuntu-NUC15CRKU5:/tmp/.ICE-unix/3734'), ('INVOCATION_ID', '4f5004497dfa4c71ade6da9bd3ea2b3d'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '01036f380a984122a1167f30d1073bb0'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/桌面/RM26/build/recive_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ubuntu/.config/Cursor/CachedData/ba90f2f88e4911312761abab9492c42442117cf0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('OpenVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake'), ('VSCODE_PID', '73504'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062583] (recive_pkg) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target recive_pkg\n'}
+[0.077466] (recive_pkg) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o\n'}
+[0.099644] (-) TimerEvent: {}
+[0.200121] (-) TimerEvent: {}
+[0.301633] (-) TimerEvent: {}
+[0.401874] (-) TimerEvent: {}
+[0.502333] (-) TimerEvent: {}
+[0.602720] (-) TimerEvent: {}
+[0.702927] (-) TimerEvent: {}
+[0.803156] (-) TimerEvent: {}
+[0.903366] (-) TimerEvent: {}
+[1.003565] (-) TimerEvent: {}
+[1.103790] (-) TimerEvent: {}
+[1.204194] (-) TimerEvent: {}
+[1.305035] (-) TimerEvent: {}
+[1.406790] (-) TimerEvent: {}
+[1.507071] (-) TimerEvent: {}
+[1.607290] (-) TimerEvent: {}
+[1.708111] (-) TimerEvent: {}
+[1.808347] (-) TimerEvent: {}
+[1.910842] (-) TimerEvent: {}
+[2.011053] (-) TimerEvent: {}
+[2.111380] (-) TimerEvent: {}
+[2.212056] (-) TimerEvent: {}
+[2.312706] (-) TimerEvent: {}
+[2.413579] (-) TimerEvent: {}
+[2.513811] (-) TimerEvent: {}
+[2.614039] (-) TimerEvent: {}
+[2.717668] (-) TimerEvent: {}
+[2.818033] (-) TimerEvent: {}
+[2.918234] (-) TimerEvent: {}
+[3.018516] (-) TimerEvent: {}
+[3.119010] (-) TimerEvent: {}
+[3.219968] (-) TimerEvent: {}
+[3.320377] (-) TimerEvent: {}
+[3.426442] (-) TimerEvent: {}
+[3.526936] (-) TimerEvent: {}
+[3.630441] (-) TimerEvent: {}
+[3.733935] (-) TimerEvent: {}
+[3.834646] (-) TimerEvent: {}
+[3.934833] (-) TimerEvent: {}
+[4.035011] (-) TimerEvent: {}
+[4.135697] (-) TimerEvent: {}
+[4.237668] (-) TimerEvent: {}
+[4.337859] (-) TimerEvent: {}
+[4.438199] (-) TimerEvent: {}
+[4.538736] (-) TimerEvent: {}
+[4.639271] (-) TimerEvent: {}
+[4.741327] (-) TimerEvent: {}
+[4.841941] (-) TimerEvent: {}
+[4.944192] (-) TimerEvent: {}
+[5.046670] (-) TimerEvent: {}
+[5.147234] (-) TimerEvent: {}
+[5.247760] (-) TimerEvent: {}
+[5.348143] (-) TimerEvent: {}
+[5.448685] (-) TimerEvent: {}
+[5.548916] (-) TimerEvent: {}
+[5.649483] (-) TimerEvent: {}
+[5.750115] (-) TimerEvent: {}
+[5.850858] (-) TimerEvent: {}
+[5.951751] (-) TimerEvent: {}
+[6.052102] (-) TimerEvent: {}
+[6.152582] (-) TimerEvent: {}
+[6.253340] (-) TimerEvent: {}
+[6.356854] (-) TimerEvent: {}
+[6.457046] (-) TimerEvent: {}
+[6.557938] (-) TimerEvent: {}
+[6.660736] (-) TimerEvent: {}
+[6.761443] (-) TimerEvent: {}
+[6.861865] (-) TimerEvent: {}
+[6.963389] (-) TimerEvent: {}
+[7.063612] (-) TimerEvent: {}
+[7.166747] (-) TimerEvent: {}
+[7.266951] (-) TimerEvent: {}
+[7.367372] (-) TimerEvent: {}
+[7.467787] (-) TimerEvent: {}
+[7.568189] (-) TimerEvent: {}
+[7.669002] (-) TimerEvent: {}
+[7.769672] (-) TimerEvent: {}
+[7.870078] (-) TimerEvent: {}
+[7.970681] (-) TimerEvent: {}
+[8.070923] (-) TimerEvent: {}
+[8.171134] (-) TimerEvent: {}
+[8.271438] (-) TimerEvent: {}
+[8.371767] (-) TimerEvent: {}
+[8.472067] (-) TimerEvent: {}
+[8.572791] (-) TimerEvent: {}
+[8.673242] (-) TimerEvent: {}
+[8.773734] (-) TimerEvent: {}
+[8.873984] (-) TimerEvent: {}
+[8.974267] (-) TimerEvent: {}
+[9.074555] (-) TimerEvent: {}
+[9.174759] (-) TimerEvent: {}
+[9.275252] (-) TimerEvent: {}
+[9.375807] (-) TimerEvent: {}
+[9.476020] (-) TimerEvent: {}
+[9.576318] (-) TimerEvent: {}
+[9.676933] (-) TimerEvent: {}
+[9.778124] (-) TimerEvent: {}
+[9.880712] (-) TimerEvent: {}
+[9.980936] (-) TimerEvent: {}
+[10.081140] (-) TimerEvent: {}
+[10.181321] (-) TimerEvent: {}
+[10.281501] (-) TimerEvent: {}
+[10.381647] (-) TimerEvent: {}
+[10.481981] (-) TimerEvent: {}
+[10.582587] (-) TimerEvent: {}
+[10.682914] (-) TimerEvent: {}
+[10.783116] (-) TimerEvent: {}
+[10.884451] (-) TimerEvent: {}
+[10.986266] (-) TimerEvent: {}
+[11.086708] (-) TimerEvent: {}
+[11.187454] (-) TimerEvent: {}
+[11.287687] (-) TimerEvent: {}
+[11.387924] (-) TimerEvent: {}
+[11.488204] (-) TimerEvent: {}
+[11.588705] (-) TimerEvent: {}
+[11.675430] (recive_pkg) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp.o\n'}
+[11.688818] (-) TimerEvent: {}
+[11.789028] (-) TimerEvent: {}
+[11.889249] (-) TimerEvent: {}
+[11.990476] (-) TimerEvent: {}
+[12.091085] (-) TimerEvent: {}
+[12.191580] (-) TimerEvent: {}
+[12.295664] (-) TimerEvent: {}
+[12.395880] (-) TimerEvent: {}
+[12.496204] (-) TimerEvent: {}
+[12.596615] (-) TimerEvent: {}
+[12.697102] (-) TimerEvent: {}
+[12.798851] (-) TimerEvent: {}
+[12.899104] (-) TimerEvent: {}
+[13.002809] (-) TimerEvent: {}
+[13.103009] (-) TimerEvent: {}
+[13.206971] (-) TimerEvent: {}
+[13.307188] (-) TimerEvent: {}
+[13.407429] (-) TimerEvent: {}
+[13.507817] (-) TimerEvent: {}
+[13.608181] (-) TimerEvent: {}
+[13.708924] (-) TimerEvent: {}
+[13.809358] (-) TimerEvent: {}
+[13.917667] (-) TimerEvent: {}
+[14.017883] (-) TimerEvent: {}
+[14.118080] (-) TimerEvent: {}
+[14.218304] (-) TimerEvent: {}
+[14.301775] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function \xe2\x80\x98void detection::DetectionArmor::run()\xe2\x80\x99:\n'}
+[14.301995] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:204:25: warning: comparison of integer expressions of different signedness: \xe2\x80\x98size_t\xe2\x80\x99 {aka \xe2\x80\x98long unsigned int\xe2\x80\x99} and \xe2\x80\x98int\xe2\x80\x99 [-Wsign-compare]\n'}
+[14.302051] (recive_pkg) StderrLine: {'line': b'  204 |         if (frame_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT)))\n'}
+[14.302091] (recive_pkg) StderrLine: {'line': b'      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[14.315682] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function \xe2\x80\x98void detection::DetectionArmor::drawTracks(cv::Mat&)\xe2\x80\x99:\n'}
+[14.315860] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:379:20: warning: variable \xe2\x80\x98color\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[14.315908] (recive_pkg) StderrLine: {'line': b'  379 |             Scalar color = tracker.get_color(track.track_id); // \xe8\x8e\xb7\xe5\x8f\x96\xe8\xb7\x9f\xe8\xb8\xaaID\xe5\xaf\xb9\xe5\xba\x94\xe7\x9a\x84\xe9\xa2\x9c\xe8\x89\xb2\n'}
+[14.315950] (recive_pkg) StderrLine: {'line': b'      |                    ^~~~~\n'}
+[14.315991] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:382:19: warning: variable \xe2\x80\x98tl\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[14.316031] (recive_pkg) StderrLine: {'line': b'  382 |             Point tl = Point(tlwh[0], tlwh[1]); // \xe5\xb7\xa6\xe4\xb8\x8a\xe8\xa7\x92   1\n'}
+[14.316079] (recive_pkg) StderrLine: {'line': b'      |                   ^~\n'}
+[14.316124] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:383:19: warning: variable \xe2\x80\x98br\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[14.316170] (recive_pkg) StderrLine: {'line': b'  383 |             Point br = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // \xe5\x8f\xb3\xe4\xb8\x8b\xe8\xa7\x92  3\n'}
+[14.316221] (recive_pkg) StderrLine: {'line': b'      |                   ^~\n'}
+[14.318416] (-) TimerEvent: {}
+[14.318588] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function \xe2\x80\x98void detection::DetectionArmor::format_print_data_test()\xe2\x80\x99:\n'}
+[14.318695] (recive_pkg) StderrLine: {'line': b'/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:459:15: warning: variable \xe2\x80\x98d\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[14.318737] (recive_pkg) StderrLine: {'line': b'  459 |     for (auto d : getdata())\n'}
+[14.318787] (recive_pkg) StderrLine: {'line': b'      |               ^\n'}
+[14.418520] (-) TimerEvent: {}
+[14.519497] (-) TimerEvent: {}
+[14.619683] (-) TimerEvent: {}
+[14.720076] (-) TimerEvent: {}
+[14.820461] (-) TimerEvent: {}
+[14.920713] (-) TimerEvent: {}
+[15.021392] (-) TimerEvent: {}
+[15.121590] (-) TimerEvent: {}
+[15.221802] (-) TimerEvent: {}
+[15.321992] (-) TimerEvent: {}
+[15.422521] (-) TimerEvent: {}
+[15.522726] (-) TimerEvent: {}
+[15.612337] (recive_pkg) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/recive_pkg.dir/main.cpp.o\n'}
+[15.622844] (-) TimerEvent: {}
+[15.723045] (-) TimerEvent: {}
+[15.823527] (-) TimerEvent: {}
+[15.927647] (-) TimerEvent: {}
+[16.029129] (-) TimerEvent: {}
+[16.130852] (-) TimerEvent: {}
+[16.231075] (-) TimerEvent: {}
+[16.331903] (-) TimerEvent: {}
+[16.433678] (-) TimerEvent: {}
+[16.533878] (-) TimerEvent: {}
+[16.635887] (-) TimerEvent: {}
+[16.736091] (-) TimerEvent: {}
+[16.838043] (-) TimerEvent: {}
+[16.938950] (-) TimerEvent: {}
+[17.041667] (-) TimerEvent: {}
+[17.142313] (-) TimerEvent: {}
+[17.242524] (-) TimerEvent: {}
+[17.343264] (-) TimerEvent: {}
+[17.444658] (-) TimerEvent: {}
+[17.544864] (-) TimerEvent: {}
+[17.645792] (-) TimerEvent: {}
+[17.746644] (-) TimerEvent: {}
+[17.847082] (-) TimerEvent: {}
+[17.947669] (-) TimerEvent: {}
+[18.047882] (-) TimerEvent: {}
+[18.148186] (-) TimerEvent: {}
+[18.253677] (-) TimerEvent: {}
+[18.353873] (-) TimerEvent: {}
+[18.454086] (-) TimerEvent: {}
+[18.554301] (-) TimerEvent: {}
+[18.654508] (-) TimerEvent: {}
+[18.754877] (-) TimerEvent: {}
+[18.855266] (-) TimerEvent: {}
+[18.955680] (-) TimerEvent: {}
+[19.055936] (-) TimerEvent: {}
+[19.156701] (-) TimerEvent: {}
+[19.256981] (-) TimerEvent: {}
+[19.357218] (-) TimerEvent: {}
+[19.457451] (-) TimerEvent: {}
+[19.559511] (-) TimerEvent: {}
+[19.659858] (-) TimerEvent: {}
+[19.761306] (-) TimerEvent: {}
+[19.861884] (-) TimerEvent: {}
+[19.962335] (-) TimerEvent: {}
+[20.065986] (-) TimerEvent: {}
+[20.166320] (-) TimerEvent: {}
+[20.266787] (-) TimerEvent: {}
+[20.366979] (-) TimerEvent: {}
+[20.467171] (-) TimerEvent: {}
+[20.567739] (-) TimerEvent: {}
+[20.667952] (-) TimerEvent: {}
+[20.771960] (-) TimerEvent: {}
+[20.872815] (-) TimerEvent: {}
+[20.974418] (-) TimerEvent: {}
+[21.075003] (-) TimerEvent: {}
+[21.130936] (recive_pkg) StdoutLine: {'line': b'[ 40%] Linking CXX executable recive_pkg\n'}
+[21.175112] (-) TimerEvent: {}
+[21.275369] (-) TimerEvent: {}
+[21.375650] (-) TimerEvent: {}
+[21.476673] (-) TimerEvent: {}
+[21.576896] (-) TimerEvent: {}
+[21.677138] (-) TimerEvent: {}
+[21.777630] (-) TimerEvent: {}
+[21.877852] (-) TimerEvent: {}
+[21.978049] (-) TimerEvent: {}
+[22.078657] (-) TimerEvent: {}
+[22.181401] (-) TimerEvent: {}
+[22.281588] (-) TimerEvent: {}
+[22.381785] (-) TimerEvent: {}
+[22.482155] (-) TimerEvent: {}
+[22.582682] (-) TimerEvent: {}
+[22.590640] (recive_pkg) StdoutLine: {'line': b'[100%] Built target recive_pkg\n'}
+[22.607269] (recive_pkg) CommandEnded: {'returncode': 0}
+[22.608289] (recive_pkg) JobProgress: {'identifier': 'recive_pkg', 'progress': 'install'}
+[22.615138] (recive_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/桌面/RM26/build/recive_pkg'], 'cwd': '/home/ubuntu/桌面/RM26/build/recive_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ubuntu'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0/nls.messages.json","corruptMarkerFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0","_corruptedFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('TBB_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib/cmake/TBB'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'cursor.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/桌面/RM26'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-91260982-2.0.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64'), ('MANAGERPID', '3346'), ('SYSTEMD_EXEC_PID', '3757'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '73504'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:14813'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-NUC15CRKU5:@/tmp/.ICE-unix/3734,unix/ubuntu-NUC15CRKU5:/tmp/.ICE-unix/3734'), ('INVOCATION_ID', '4f5004497dfa4c71ade6da9bd3ea2b3d'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '01036f380a984122a1167f30d1073bb0'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/桌面/RM26/build/recive_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ubuntu/.config/Cursor/CachedData/ba90f2f88e4911312761abab9492c42442117cf0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('OpenVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake'), ('VSCODE_PID', '73504'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.629066] (recive_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.629235] (recive_pkg) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/lib/recive_pkg/recive_pkg\n'}
+[22.642945] (recive_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/lib/recive_pkg/recive_pkg" to ""\n'}
+[22.643280] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/ament_index/resource_index/package_run_dependencies/recive_pkg\n'}
+[22.643362] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/ament_index/resource_index/parent_prefix_path/recive_pkg\n'}
+[22.643431] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.sh\n'}
+[22.643499] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.dsv\n'}
+[22.643564] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/environment/path.sh\n'}
+[22.645815] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/environment/path.dsv\n'}
+[22.645870] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/local_setup.bash\n'}
+[22.645975] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/local_setup.sh\n'}
+[22.646071] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/local_setup.zsh\n'}
+[22.646112] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/local_setup.dsv\n'}
+[22.646156] (recive_pkg) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/package.dsv\n'}
+[22.646200] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/ament_index/resource_index/packages/recive_pkg\n'}
+[22.646242] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig.cmake\n'}
+[22.646301] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig-version.cmake\n'}
+[22.646347] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26/install/recive_pkg/share/recive_pkg/package.xml\n'}
+[22.646675] (recive_pkg) CommandEnded: {'returncode': 0}
+[22.669229] (recive_pkg) JobEnded: {'identifier': 'recive_pkg', 'rc': 0}
+[22.669794] (-) EventReactorShutdown: {}

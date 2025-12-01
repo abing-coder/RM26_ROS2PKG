@@ -1,0 +1,27 @@
+[ 50%] Built target armor_send_node
+[100%] Built target test_send_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node
+-- Set runtime path of "/home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node" to ""
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/ros2_armor_can/test_send_node
+-- Set runtime path of "/home/ubuntu/桌面/RM26/install/ros2_armor_can/lib/ros2_armor_can/test_send_node" to ""
+-- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch
+-- Up-to-date: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__/motor_all.launch.cpython-310.pyc
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/test.launch.py
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can//launch/motor_all.launch.py
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ament_index/resource_index/package_run_dependencies/ros2_armor_can
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ament_index/resource_index/parent_prefix_path/ros2_armor_can
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/path.sh
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/environment/path.dsv
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.bash
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.sh
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.zsh
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/local_setup.dsv
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.dsv
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ament_index/resource_index/packages/ros2_armor_can
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig.cmake
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig-version.cmake
+-- Installing: /home/ubuntu/桌面/RM26/install/ros2_armor_can/share/ros2_armor_can/package.xml

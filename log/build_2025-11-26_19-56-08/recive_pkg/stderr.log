@@ -1,0 +1,46 @@
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:99:2:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+   99 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:[m[K In member function ‘[01m[Kvoid armor_detection::ImageSubscriber::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   80 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   80 |                 RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),
+      |                            [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:49:34:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   49 |             if (!armors.empty()) [01;36m[K{[m[K
+      |                                  [01;36m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   80 |                 RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),
+      |                            [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:34:13:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   34 |         try [01;36m[K{[m[K
+      |             [01;36m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ at end of input
+   80 |                 RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),
+      |                            [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ at end of input
+   80 |                 RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),
+      |                            [01;31m[K^[m[K
+      |                            [32m[K([m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected type-specifier at end of input
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ at end of input
+   80 |                 RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),
+      |                            [01;31m[K^[m[K
+      |                            [32m[K)[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:33:5:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   33 |     [01;36m[K{[m[K
+      |     [01;36m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:80:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   80 |                 RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),
+      |                            [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:4:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    4 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:76：CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/recive_pkg.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

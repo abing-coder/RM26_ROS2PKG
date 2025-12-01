@@ -5,11 +5,13 @@
 #include <cv_bridge/cv_bridge.h>
 #include <geometry_msgs/msg/point.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
+#include <std_msgs/msg/int32.hpp>
 #include <opencv2/opencv.hpp>
 #include "yolo_detection.hpp"  // 确保包含检测头文件
 #include <string>
 #include <chrono>
 #include <rclcpp/qos.hpp>
+
 
 namespace armor_detection
 {

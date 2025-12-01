@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target detection[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable detection[0m
+[100%] Built target detection

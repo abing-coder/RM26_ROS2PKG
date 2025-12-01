@@ -231,7 +231,7 @@ Eigen3_DIR:PATH=/usr/share/eigen3/cmake
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //The directory containing a CMake configuration file for OpenVINO.
-OpenVINO_DIR:PATH=/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake
+OpenVINO_DIR:PATH=/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/cmake
 
 //Value Computed by CMake
 detection_BINARY_DIR:STATIC=/home/ubuntu/桌面/RM26/build/detection

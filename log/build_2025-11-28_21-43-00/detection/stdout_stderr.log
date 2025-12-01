@@ -1,0 +1,1442 @@
+[35m[1mConsolidate compiler generated dependencies of target detection[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:28:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} and ‘[01m[Klong int[m[K’)
+  149 |       if(detected_center [01;31m[K![m[K= NULL)
+      |                          [01;31m[K^[m[K
+
+In file included from [01m[K/usr/include/c++/11/iosfwd:40[m[K,
+                 from [01m[K/usr/include/c++/11/ios:38[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/postypes.h:227:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)[m[K’
+  227 |     [01;36m[Koperator[m[K!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/postypes.h:227:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/ios:40[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_pair.h:496:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+  496 |     [01;36m[Koperator[m[K!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_pair.h:496:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/ios:40[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:432:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+  432 |     [01;36m[Koperator[m[K!=(const reverse_iterator<_Iterator>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:432:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/ios:40[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  471 |     [01;36m[Koperator[m[K!=(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/ios:40[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:1602:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1602 |     [01;36m[Koperator[m[K!=(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:1602:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/ios:40[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:1661:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+ 1661 |     [01;36m[Koperator[m[K!=(const move_iterator<_Iterator>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_iterator.h:1661:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/string:41[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/allocator.h:225:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)[m[K’
+  225 |     [01;36m[Koperator[m[K!=(const allocator<_T1>&, const allocator<_T2>&)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/allocator.h:225:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+                 from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/string_view:570:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)[m[K’
+  570 |     [01;36m[Koperator[m[K!=(basic_string_view<_CharT, _Traits> __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/string_view:570:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point_<float>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+                 from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/string_view:576:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)[m[K’
+  576 |     [01;36m[Koperator[m[K!=(basic_string_view<_CharT, _Traits> __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/string_view:576:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point_<float>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+                 from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/string_view:583:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)[m[K’
+  583 |     [01;36m[Koperator[m[K!=(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/string_view:583:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:6302:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 6302 |     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:6302:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:6315:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 6315 |     [01;36m[Koperator[m[K!=(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:6315:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kcv::Point_<float>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:6327:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+ 6327 |     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:6327:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/locale_facets.h:48[m[K,
+                 from [01m[K/usr/include/c++/11/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/ios:44[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/streambuf_iterator.h:232:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)[m[K’
+  232 |     [01;36m[Koperator[m[K!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/streambuf_iterator.h:232:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/cvdef.h:779[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:52[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:305:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+  305 |     [01;36m[Koperator[m[K!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/array:305:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/functional:54[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:55[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1579:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)[m[K’
+ 1579 |     [01;36m[Koperator[m[K!=(const tuple<_TElements...>& __t,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/tuple:1579:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:55[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)[m[K’
+  737 |     [01;36m[Koperator[m[K!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/functional:59[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:55[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:743:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)[m[K’
+  743 |     [01;36m[Koperator[m[K!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_function.h:743:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:55[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:2141:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+ 2141 |     [01;36m[Koperator[m[K!=(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:2141:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:55[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:2155:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+ 2155 |     [01;36m[Koperator[m[K!=(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:2155:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:55[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1937:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+ 1937 |     [01;36m[Koperator[m[K!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1937:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:774:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+  774 |     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:774:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:781:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+  781 |     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:781:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:787:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+  787 |     [01;36m[Koperator[m[K!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:787:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1441:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+ 1441 |     [01;36m[Koperator[m[K!=(const __shared_ptr<_Tp1, _Lp>& __a,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1441:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1447:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+ 1447 |     [01;36m[Koperator[m[K!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1447:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1452:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+ 1452 |     [01;36m[Koperator[m[K!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1452:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:470:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator!=(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+  470 |     [01;36m[Koperator[m[K!=(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:470:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:476:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+  476 |     [01;36m[Koperator[m[K!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:11[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:81[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:482:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+  482 |     [01;36m[Koperator[m[K!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:47[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:3306[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/complex:483:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator!=(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  483 |     [01;36m[Koperator[m[K!=(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/complex:483:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:47[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:3306[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/complex:488:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator!=(const std::complex<_Tp>&, const _Tp&)[m[K’
+  488 |     [01;36m[Koperator[m[K!=(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/complex:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:47[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:3306[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/complex:493:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator!=(const _Tp&, const std::complex<_Tp>&)[m[K’
+  493 |     [01;36m[Koperator[m[K!=(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/complex:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::complex<_Tp>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/dnn/dict.hpp:43[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/dnn/dnn.hpp:51[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/dnn.hpp:76[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:62[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_map.h:1508:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+ 1508 |     [01;36m[Koperator[m[K!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_map.h:1508:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/map:62[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/dnn/dict.hpp:43[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/dnn/dnn.hpp:51[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/dnn.hpp:76[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:62[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_multimap.h:1173:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+ 1173 |     [01;36m[Koperator[m[K!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_multimap.h:1173:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/set:61[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/result_set.h:40[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/nn_index.h:35[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/saving.h:38[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/flann_base.hpp:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:65[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_set.h:1030:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)[m[K’
+ 1030 |     [01;36m[Koperator[m[K!=(const set<_Key, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:1030:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/set:62[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/result_set.h:40[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/nn_index.h:35[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/saving.h:38[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann/flann_base.hpp:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/flann.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:65[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_multiset.h:1016:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)[m[K’
+ 1016 |     [01;36m[Koperator[m[K!=(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_multiset.h:1016:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/list:63[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:86[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_list.h:2092:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+ 2092 |     [01;36m[Koperator[m[K!=(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_list.h:2092:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/deque:67[m[K,
+                 from [01m[K/usr/include/c++/11/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:86[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_deque.h:2292:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)[m[K’
+ 2292 |     [01;36m[Koperator[m[K!=(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_deque.h:2292:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/queue:64[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:86[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_queue.h:368:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator!=(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)[m[K’
+  368 |     [01;36m[Koperator[m[K!=(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_queue.h:368:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/stack:61[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp:12[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp:20[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp:13[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:6[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_stack.h:343:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator!=(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)[m[K’
+  343 |     [01;36m[Koperator[m[K!=(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_stack.h:343:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::stack<_Tp, _Seq>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/unordered_set:47[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp:15[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp:20[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp:13[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:6[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_set.h:1811:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+ 1811 |     [01;36m[Koperator[m[K!=(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_set.h:1811:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/unordered_set:47[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp:15[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp:20[m[K,
+                 from [01m[K/opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp:13[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:6[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_set.h:1825:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+ 1825 |     [01;36m[Koperator[m[K!=(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_set.h:1825:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1337:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> bool cv::operator!=(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)[m[K’
+ 1337 | bool [01;36m[Koperator[m[K != (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1337:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1035:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)[m[K’
+ 1035 | bool [01;36m[Koperator[m[K != (const Complex<_Tp>& a, const Complex<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1035:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1327:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+ 1327 | bool [01;36m[Koperator[m[K != (const Point_<_Tp>& a, const Point_<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1327:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Point_<_Tp>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1596:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)[m[K’
+ 1596 | bool [01;36m[Koperator[m[K != (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1596:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1829:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+ 1829 | bool [01;36m[Koperator[m[K != (const Size_<_Tp>& a, const Size_<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1829:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Size_<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:2006:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::Rect_<_Tp>&, const cv::Rect_<_Tp>&)[m[K’
+ 2006 | bool [01;36m[Koperator[m[K != (const Rect_<_Tp>& a, const Rect_<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:2006:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Rect_<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:2309:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)[m[K’
+ 2309 | bool [01;36m[Koperator[m[K != ( const Scalar_<_Tp>& a, const Scalar_<_Tp>& b )
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:2309:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Scalar_<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3680:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator!=(const cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+ 3680 | MatExpr [01;36m[Koperator[m[K != (const Mat& a, const Matx<_Tp, m, n>& b) { return a != Mat(b); }
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3680:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’ and ‘[01m[Klong int[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3682:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator!=(const cv::Matx<_Tp, m, n>&, const cv::Mat&)[m[K’
+ 3682 | MatExpr [01;36m[Koperator[m[K != (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) != b; }
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3682:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2581:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::MatConstIterator_<_Tp>&, const cv::MatConstIterator_<_Tp>&)[m[K’
+ 2581 | bool [01;36m[Koperator[m[K != (const MatConstIterator_<_Tp>& a, const MatConstIterator_<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2581:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::MatConstIterator_<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2718:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool cv::operator!=(const cv::MatIterator_<_Tp>&, const cv::MatIterator_<_Tp>&)[m[K’
+ 2718 | bool [01;36m[Koperator[m[K != (const MatIterator_<_Tp>& a, const MatIterator_<_Tp>& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2718:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/usr/include/c++/11/cstring:42[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:149:31:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::MatIterator_<_Tp>[m[K’
+  149 |       if(detected_center != [01;36m[KNULL[m[K)
+      |                             [01;36m[K^~~~[m[K
+
+In file included from [01m[K/usr/include/c++/11/bits/ios_base.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:4[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/system_error:416:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_code&, const std::error_code&)[m[K’
+  416 |   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/system_error:416:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+  416 | r!=([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/usr/include/c++/11/system_error:421:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_code&, const std::error_condition&)[m[K’
+  421 |   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/system_error:421:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+  421 | r!=([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/usr/include/c++/11/system_error:426:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_condition&, const std::error_code&)[m[K’
+  426 |   [01;36m[Koperator[m[K!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/system_error:426:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+  426 | [01;36m[Konst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/usr/include/c++/11/system_error:431:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_condition&, const std::error_condition&)[m[K’
+  431 |   [01;36m[Koperator[m[K!=(const error_condition& __lhs,
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/system_error:431:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+  431 | r!=([01;36m[Kconst error_condition& __lhs[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+In file included from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/c++/11/thread:66:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(std::thread::id, std::thread::id)[m[K’
+   66 |   [01;36m[Koperator[m[K!=(thread::id __x, thread::id __y) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/thread:66:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+   66 | operator!=([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+      |            [01;36m[K~~~~~~~~~~~^~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:2119:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::Range&, const cv::Range&)[m[K’
+ 2119 | bool [01;36m[Koperator[m[K != (const Range& r1, const Range& r2)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:2119:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Range&[m[K’
+ 2119 | ator != ([01;36m[Kconst Range& r1[m[K, const Range& r2)
+      |          [01;36m[K~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:52[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:66:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::AccessFlag&, const int&)[m[K’
+   66 | [01;36m[KCV_ENUM_FLAGS[m[K(AccessFlag)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:66:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::AccessFlag&[m[K’
+   66 | [01;36m[KCV_ENUM_FLAGS[m[K(AccessFlag)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:266:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::_InputArray::KindFlag&, const int&)[m[K’
+  266 | [01;36m[KCV_ENUM_FLAGS[m[K(_InputArray::KindFlag)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:266:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::_InputArray::KindFlag&[m[K’
+  266 | [01;36m[KCV_ENUM_FLAGS[m[K(_InputArray::KindFlag)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:574:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::UMatData::MemoryFlag&, const int&)[m[K’
+  574 | [01;36m[KCV_ENUM_FLAGS[m[K(UMatData::MemoryFlag)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:574:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::UMatData::MemoryFlag&[m[K’
+  574 | [01;36m[KCV_ENUM_FLAGS[m[K(UMatData::MemoryFlag)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3676:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator!=(const cv::Mat&, const cv::Mat&)[m[K’
+ 3676 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K != (const Mat& a, const Mat& b);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3676:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+ 3676 | erator != ([01;36m[Kconst Mat& a[m[K, const Mat& b);
+      |            [01;36m[K~~~~~~~~~~~^[m[K
+
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3677:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator!=(const cv::Mat&, double)[m[K’
+ 3677 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K != (const Mat& a, double s);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3677:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+ 3677 | erator != ([01;36m[Kconst Mat& a[m[K, double s);
+      |            [01;36m[K~~~~~~~~~~~^[m[K
+
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3678:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator!=(double, const cv::Mat&)[m[K’
+ 3678 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K != (double s, const Mat& a);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3678:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kdouble[m[K’
+ 3678 | r operator != ([01;36m[Kdouble s[m[K, const Mat& a);
+      |                [01;36m[K~~~~~~~^[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2398:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::MatConstIterator&, const cv::MatConstIterator&)[m[K’
+ 2398 | bool [01;36m[Koperator[m[K != (const MatConstIterator& a, const MatConstIterator& b)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2398:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::MatConstIterator&[m[K’
+ 2398 | [01;36m[Knst MatConstIterator& a[m[K, const MatConstIterator& b)
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2807:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::SparseMatConstIterator&, const cv::SparseMatConstIterator&)[m[K’
+ 2807 | bool [01;36m[Koperator[m[K != (const SparseMatConstIterator& it1, const SparseMatConstIterator& it2)
+      |      [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2807:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::SparseMatConstIterator&[m[K’
+ 2807 | [01;36m[KarseMatConstIterator& it1[m[K, const SparseMatConstIterator& it2)
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1332:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::FileNodeIterator&, const cv::FileNodeIterator&)[m[K’
+ 1332 | CV_EXPORTS bool [01;36m[Koperator[m[K != (const FileNodeIterator& it1, const FileNodeIterator& it2);
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1332:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::FileNodeIterator&[m[K’
+ 1332 | [01;36m[Knst FileNodeIterator& it1[m[K, const FileNodeIterator& it2);
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:52[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include/yolo_detection.hpp:5[m[K,
+                 from [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/features2d.hpp:1291:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator!=(const cv::DrawMatchesFlags&, const int&)[m[K’
+ 1291 | [01;36m[KCV_ENUM_FLAGS[m[K(DrawMatchesFlags)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/features2d.hpp:1291:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::DrawMatchesFlags&[m[K’
+ 1291 | [01;36m[KCV_ENUM_FLAGS[m[K(DrawMatchesFlags)
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/detection.dir/build.make:174：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

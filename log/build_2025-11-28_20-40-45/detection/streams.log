@@ -1,0 +1,12 @@
+[0.017s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.077s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[1.540s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[1.540s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:147:12:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kdetected_center[m[K’ from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kbool[m[K’
+[1.540s]   147 |         if([01;31m[Kdetected_center[m[K)
+[1.540s]       |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.540s]       |            [01;31m[K|[m[K
+[1.540s]       |            [01;31m[Kcv::Point2f {aka cv::Point_<float>}[m[K
+[1.981s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:174：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+[1.981s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[1.981s] gmake: *** [Makefile:91：all] 错误 2
+[1.984s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '2': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14

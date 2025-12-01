@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-set(OpenVINO_DIR /opt/intel/openvino_2024.6.0/cmake)
+set(OpenVINO_DIR /opt/intel/openvino_2024.6/cmake)
 find_package(OpenVINO REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)

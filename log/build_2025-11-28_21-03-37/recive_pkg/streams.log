@@ -1,0 +1,20 @@
+[0.020s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[0.094s] [ 20%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o[0m
+[0.095s] [ 20%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/main.cpp.o[0m
+[0.401s] In file included from [01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/src/image_subscirber_node.cpp:1[m[K:
+[0.401s] [01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/include/recive_pkg/image_subscriber_node.hpp:13:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/int32.hpp: 没有那个文件或目录
+[0.401s]    13 | #include [01;31m[K<geometry_msgs/msg/int32.hpp>[m[K
+[0.401s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.401s] compilation terminated.
+[0.401s] In file included from [01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/main.cpp:1[m[K:
+[0.402s] [01m[K/home/ubuntu/桌面/RM26/src/recive_pkg/include/recive_pkg/image_subscriber_node.hpp:13:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/int32.hpp: 没有那个文件或目录
+[0.402s]    13 | #include [01;31m[K<geometry_msgs/msg/int32.hpp>[m[K
+[0.402s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.402s] compilation terminated.
+[0.415s] gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:76：CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o] 错误 1
+[0.415s] gmake[2]: *** 正在等待未完成的任务....
+[0.416s] gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:90：CMakeFiles/recive_pkg.dir/main.cpp.o] 错误 1
+[0.416s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/recive_pkg.dir/all] 错误 2
+[0.416s] gmake: *** [Makefile:146：all] 错误 2
+[0.418s] Invoked command in '/home/ubuntu/桌面/RM26/build/recive_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14

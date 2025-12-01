@@ -1,0 +1,12 @@
+[0.016s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
+[0.085s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[1.496s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[1.496s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:158:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kstd::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = detection::ArmorData; _Alloc = std::allocator<detection::ArmorData>; std::vector<_Tp, _Alloc>::size_type = long unsigned int][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.496s]   158 |          if([01;31m[Kdatas.size[m[K != 0)
+[1.496s]       |             [01;31m[K~~~~~~^~~~[m[K
+[1.496s]       |                       [32m[K()[m[K
+[1.949s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:174：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+[1.949s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[1.950s] gmake: *** [Makefile:91：all] 错误 2
+[1.952s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '2': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14

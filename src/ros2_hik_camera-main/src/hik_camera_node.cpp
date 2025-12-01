@@ -7,6 +7,8 @@
 #include <rclcpp/utilities.hpp>
 #include <sensor_msgs/msg/camera_info.hpp>
 #include <sensor_msgs/msg/image.hpp>
+#include <pthread.h>
+#include <sched.h>
 
 namespace hik_camera
 {
@@ -72,18 +74,21 @@ public:
     convert_param_.nHeight = img_info_.nHeightValue;
     convert_param_.enDstPixelType = PixelType_Gvsp_RGB8_Packed;
 
-    // 设置图像节点数量（缓冲区）
-    int nBufferNum = this->declare_parameter("buffer_num", 10);
+    // 设置图像节点数量（缓冲区）- 增加缓冲区以提高性能
+    int nBufferNum = this->declare_parameter("buffer_num", 8);
     nRet = MV_CC_SetImageNodeNum(camera_handle_, nBufferNum);
     if (MV_OK != nRet) {
       RCLCPP_WARN(this->get_logger(), "Set image node num failed! nRet: [%x]", nRet);
+    } else {
+      RCLCPP_INFO(this->get_logger(), "Image buffer num set to: %d", nBufferNum);
     }
 
-    // 创建图像发布者 - 使用正确的 QoS 配置
+    // 创建图像发布者 - 使用最佳性能的 QoS 配置
     auto qos = rclcpp::QoS(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_sensor_data));
-    qos.reliability(rclcpp::ReliabilityPolicy::Reliable);  // 改为 Reliable
+    qos.reliability(rclcpp::ReliabilityPolicy::BestEffort);  // BestEffort 更适合实时图像流
     qos.durability(rclcpp::DurabilityPolicy::Volatile);
     qos.avoid_ros_namespace_conventions(false);
+    qos.keep_last(1);  // 只保留最新一帧，减少内存占用
 
     // 创建发布者
     camera_pub_ = image_transport::create_camera_publisher(this, "/image_raw", qos.get_rmw_qos_profile());
@@ -223,7 +228,7 @@ private:
     MVCC_FLOATVALUE exposure_range;
     nRet = MV_CC_GetFloatValue(camera_handle_, "ExposureTime", &exposure_range);
     if (MV_OK == nRet) {
-        double exposure_time = this->declare_parameter("exposure_time", 8000.0);
+        double exposure_time = this->declare_parameter("exposure_time", 5000.0);
         nRet = MV_CC_SetFloatValue(camera_handle_, "ExposureTime", exposure_time);
         if (MV_OK == nRet) {
             RCLCPP_INFO(this->get_logger(), "Exposure time set to: %f us", exposure_time);

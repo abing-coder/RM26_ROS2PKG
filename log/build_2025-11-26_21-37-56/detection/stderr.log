@@ -1,0 +1,30 @@
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In constructor ‘[01m[Kdetection::DetectionArmor::DetectionArmor(std::string&, bool, std::string)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K:[m[K’ token
+   46 |     compiled = core.compile_model(network, "CPU", [32m[K{[m[K"CPU_THROUGHPUT_STREAMS"[01;31m[K:[m[K "AUTO"}, config);
+      |                                                   [32m[K~[m[K                        [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K:[m[K’ token
+   46 |     compiled = core.compile_model[34m[K([m[Knetwork, "CPU", {"CPU_THROUGHPUT_STREAMS"[01;31m[K:[m[K "AUTO"}, config);
+      |                                  [34m[K~[m[K                                         [01;31m[K^[m[K
+      |                                                                            [32m[K)[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:85:[m[K [01;31m[Kerror: [m[Kmixing declarations and function-definitions is forbidden
+   46 |     compiled = core.compile_model(network, "CPU", {"CPU_THROUGHPUT_STREAMS": "AUTO"}[01;31m[K,[m[K config);
+      |                                                                                     [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:93:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K)[m[K’ token
+   46 |     compiled = core.compile_model(network, "CPU", {"CPU_THROUGHPUT_STREAMS": "AUTO"}, config[01;31m[K)[m[K;
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfer_request[m[K’ does not name a type
+   47 |     [01;31m[Kinfer_request[m[K = compiled.create_infer_request();
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_port[m[K’ does not name a type
+   48 |     [01;31m[Kinput_port[m[K = compiled.input();
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_blob[m[K’ does not name a type
+   50 |     [01;31m[Kinput_blob[m[K = Mat(640, 640, CV_32F, Scalar(0)); // 初始化输入blob
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:55:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   55 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/detection.dir/build.make:174：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

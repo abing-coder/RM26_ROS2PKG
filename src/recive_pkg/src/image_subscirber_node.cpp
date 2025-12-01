@@ -46,38 +46,47 @@ namespace armor_detection
 
             std::vector<detection::ArmorData> armors = detectionArmor_.getdata();
 
+            float optical_center_x = 0.0f;
+            float optical_center_y = 0.0f;
+            float delta_x = 0.0f;
+            float delta_y = 0.0f;
+            float flag = 0.0f;
+            float target_x = 0.0f;
+            float target_y = 0.0f;
+
             if (!armors.empty()) {
                 detection::ArmorData target = armors[0];
-
-                // 计算差值
-                float optical_center_x = target.optical_center.x;
-                float optical_center_y = target.optical_center.y;
-                float delta_x = target.delta_x;
-                float delta_y = target.delta_y;
-
-                auto delta_msg = geometry_msgs::msg::Point();
-                delta_msg.x = delta_x;
-                delta_msg.y = delta_y;
-                delta_msg.z = 0.0f;
-                delta_publisher_->publish(delta_msg);
-
-                auto target_info_msg = std_msgs::msg::Float32MultiArray();
-                target_info_msg.data = {
-                    static_cast<float>(target.center_point.x),
-                    static_cast<float>(target.center_point.y),
-                    optical_center_x,
-                    optical_center_y,
-                    delta_x,
-                    delta_y
-                };
-                target_info_publisher_->publish(target_info_msg);
-
-                RCLCPP_INFO(this->get_logger(),
-                    "检测到目标 - 目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f)",
-                    static_cast<float>(target.center_point.x), static_cast<float>(target.center_point.y),
-                    optical_center_x, optical_center_y, delta_x, delta_y);
-                last_publish_time_ = now; // 记录发布时间
+                optical_center_x = target.optical_center.x;
+                optical_center_y = target.optical_center.y;
+                delta_x = target.delta_x;
+                delta_y = target.delta_y;
+                flag = float(target.flag);
+                target_x = static_cast<float>(target.center_point.x);
+                target_y = static_cast<float>(target.center_point.y);
             }
+
+            auto delta_msg = geometry_msgs::msg::Point();
+            delta_msg.x = delta_x;
+            delta_msg.y = delta_y;
+            delta_msg.z = 0.0f;
+            delta_publisher_->publish(delta_msg);
+
+            auto target_info_msg = std_msgs::msg::Float32MultiArray();
+            target_info_msg.data = {
+                target_x,
+                target_y,
+                optical_center_x,
+                optical_center_y,
+                delta_x,
+                delta_y,
+                flag
+            };
+            target_info_publisher_->publish(target_info_msg);
+
+            RCLCPP_INFO(this->get_logger(),
+                "目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f) | 标志: %.1f",
+                target_x, target_y, optical_center_x, optical_center_y, delta_x, delta_y, flag);
+            last_publish_time_ = now;
 
             cv::imshow("原始图像", cv_ptr->image);
             cv::waitKey(1);

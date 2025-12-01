@@ -1,0 +1,57 @@
+正在启动 ROS2 节点...
+工作空间目录: /home/ubuntu/桌面/RM26
+正在加载 ROS2 环境...
+环境加载完成，开始启动节点...
+启动 hik_camera_node (后台运行)...
+启动 recive_pkg (后台运行)...
+所有节点已启动完成!
+进程 ID:
+  hik_camera_node: 16393
+  recive_pkg: 16423
+
+要停止节点，请按 Ctrl+C 或运行:
+  kill 16393 16423
+Init ByteTrack!
+dfdsfdsfdsfsdfsdfsdfsdfsdfsdfsdfDetected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+Detected armors: 0
+Detected center: (0, 0)
+正在停止节点...
+节点已停止
+run a frame: Average time per call: 14.0521 ms

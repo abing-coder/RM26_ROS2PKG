@@ -239,7 +239,7 @@ detection: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
-detection: /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/libopenvino.so.2025.2.0
+detection: /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/lib/intel64/libopenvino.so.2025.3.0
 detection: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 detection: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d

@@ -2,7 +2,7 @@
 
 using namespace detection;
 
-int detection::DetectionArmor::detect_color = 0; // 0: 红色，1: 蓝色
+int detection::DetectionArmor::detect_color = 0;//0: 红色，1: 蓝色
 
 bool setThreadPriority(std::thread& thread, int priority) {
     pthread_t pthread = thread.native_handle();
@@ -35,7 +35,7 @@ DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime, string vide
 
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)}, // 设置性能模式为延迟优化
-        {ov::inference_num_threads(8)}, // 使用4个线程进行推理
+        {ov::inference_num_threads(4)},//使用4个线程进行推理
         {ov::num_streams(1)}, // 允许同时执行1个推理流
         {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 性能核心绑定
         {ov::hint::enable_hyper_threading(false)}, // 关闭超线程
@@ -60,13 +60,13 @@ DetectionArmor::DetectionArmor(string& model_path, bool ifcountTime)
 
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)}, // 设置性能模式为延迟优化
-        {ov::inference_num_threads(8)}, // 使用4个线程进行推理
+        {ov::inference_num_threads(4)}, // 使用4个线程进行推理
         {ov::num_streams(1)}, // 允许同时执行1个推理流
         {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 性能核心绑定
         {ov::hint::enable_hyper_threading(false)}, // 关闭超线程
         {ov::hint::enable_cpu_pinning(false)} // 关闭CPU固定
     };
-
+    cout<<"dfdsfdsfdsfsdfsdfsdfsdfsdfsdfsdf";
     auto network = core.read_model(model_path);
     compiled = core.compile_model(network, "CPU", config);  
     infer_request = compiled.create_infer_request();
@@ -109,7 +109,7 @@ void DetectionArmor::clearHeap()
 
 Detector::LightParams l_params; 
 Detector::ArmorParams a_params;
-Detector detector(80,l_params,a_params); 
+Detector detector(70,l_params,a_params); 
 
 void get_roi(Mat& image,vector<Point>& points,Mat& ROI)
 { 
@@ -123,15 +123,19 @@ void get_roi(Mat& image,vector<Point>& points,Mat& ROI)
     std::vector<cv::Point> roi_points = {lt, rt, rb, lb};
     cv::fillConvexPoly(mask, roi_points,Scalar(255,0,0));
     cv::bitwise_and(image, image,ROI, mask);
+
 }
 void DetectionArmor::drawObject(Mat& image, vector<ArmorData>& datas)
 {
+    
     // 绘制装甲板的边界框
     //std::vector<Point> points = {d.p1, d.p2, d.p3, d.p4};
+   
     // 计算并绘制光心点（图像中心）
     cv::Point optical_center(image.cols / 2, image.rows / 2);
     for (ArmorData& d : datas)
     {
+        
         cv::Point lt = cv::Point(d.p1.x-20, d.p1.y-20);  // 左上角
         cv::Point rb = cv::Point(d.p3.x+20, d.p3.y+20);  // 右下角
         cv::Point lb = cv::Point(d.p2.x-20, d.p2.y+20);  // 左下角
@@ -143,12 +147,23 @@ void DetectionArmor::drawObject(Mat& image, vector<ArmorData>& datas)
         detector.detect(ROI);   
         cv::Point2f detected_center;
         detector.drawResults(image, detected_center);
+        
+        //cout << d.flag << endl;
         d.center_point = detected_center;
         std::cout << "Detected center: (" << detected_center.x << ", " << detected_center.y << ")" << std::endl;
         d.optical_center = optical_center;
-        d.delta_x = (d.center_point.x - d.optical_center.x) + GUN_CAM_DISTANCE_X;
-        d.delta_y = (d.optical_center.y - d.center_point.y) + GUN_CAM_DISTANCE_Y;
+        d.delta_x = ((d.center_point.x - d.optical_center.x) + GUN_CAM_DISTANCE_X);
+        d.delta_y = ((d.optical_center.y - d.center_point.y) + GUN_CAM_DISTANCE_Y);
 
+        if(!datas.empty())
+        {
+            d.flag = 1;
+            cout << "flag" <<"1" << endl;
+        }
+        else{
+            d.flag = 0;
+            cout << "flag" << "0" << endl;
+        }
 
         // 调试信息
         cv::circle(image, optical_center, 5, Scalar(255, 0, 0), -1); 
@@ -235,7 +250,7 @@ void DetectionArmor::infer()
     ov::Shape output_shape = output.get_shape();
     cv::Mat output_buffer(output_shape[1], output_shape[2], CV_32F, output.data());
     
-    float conf_threshold = 0.6;   
+    float conf_threshold = 0.8;   
     float nms_threshold = 0.4;  
     
     // 存储临时结果
@@ -304,7 +319,6 @@ void DetectionArmor::infer()
         boxes.push_back(rect);
         confidences.push_back(confidence);
     }
-
     // 非什么几把极大值抑制
     cv::dnn::NMSBoxes(
         boxes,                // 输入边界框（std::vector<cv::Rect>）
@@ -316,22 +330,23 @@ void DetectionArmor::infer()
 
     // 保留最终的数据
     std::vector<ArmorData> data;
-    for (int valid_index = 0; valid_index < indices.size(); ++valid_index) 
+    for (size_t valid_index = 0; valid_index < indices.size(); ++valid_index) 
     {
+        const int keep = indices[valid_index];
         ArmorData d;
 
-        d.p1 = fourPointModel[valid_index][0];
-        d.p2 = fourPointModel[valid_index][1];
-        d.p3 = fourPointModel[valid_index][2];
-        d.p4 = fourPointModel[valid_index][3];
+        d.p1 = fourPointModel[keep][0];
+        d.p2 = fourPointModel[keep][1];
+        d.p3 = fourPointModel[keep][2];
+        d.p4 = fourPointModel[keep][3];
 
         d.center_point.x = (d.p1.x + d.p2.x + d.p3.x + d.p4.x) / 4;
         d.center_point.y = (d.p1.y + d.p2.y + d.p3.y + d.p4.y) / 4;
         // d.length = boxes[indices[valid_index]].width;
         // d.width = boxes[indices[valid_index]].height;
-        d.ID = num_class[indices[valid_index]];
+        d.ID = num_class[keep];
 
-        int color = color_class[indices[valid_index]];
+        int color = color_class[keep];
         if (color == 0){ d.color = Color::RED; }
         else if (color == 1){ d.color = Color::BLUE; }
         else { d.color = Color::NONE; }
@@ -341,14 +356,14 @@ void DetectionArmor::infer()
         // // 创建对象用于跟踪器
         // Object dog;
         // dog.rect = cv::Rect_<float>(
-        //     boxes[indices[valid_index]].x,
-        //     boxes[indices[valid_index]].y,
+        //     boxes[keep].x,
+        //     boxes[keep].y,
 
-        //     boxes[indices[valid_index]].width,
-        //     boxes[indices[valid_index]].height
+        //     boxes[keep].width,
+        //     boxes[keep].height
         // );
-        // dog.label = num_class[indices[valid_index]];  //从类别里面取
-        // dog.prob = confidences[indices[valid_index]];
+        // dog.label = num_class[keep];  //从类别里面取
+        // dog.prob = confidences[keep];
         // detection_objects.push_back(dog);
 
         

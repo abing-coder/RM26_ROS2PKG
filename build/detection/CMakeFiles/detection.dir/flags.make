@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DOV_THREAD=OV_THREAD_TBB -D_GLIBCXX_USE_CXX11_ABI=1
 
-CXX_INCLUDES = -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./TimeCounter -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./TrackerHeader -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./Eigen -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include -isystem /usr/include/opencv4 -isystem /opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/include
+CXX_INCLUDES = -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./include -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./TimeCounter -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./TrackerHeader -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/./Eigen -I/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/include -isystem /usr/include/opencv4 -isystem /opt/intel/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include
 
 CXX_FLAGS = -Wno-error=deprecated-declarations -std=gnu++17
 

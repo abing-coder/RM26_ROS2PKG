@@ -1,0 +1,41 @@
+[0.030s] Invoking command in '/home/ubuntu/桌面/RM26/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/recive_pkg -- -j14 -l14
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[0.091s] [ 10%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp.o[0m
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In constructor ‘[01m[Kdetection::DetectionArmor::DetectionArmor(std::string&, bool, std::string)[m[K’:
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K:[m[K’ token
+[1.472s]    46 |     compiled = core.compile_model(network, "CPU", [32m[K{[m[K"CPU_THROUGHPUT_STREAMS"[01;31m[K:[m[K "AUTO"}, config);
+[1.472s]       |                                                   [32m[K~[m[K                        [01;31m[K^[m[K
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K:[m[K’ token
+[1.472s]    46 |     compiled = core.compile_model[34m[K([m[Knetwork, "CPU", {"CPU_THROUGHPUT_STREAMS"[01;31m[K:[m[K "AUTO"}, config);
+[1.472s]       |                                  [34m[K~[m[K                                         [01;31m[K^[m[K
+[1.472s]       |                                                                            [32m[K)[m[K
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K At global scope:
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:85:[m[K [01;31m[Kerror: [m[Kmixing declarations and function-definitions is forbidden
+[1.472s]    46 |     compiled = core.compile_model(network, "CPU", {"CPU_THROUGHPUT_STREAMS": "AUTO"}[01;31m[K,[m[K config);
+[1.472s]       |                                                                                     [01;31m[K^[m[K
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:46:93:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K)[m[K’ token
+[1.472s]    46 |     compiled = core.compile_model(network, "CPU", {"CPU_THROUGHPUT_STREAMS": "AUTO"}, config[01;31m[K)[m[K;
+[1.472s]       |                                                                                             [01;31m[K^[m[K
+[1.472s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfer_request[m[K’ does not name a type
+[1.472s]    47 |     [01;31m[Kinfer_request[m[K = compiled.create_infer_request();
+[1.472s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.475s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_port[m[K’ does not name a type
+[1.475s]    48 |     [01;31m[Kinput_port[m[K = compiled.input();
+[1.475s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.475s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_blob[m[K’ does not name a type
+[1.475s]    50 |     [01;31m[Kinput_blob[m[K = Mat(640, 640, CV_32F, Scalar(0)); // 初始化输入blob
+[1.475s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.475s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:55:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.475s]    55 | [01;31m[K}[m[K
+[1.475s]       | [01;31m[K^[m[K
+[1.479s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[1.479s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:193:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.479s]   193 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+[1.479s]       |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.487s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::infer()[m[K’:
+[1.487s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:320:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.487s]   320 |     for (int valid_index = 0; [01;35m[Kvalid_index < indices.size()[m[K; ++valid_index)
+[1.487s]       |                               [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.914s] gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:104：CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp.o] 错误 1
+[1.914s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/recive_pkg.dir/all] 错误 2
+[1.914s] gmake: *** [Makefile:146：all] 错误 2

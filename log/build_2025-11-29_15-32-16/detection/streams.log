@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.076s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[1.464s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[1.465s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:158:25:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K!=[m[K’ token
+[1.465s]   158 |          if(datas.size( [01;31m[K!=[m[K 0)
+[1.465s]       |                         [01;31m[K^~[m[K
+[1.465s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:163:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kelse[m[K’
+[1.465s]   163 |         [01;31m[Kelse[m[K{
+[1.465s]       |         [01;31m[K^~~~[m[K
+[1.465s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:162:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kelse[m[K’
+[1.465s]   162 |         }
+[1.465s]       |          [01;31m[K^[m[K
+[1.465s]       |          [32m[K)[m[K
+[1.465s]   163 |         [32m[Kelse[m[K{
+[1.465s]       |         [32m[K~~~~[m[K
+[1.465s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:158:12:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.465s]   158 |          if[01;36m[K([m[Kdatas.size( != 0)
+[1.465s]       |            [01;36m[K^[m[K
+[1.898s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:174：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+[1.898s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[1.898s] gmake: *** [Makefile:91：all] 错误 2
+[1.904s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '2': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14

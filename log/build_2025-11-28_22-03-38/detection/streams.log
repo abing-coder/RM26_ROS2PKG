@@ -1,0 +1,5 @@
+[0.017s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.067s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[3.181s] [ 22%] [32m[1mLinking CXX executable detection[0m
+[3.788s] [100%] Built target detection
+[3.805s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14

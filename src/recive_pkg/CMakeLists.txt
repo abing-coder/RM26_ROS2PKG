@@ -11,7 +11,7 @@ if(POLICY CMP0057)
 endif()
 
 #set
-set(OpenVINO_DIR /opt/intel/openvino_2024.6.0/cmake)
+set(OpenVINO_DIR /opt/intel/openvino_2025.3.0/cmake)
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

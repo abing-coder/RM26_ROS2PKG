@@ -1,0 +1,13 @@
+[0.024s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
+[0.085s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o[0m
+[0.086s] [ 22%] [32mBuilding CXX object CMakeFiles/detection.dir/main.cpp.o[0m
+[0.087s] [ 33%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[2.440s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[2.440s] [01m[K/home/ubuntu/桌面/RM26/src/rm_auto_aim/detection/src/yolo_detection.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+[2.440s]   130 |     [01;31m[Kflag[m[K = 0;
+[2.440s]       |     [01;31m[K^~~~[m[K
+[3.139s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:174：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+[3.139s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[3.139s] gmake: *** [Makefile:91：all] 错误 2
+[3.144s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '2': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14

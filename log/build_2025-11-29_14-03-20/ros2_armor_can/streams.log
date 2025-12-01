@@ -1,0 +1,21 @@
+[0.022s] Invoking command in '/home/ubuntu/桌面/RM26/build/ros2_armor_can': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/ros2_armor_can -- -j14 -l14
+[0.077s] [ 16%] [32mBuilding CXX object CMakeFiles/armor_send_node.dir/src/armor_send.cpp.o[0m
+[0.077s] [ 66%] Built target test_send_node
+[1.445s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:[m[K In member function ‘[01m[Kvoid ArmorSend::delta_callback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.445s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:123:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.445s]   123 |     void delta_callback([01;35m[Kconst geometry_msgs::msg::Point::SharedPtr msg[m[K) {
+[1.445s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.445s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:[m[K In lambda function:
+[1.445s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:137:120:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kflag[m[K’
+[1.445s]   137 |                 this->send_motor_cmd(static_cast<int16_t>(delta_x), static_cast<int16_t>(delta_y), static_cast<int16_t>[01;31m[Kflag[m[K, 0);
+[1.445s]       |                                                                                                                        [01;31m[K^~~~[m[K
+[1.445s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:137:120:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[1.445s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:137:128:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[1.445s]   137 |                 this->send_motor_cmd(static_cast<int16_t>(delta_x), static_cast<int16_t>(delta_y), static_cast<int16_t>flag, 0)[01;31m[K;[m[K
+[1.445s]       |                                                                                                                                [01;31m[K^[m[K
+[1.446s] [01m[K/home/ubuntu/桌面/RM26/src/ros2_armor_can/src/armor_send.cpp:137:37:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.446s]   137 |                 this->send_motor_cmd[01;36m[K([m[Kstatic_cast<int16_t>(delta_x), static_cast<int16_t>(delta_y), static_cast<int16_t>flag, 0);
+[1.446s]       |                                     [01;36m[K^[m[K
+[3.275s] gmake[2]: *** [CMakeFiles/armor_send_node.dir/build.make:76：CMakeFiles/armor_send_node.dir/src/armor_send.cpp.o] 错误 1
+[3.275s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/armor_send_node.dir/all] 错误 2
+[3.275s] gmake: *** [Makefile:146：all] 错误 2

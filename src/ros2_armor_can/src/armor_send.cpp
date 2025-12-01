@@ -24,33 +24,34 @@ public:
         RCLCPP_INFO(this->get_logger(), "channelhandle=%p notification=%p", (void*)channelhandle, (void*)result);
 
         // 订阅目标差值：显式使用与发布方一致的 QoS（RELIABLE + TRANSIENT_LOCAL）
-        auto qos = rclcpp::QoS(rclcpp::KeepLast(10)).reliable().transient_local();
-        delta_subscription_ = this->create_subscription<geometry_msgs::msg::Point>(
-            "target_delta",
-            qos,
-            [this](const geometry_msgs::msg::Point::SharedPtr msg) {
-                try {
-                    RCLCPP_INFO(this->get_logger(), "delta_callback ENTER: x=%.3f y=%.3f", msg->x, msg->y);
-                    // 将发送放到后台线程，避免阻塞 DDS 回调线程
-                    double fx = msg->x;
-                    double fy = msg->y;
-                    std::thread send_thread([this, fx, fy]() {
-                        try {
-                            this->send_motor_cmd(static_cast<int16_t>(fx), static_cast<int16_t>(fy), 0, 0);
-                        } catch (const std::exception& e) {
-                            RCLCPP_ERROR(this->get_logger(), "后台发送异常: %s", e.what());
-                        } catch (...) {
-                            RCLCPP_ERROR(this->get_logger(), "后台发送未知异常");
-                        }
-                    });
-                    send_thread.detach();
-                } catch (const std::exception &e) {
-                    RCLCPP_ERROR(this->get_logger(), "delta 回调异常: %s", e.what());
-                } catch (...) {
-                    RCLCPP_ERROR(this->get_logger(), "delta 回调未知异常");
-                }
-            }
-        );
+        // auto qos = rclcpp::QoS(rclcpp::KeepLast(10)).reliable().transient_local();
+        // delta_subscription_ = this->create_subscription<geometry_msgs::msg::Point>(
+        //     "target_delta",
+        //     qos,
+        //     [this](const geometry_msgs::msg::Point::SharedPtr msg) {
+        //         try {
+        //             RCLCPP_INFO(this->get_logger(), "delta_callback ENTER: x=%.3f y=%.3f", msg->x, msg->y);
+        //             // 将发送放到后台线程，避免阻塞 DDS 回调线程
+        //             double fx = msg->x;
+        //             double fy = msg->y;
+                    
+        //             std::thread send_thread([this, fx, fy]() {
+        //                 try {
+        //                     this->send_motor_cmd(static_cast<int16_t>(fx), static_cast<int16_t>(fy), 0, 0);
+        //                 } catch (const std::exception& e) {
+        //                     RCLCPP_ERROR(this->get_logger(), "后台发送异常: %s", e.what());
+        //                 } catch (...) {
+        //                     RCLCPP_ERROR(this->get_logger(), "后台发送未知异常");
+        //                 }
+        //             });
+        //             send_thread.detach();
+        //         } catch (const std::exception &e) {
+        //             RCLCPP_ERROR(this->get_logger(), "delta 回调异常: %s", e.what());
+        //         } catch (...) {
+        //             RCLCPP_ERROR(this->get_logger(), "delta 回调未知异常");
+        //         }
+        //     }
+        // );
 
         // target_info 也显式 QoS（如果你需要接收历史也可设置 transient_local）
         target_info_subscription_ = this->create_subscription<std_msgs::msg::Float32MultiArray>(
@@ -88,8 +89,11 @@ public:
         can_send_data[1] = motor1 & 0xFF;
         can_send_data[2] = (motor2 >> 8) & 0xFF;
         can_send_data[3] = motor2 & 0xFF;
+        can_send_data[4] = (motor3 >> 8) & 0xFF;
+        can_send_data[5] = motor3 & 0xFF;
+        
 
-        RCLCPP_INFO(this->get_logger(), "准备发送自瞄偏移量: x=%d, y=%d", motor1, motor2);
+        RCLCPP_INFO(this->get_logger(), "准备发送自瞄偏移量: x=%d, y=%d, flag=%d", motor1, motor2, motor3);
 
         try {
             // 注意：请以 bmcan 库文档为准，下面假设 can_send(handle, id, data, len) 返回 0 表示成功
@@ -121,15 +125,21 @@ private:
     }
 
     void target_info_callback(const std_msgs::msg::Float32MultiArray::SharedPtr msg) {
-        if (msg->data.size() >= 6) {
+        if (msg->data.size() >= 7) {
             double delta_x = msg->data[4];
             double delta_y = msg->data[5];
+            double flag = msg->data[6];
             RCLCPP_INFO(this->get_logger(),
-                "目标:(%.1f,%.1f) 光心:(%.1f,%.1f) 差值:(%.1f,%.1f)",
-                msg->data[0], msg->data[1], msg->data[2], msg->data[3], delta_x, delta_y);
+                "目标:(%.1f,%.1f) 光心:(%.1f,%.1f) 差值:(%.1f,%.1f) flag:%.lf",
+                msg->data[0], msg->data[1], msg->data[2], msg->data[3], delta_x, delta_y, flag);
             // 异步发送，避免阻塞回调线程
-            std::thread([this, delta_x, delta_y]() {
-                this->send_motor_cmd(static_cast<int16_t>(delta_x), static_cast<int16_t>(delta_y), 0, 0);
+            std::thread([this, delta_x, delta_y, flag]() {
+                this->send_motor_cmd(
+                    static_cast<int16_t>(delta_x),
+                    static_cast<int16_t>(delta_y),
+                    static_cast<int16_t>(flag),
+                    0
+                );
             }).detach();
         }
     }

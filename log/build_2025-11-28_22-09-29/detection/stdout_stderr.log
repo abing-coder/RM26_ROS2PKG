@@ -1,0 +1,4 @@
+Consolidate compiler generated dependencies of target detection
+[ 11%] Building CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o
+[ 22%] Linking CXX executable detection
+[100%] Built target detection

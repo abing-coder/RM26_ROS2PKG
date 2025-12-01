@@ -1,0 +1,43 @@
+[0.023s] Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14
+[0.060s] [ 25%] [32mBuilding CXX object CMakeFiles/hik_camera.dir/src/hik_camera_node.cpp.o[0m
+[0.061s] [ 75%] Built target hik_camera_node
+[1.758s] [100%] [32m[1mLinking CXX shared library libhik_camera.so[0m
+[1.851s] [100%] Built target hik_camera
+[1.866s] Invoked command in '/home/ubuntu/桌面/RM26/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/hik_camera -- -j14 -l14
+[1.871s] Invoking command in '/home/ubuntu/桌面/RM26/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/hik_camera
+[1.871s] -- Install configuration: ""
+[1.871s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/amd64
+[1.871s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/amd64/libMediaProcess.so
+[1.871s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/amd64/libMvCameraControl.so
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/amd64/libMVRender.so
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/amd64/libFormatConversion.so
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/amd64/libMvUsb3vTL.so
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/lib/hik_camera/hik_camera_node
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/environment/library_path.sh
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/environment/library_path.dsv
+[1.872s] -- Installing: /home/ubuntu/桌面/RM26/install/hik_camera/lib/libhik_camera.so
+[1.872s] -- Set runtime path of "/home/ubuntu/桌面/RM26/install/hik_camera/lib/libhik_camera.so" to ""
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/config
+[1.872s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/config/camera_info.yaml
+[1.872s] -- Installing: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/config/camera_params.yaml
+[1.873s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/launch
+[1.873s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/launch/hik_camera.launch.py
+[1.873s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/ament_index/resource_index/package_run_dependencies/hik_camera
+[1.873s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/ament_index/resource_index/parent_prefix_path/hik_camera
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/environment/ament_prefix_path.sh
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/environment/ament_prefix_path.dsv
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/environment/path.sh
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/environment/path.dsv
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/local_setup.bash
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/local_setup.sh
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/local_setup.zsh
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/local_setup.dsv
+[1.874s] -- Installing: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.dsv
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/ament_index/resource_index/packages/hik_camera
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/ament_index/resource_index/rclcpp_components/hik_camera
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig.cmake
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig-version.cmake
+[1.874s] -- Up-to-date: /home/ubuntu/桌面/RM26/install/hik_camera/share/hik_camera/package.xml
+[1.875s] Invoked command in '/home/ubuntu/桌面/RM26/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26/build/hik_camera

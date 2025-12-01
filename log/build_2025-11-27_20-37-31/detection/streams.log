@@ -1,0 +1,16 @@
+[0.020s] Invoking command in '/home/ubuntu/桌面/RM26/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
+[0.052s] -- Configuring done
+[0.066s] -- Generating done
+[0.071s] -- Build files have been written to: /home/ubuntu/桌面/RM26/build/detection
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
+[0.113s] [ 11%] [32mBuilding CXX object CMakeFiles/detection.dir/TrackerSource/BYTETracker.cpp.o[0m
+[0.114s] [ 22%] [32mBuilding CXX object CMakeFiles/detection.dir/main.cpp.o[0m
+[0.114s] [ 33%] [32mBuilding CXX object CMakeFiles/detection.dir/TrackerSource/kalmanFilter.cpp.o[0m
+[0.114s] [ 44%] [32mBuilding CXX object CMakeFiles/detection.dir/TrackerSource/STrack.cpp.o[0m
+[0.114s] [ 55%] [32mBuilding CXX object CMakeFiles/detection.dir/TrackerSource/lapjv.cpp.o[0m
+[0.138s] [ 66%] [32mBuilding CXX object CMakeFiles/detection.dir/TrackerSource/utils.cpp.o[0m
+[0.138s] [ 77%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[0.140s] [ 88%] [32mBuilding CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o[0m
+[5.868s] [100%] [32m[1mLinking CXX executable detection[0m
+[6.416s] [100%] Built target detection
+[6.427s] Invoked command in '/home/ubuntu/桌面/RM26/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26/build/detection -- -j14 -l14
