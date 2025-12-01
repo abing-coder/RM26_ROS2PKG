@@ -15,7 +15,39 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d29b8e-ead0-4522-b4dc-6444c28a6ff6" name="Changes" comment="" />
+    <list default="true" id="50d29b8e-ead0-4522-b4dc-6444c28a6ff6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/src/yolo_detection.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/detection.dir/src/yolo_detection.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/test_aim_node.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/test_aim_node.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/test_aim_node.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/test_aim_node.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/colcon_command_prefix_build.sh.env" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/colcon_command_prefix_build.sh.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/detection" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/detection" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/detection/test_aim_node" beforeDir="false" afterPath="$PROJECT_DIR$/build/detection/test_aim_node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hik_camera/CMakeFiles/hik_camera.dir/src/hik_camera_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/hik_camera/CMakeFiles/hik_camera.dir/src/hik_camera_node.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hik_camera/colcon_command_prefix_build.sh.env" beforeDir="false" afterPath="$PROJECT_DIR$/build/hik_camera/colcon_command_prefix_build.sh.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hik_camera/libhik_camera.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/hik_camera/libhik_camera.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/colcon_command_prefix_build.sh.env" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/colcon_command_prefix_build.sh.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recive_pkg/recive_pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/recive_pkg/recive_pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros2_armor_can/colcon_command_prefix_build.sh.env" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros2_armor_can/colcon_command_prefix_build.sh.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuck.sh" beforeDir="false" afterPath="$PROJECT_DIR$/fuck.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/hik_camera/lib/libhik_camera.so" beforeDir="false" afterPath="$PROJECT_DIR$/install/hik_camera/lib/libhik_camera.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/hik_camera/share/hik_camera/config/camera_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/install/hik_camera/share/hik_camera/config/camera_params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/recive_pkg/lib/recive_pkg/recive_pkg" beforeDir="false" afterPath="$PROJECT_DIR$/install/recive_pkg/lib/recive_pkg/recive_pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/latest_build" beforeDir="false" afterPath="$PROJECT_DIR$/log/latest_build" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rm_auto_aim/detection/include/yolo_detection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/rm_auto_aim/detection/include/yolo_detection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rm_auto_aim/detection/src/inference_engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/rm_auto_aim/detection/src/inference_engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rm_auto_aim/detection/src/yolo_detection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/rm_auto_aim/detection/src/yolo_detection.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros2_hik_camera-main/config/camera_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros2_hik_camera-main/config/camera_params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros2_hik_camera-main/src/hik_camera_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros2_hik_camera-main/src/hik_camera_node.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,26 +72,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "TX",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="50d29b8e-ead0-4522-b4dc-6444c28a6ff6" name="Changes" comment="" />
@@ -70,6 +102,7 @@
       <workItem from="1764221275092" duration="25000" />
       <workItem from="1764222570526" duration="2221000" />
       <workItem from="1764405660432" duration="2000" />
+      <workItem from="1764601343631" duration="689000" />
     </task>
     <servers />
   </component>

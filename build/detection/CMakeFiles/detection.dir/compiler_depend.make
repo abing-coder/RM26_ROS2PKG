@@ -1047,7 +1047,10 @@ CMakeFiles/detection.dir/src/inference_engine.cpp.o: /home/ubuntu/桌面/Robomas
   /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
   /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/properties.hpp \
   /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
-  /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp
+  /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h
 
 CMakeFiles/detection.dir/src/openvino_profiler.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp \
   /usr/include/stdc-predef.h \

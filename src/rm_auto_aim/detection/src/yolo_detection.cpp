@@ -14,7 +14,7 @@ constexpr float NMS_THRESHOLD = 0.4f;
 constexpr int INFERENCE_THREADS = 14;
 
 DetectionArmor::DetectionArmor(std::string& model_path, bool if_count_time, std::string video_path)
-    : m_inference_engine(model_path, INPUT_SIZE, INFERENCE_THREADS), 
+    : m_inference_engine(model_path, INPUT_SIZE, INFERENCE_THREADS),
       m_if_count_time(if_count_time), fps(0.0), m_profiler("openvino_performance.log")
 {
     // 如果提供了视频路径，则初始化视频捕获
@@ -252,9 +252,9 @@ void DetectionArmor::applyNMS(const std::vector<cv::Rect>& boxes,
 }
 
 void DetectionArmor::buildArmorData(const std::vector<int>& indices,
-                                   const std::vector<std::vector<cv::Point>>& fourPointModel,
-                                   const std::vector<int>& num_class,
-                                   const std::vector<int>& color_class)
+                                    const std::vector<std::vector<cv::Point>>& fourPointModel,
+                                    const std::vector<int>& num_class,
+                                    const std::vector<int>& color_class)
 {
     // 保留最终的数据
     for (int valid_index = 0; valid_index < indices.size(); ++valid_index)

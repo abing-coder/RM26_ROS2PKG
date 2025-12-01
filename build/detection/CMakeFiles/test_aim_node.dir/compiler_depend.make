@@ -515,7 +515,10 @@ CMakeFiles/test_aim_node.dir/src/inference_engine.cpp.o: /home/ubuntu/桌面/Rob
   /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
   /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/properties.hpp \
   /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
-  /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp
+  /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h
 
 CMakeFiles/test_aim_node.dir/src/openvino_profiler.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp \
   /usr/include/stdc-predef.h \
@@ -2589,19 +2592,15 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 
 /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/test_aim_node.cpp:
 
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/dirent.h:
-
-/usr/include/c++/11/thread:
-
 /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/include/armor.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/opencv4/opencv2/core/vsx_utils.hpp:
 
@@ -2702,8 +2701,6 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 /usr/include/time.h:
 
 /usr/include/opencv4/opencv2/core/cuda.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -2807,6 +2804,8 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
@@ -2882,6 +2881,10 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/c++/11/bits/functexcept.h:
 
 /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp:
 
@@ -2966,6 +2969,8 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/runtime/profiling_info.hpp:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -3328,6 +3333,10 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 /usr/include/c++/11/ratio:
 
 /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/include/openvino/core/shape.hpp:
+
+/usr/include/dirent.h:
+
+/usr/include/c++/11/thread:
 
 /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/include/traditional_detector.hpp:
 
@@ -3706,9 +3715,3 @@ CMakeFiles/test_aim_node.dir/test_aim_node.cpp.o: /home/ubuntu/桌面/Robomaster
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:

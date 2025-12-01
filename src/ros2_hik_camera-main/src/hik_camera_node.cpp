@@ -223,7 +223,7 @@ private:
     MVCC_FLOATVALUE exposure_range;
     nRet = MV_CC_GetFloatValue(camera_handle_, "ExposureTime", &exposure_range);
     if (MV_OK == nRet) {
-        double exposure_time = this->declare_parameter("exposure_time", 8000.0);
+        double exposure_time = this->declare_parameter("exposure_time", 10000.0);
         nRet = MV_CC_SetFloatValue(camera_handle_, "ExposureTime", exposure_time);
         if (MV_OK == nRet) {
             RCLCPP_INFO(this->get_logger(), "Exposure time set to: %f us", exposure_time);

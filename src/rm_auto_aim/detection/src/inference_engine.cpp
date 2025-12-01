@@ -1,4 +1,5 @@
 #include "inference_engine.hpp"
+#include <thread>
 #include <iostream>
 
 namespace detection {
@@ -19,14 +20,22 @@ InferenceEngine::~InferenceEngine()
 
 void InferenceEngine::initialize_model(const std::string& model_path, int inference_threads)
 {
-    // 统一使用优化的配置参数
+    // 实时推理优化：使用较少的线程数以减少调度开销
+    int threads = inference_threads > 0 ? inference_threads : 4;
+    const int hw_threads = static_cast<int>(std::thread::hardware_concurrency());
+    if (hw_threads > 0) {
+        threads = std::min(threads, hw_threads);
+    }
+    threads = std::max(1, threads);
+
+    // 针对实时单帧推理的最优配置
     ov::AnyMap config = {
-        {ov::hint::performance_mode(ov::hint::PerformanceMode::THROUGHPUT)},  // 吞吐量模式，提高帧率
-        {ov::inference_num_threads(inference_threads)},                       // 动态线程配置
-        {ov::num_streams(1)},                                                 // 多流推理，提高并行性
-        {ov::hint::enable_cpu_pinning(true)},                                 // 启用CPU固定，减少线程迁移开销
-        {ov::hint::execution_mode(ov::hint::ExecutionMode::PERFORMANCE)},     // 性能执行模式
-        {ov::log::level(ov::log::Level::WARNING)}                             // 减少日志输出，提高性能
+        {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)},  // 低延迟模式，适合实时推理
+        {ov::hint::execution_mode(ov::hint::ExecutionMode::PERFORMANCE)},
+        {ov::inference_num_threads(8)},  // 使用优化后的线程数
+        {ov::num_streams(1)},  // 单流模式，避免多流开销
+        {ov::hint::enable_cpu_pinning(true)},
+        {ov::log::level(ov::log::Level::WARNING)}
     };
 
     auto network = m_core.read_model(model_path);
@@ -34,12 +43,12 @@ void InferenceEngine::initialize_model(const std::string& model_path, int infere
     m_infer_request = m_compiled_model.create_infer_request();
     m_input_port = m_compiled_model.input();
     m_output_ports = m_compiled_model.outputs();
-    
-    // 获取输出形状
+
     if (!m_output_ports.empty()) {
         m_output_shape = m_output_ports[0].get_shape();
     }
 }
+
 
 cv::Mat InferenceEngine::infer(const cv::Mat& input_image)
 {

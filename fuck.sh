@@ -31,9 +31,9 @@ source "$SETUP_FILE"
 
 echo "环境加载完成，开始启动节点..."
 
-# 使用后台运行的方式启动两个节点
-ros2 run hik_camera hik_camera_node &
-echo "启动 hik_camera_node (后台运行)..."
+# 使用 launch 文件启动相机节点（会自动加载 YAML 配置）
+ros2 launch hik_camera hik_camera.launch.py &
+echo "启动 hik_camera_node (后台运行，使用 launch 文件)..."
 HIK_PID=$!
 
 sleep 1

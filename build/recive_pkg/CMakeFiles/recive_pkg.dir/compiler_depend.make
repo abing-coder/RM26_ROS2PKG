@@ -509,7 +509,10 @@ CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto
   /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
   /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/include/openvino/runtime/properties.hpp \
   /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
-  /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp
+  /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h
 
 CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp.o: /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp \
   /usr/include/stdc-predef.h \
@@ -4407,18 +4410,6 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 
 /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/recive_pkg/main.cpp:
 
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
-
-/usr/include/c++/11/thread:
-
 /opt/ros/humble/include/rclcpp/rclcpp/generic_subscription.hpp:
 
 /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/TimeCounter/timeCounter.hpp:
@@ -4655,6 +4646,8 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
@@ -4847,6 +4840,10 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/c++/11/bits/std_thread.h:
+
 /usr/include/c++/11/bits/exception.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
@@ -4876,6 +4873,10 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 /usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/c++/11/chrono:
 
 /usr/include/opencv4/opencv2/core.hpp:
 
@@ -4976,6 +4977,14 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/cfloat:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /opt/intel/l_openvino_toolkit_ubuntu22_2024.6.0.17404.4c0f47d2335_x86_64/runtime/include/openvino/runtime/variable_state.hpp:
 
@@ -5298,6 +5307,12 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 /usr/include/c++/11/mutex:
 
 /usr/include/c++/11/ratio:
+
+/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
+
+/usr/include/c++/11/thread:
 
 /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/include/traditional_detector.hpp:
 
@@ -5754,15 +5769,3 @@ CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o: /home/ubuntu/桌面/R
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/linux/close_range.h:
-
-/usr/include/c++/11/chrono:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:

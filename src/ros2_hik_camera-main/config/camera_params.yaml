@@ -2,7 +2,7 @@
   ros__parameters:
     camera_name: narrow_stereo
 
-    exposure_time: 10000.0
+    exposure_time: 20000.0
     gain: 32.0
-    width: 1280
-    height: 720
+    width: 640
+    height: 640

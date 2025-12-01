@@ -101,6 +101,22 @@ devel_isolated/
 **/recive_pkg/recive_pkg
 **/test_aim_node
 
+# Node-specific build artifacts
+build/detection/
+build/hik_camera/
+build/recive_pkg/
+build/ros2_armor_can/
+
+# CMake dependency files
+**/CMakeFiles/*.dir/compiler_depend.internal
+**/CMakeFiles/*.dir/compiler_depend.make
+
+# Colcon build environment files
+**/colcon_command_prefix_build.sh.env
+
+# OpenVINO cache
+ov_cache/
+
 # CMake API files
 **/.cmake/
 
