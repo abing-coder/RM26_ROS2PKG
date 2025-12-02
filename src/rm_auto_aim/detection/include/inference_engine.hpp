@@ -3,7 +3,6 @@
 
 #include <opencv2/opencv.hpp>
 #include <openvino/openvino.hpp>
-#include <openvino/preprocess/pre_post_process.hpp>
 #include <string>
 #include <vector>
 
