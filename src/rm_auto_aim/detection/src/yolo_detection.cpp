@@ -135,13 +135,13 @@ void DetectionArmor::run()
 {
     size_t frame_count = 0;
 
-    while (true) 
+    while (true)
     {
         m_armors_datas.clear();  // 清空当前帧的装甲板数据
         m_cap >> m_frame;
-        cv::resize(m_frame, m_img, cv::Size(INPUT_SIZE, INPUT_SIZE));
+        m_img = m_frame;  // 直接使用原始图像，PPP自动处理BGR→RGB、u8→f32、归一化
         auto start = std::chrono::high_resolution_clock::now();
-        
+
         // 推理
         infer();
 
@@ -334,7 +334,7 @@ void DetectionArmor::start_detection(const cv::Mat& input_image)
     }
 
     m_armors_datas.clear();
-    cv::resize(input_image, m_img, cv::Size(INPUT_SIZE, INPUT_SIZE));
+    m_img = input_image;  // 直接使用输入图像，PPP自动处理BGR→RGB、u8→f32、归一化
 
     auto start = std::chrono::high_resolution_clock::now();
     infer();

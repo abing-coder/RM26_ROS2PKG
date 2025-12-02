@@ -48,7 +48,7 @@ int main(int argc, char** argv)
     std::string current_path = cwd;
     
     // 设置模型路径和视频路径
-    std::string model_path = current_path + "/src/rm_auto_aim/detection/model/new.onnx";
+    std::string model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/new.xml";
     std::string video_dir = current_path + "/src/rm_auto_aim/detection/video/";
     
     // 检查视频目录是否存在
@@ -133,8 +133,9 @@ int main(int argc, char** argv)
             // 读取帧
             cap >> frame;
             if (frame.empty()) {
-                std::cout << "视频播放完毕" << std::endl;
-                break;
+                // 视频播放完毕，重置到开头循环播放
+                cap.set(cv::CAP_PROP_POS_FRAMES, 0);
+                continue;
             }
 
             // 执行检测
