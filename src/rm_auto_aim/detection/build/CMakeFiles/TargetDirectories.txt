@@ -1,4 +1,0 @@
-/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles/detection.dir
-/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles/test_aim_node.dir
-/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles/edit_cache.dir
-/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/build/CMakeFiles/rebuild_cache.dir

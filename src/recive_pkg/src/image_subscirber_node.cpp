@@ -36,6 +36,17 @@ namespace armor_detection
         try {
             // 10Hz 发布节流：仅当距离上次发布超过100ms才发布
             const auto now = std::chrono::steady_clock::now();
+
+            // [TEST] 帧率统计 - 每100帧计算平均帧率
+            frame_count_++;
+            if (frame_count_ == 1) {
+                fps_start_time_ = now;
+            } else if (frame_count_ % 100 == 0) {
+                auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - fps_start_time_).count();
+                double avg_fps = 100.0 * 1000.0 / elapsed;
+                RCLCPP_INFO(this->get_logger(), "[TEST] 帧率统计: 最近100帧平均帧率 = %.2f FPS (耗时 %ld ms)", avg_fps, elapsed);
+                fps_start_time_ = now;  // 重置起始时间
+            }
             if (last_publish_time_.time_since_epoch().count() != 0) {
                 if (now - last_publish_time_ < publish_interval_) {
                     return; // 跳过本次发布
@@ -74,10 +85,10 @@ namespace armor_detection
                 };
                 target_info_publisher_->publish(target_info_msg);
 
-                RCLCPP_INFO(this->get_logger(),
-                    "检测到目标 - 目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f)",
-                    static_cast<float>(target.center_point.x), static_cast<float>(target.center_point.y),
-                    optical_center_x, optical_center_y, delta_x, delta_y);
+                // RCLCPP_INFO(this->get_logger(),
+                //     "检测到目标 - 目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f)",
+                //     static_cast<float>(target.center_point.x), static_cast<float>(target.center_point.y),
+                //     optical_center_x, optical_center_y, delta_x, delta_y);
                 last_publish_time_ = now; // 记录发布时间
             }
 

@@ -36,6 +36,10 @@ namespace armor_detection
         // 发布节流：仅以10Hz发布
         std::chrono::steady_clock::time_point last_publish_time_{};
         std::chrono::milliseconds publish_interval_{10}; // 10Hz
+
+        // [TEST] 帧率统计 - 每100帧计算平均帧率
+        uint64_t frame_count_{0};
+        std::chrono::steady_clock::time_point fps_start_time_{};
     };
 
 }

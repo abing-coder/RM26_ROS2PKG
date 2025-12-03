@@ -4,9 +4,10 @@ int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
     
-    // 修改5：通过参数传递模型路径
-     const std::string model_path = "/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/model/new2.onnx";
-    // const bool debug_mode = true;  // 可从参数读取
+    // 修改5：模型路径 - 使用 OpenVINO IR 格式模型（与 test_aim.sh 一致）
+    // 注意：此路径指向经过 OpenVINO PrePostProcessor 优化的 IR 模型，支持零拷贝推理
+    // 如需更改模型，请同时更新 test_aim_node.cpp 保持一致
+    const std::string model_path = "/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/model/IR_MODEL/new.xml";
    
     
     // 修改6：直接实例化节点

@@ -150,7 +150,7 @@ int main(int argc, char** argv)
                 auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
                 double avg_fps = 100.0 / (duration / 1000.0);
 
-                std::cout << "已处理 " << frame_count << " 帧，最近100帧平均帧率: "
+                std::cout << "最近100帧平均帧率: "
                           << std::fixed << std::setprecision(2) << avg_fps << " FPS" << std::endl;
 
                 // 重置计时器

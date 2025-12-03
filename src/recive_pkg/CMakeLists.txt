@@ -10,8 +10,8 @@ if(POLICY CMP0057)
   cmake_policy(SET CMP0057 NEW)
 endif()
 
-#set
-set(OpenVINO_DIR /opt/intel/openvino_2024.6.0/cmake)
+# OpenVINO 2025 路径 - 与 detection 包保持一致，支持零拷贝推理
+set(OpenVINO_DIR /home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64/runtime/cmake)
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -1,7 +1,0 @@
-[ 12%] [32mBuilding CXX object CMakeFiles/detection.dir/main.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/test_aim_node.dir/src/yolo_detection.cpp.o[0m
-[ 37%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
-[ 50%] [32m[1mLinking CXX executable test_aim_node[0m
-[ 75%] Built target test_aim_node
-[ 87%] [32m[1mLinking CXX executable detection[0m
-[100%] Built target detection

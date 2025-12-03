@@ -4,6 +4,15 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKSPACE_DIR="$SCRIPT_DIR"
 
+# 加载 OpenVINO 2025 环境 - 确保运行时库与编译时一致
+OPENVINO_DIR="/home/ubuntu/桌面/Robomaster/openvino_toolkit_ubuntu22_2025.0.0.17942.1f68be9f594_x86_64"
+if [ -f "$OPENVINO_DIR/setupvars.sh" ]; then
+    echo "正在加载 OpenVINO 2025 环境..."
+    source "$OPENVINO_DIR/setupvars.sh"
+else
+    echo "警告: 未找到 OpenVINO setupvars.sh，推理可能失败"
+fi
+
 # 先执行增量编译
 echo "正在执行增量编译..."
 bash "$WORKSPACE_DIR/incremental_build.sh"

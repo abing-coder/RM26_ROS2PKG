@@ -1,6 +1,0 @@
-[0.006s] Invoking command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection -- -j14 -l14
-[0.034s] [35m[1mConsolidate compiler generated dependencies of target test_aim_node[0m
-[0.041s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
-[0.050s] [ 50%] Built target test_aim_node
-[0.056s] [100%] Built target detection
-[0.081s] Invoked command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/detection -- -j14 -l14

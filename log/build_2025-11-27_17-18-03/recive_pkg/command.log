@@ -1,6 +1,0 @@
-Invoking command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/recive_pkg -DCMAKE_INSTALL_PREFIX=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/install/recive_pkg
-Invoked command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/recive_pkg -DCMAKE_INSTALL_PREFIX=/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/install/recive_pkg
-Invoking command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg -- -j14 -l14
-Invoked command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg -- -j14 -l14
-Invoking command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg
-Invoked command in '/home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/build/recive_pkg

@@ -41,6 +41,8 @@ Makefile
 # IDE
 .vscode/
 .idea/
+**/.vscode/
+**/.idea/
 *.swp
 *.swo
 *~
@@ -119,6 +121,9 @@ ov_cache/
 
 # Video files
 src/rm_auto_aim/detection/video/
+
+# Vendor SDK logs
+src/ros2_hik_camera-main/MvSdkLog/
 
 # CMake API files
 **/.cmake/
