@@ -8,6 +8,8 @@ namespace armor_detection
         model_path_copy_(model_path),
         detectionArmor_(model_path_copy_, false)
     {
+        // 设置检测颜色: 0 = 红色, 1 = 蓝色
+        detection::DetectionArmor::detect_color = 0;
         // 使用 sensor_data 初始化的 QoS（但我们显式将发布 target_delta 的 QoS 设为 reliable + transient_local）
         auto image_qos = rclcpp::QoS(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_sensor_data));
         image_qos.best_effort(); // 保持摄像头订阅为 sensor_data 风格（通常 best-effort）

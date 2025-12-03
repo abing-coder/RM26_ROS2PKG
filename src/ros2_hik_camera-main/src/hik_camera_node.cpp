@@ -64,13 +64,13 @@ public:
     }
 
     // 初始化图像消息
-    image_msg_.encoding = "rgb8";
+    image_msg_.encoding = "bgr8";  // 使用 BGR8 格式，与 OpenCV 默认格式一致
     image_msg_.header.frame_id = "camera_optical_frame";
 
     // 初始化像素转换参数
     convert_param_.nWidth = img_info_.nWidthValue;
     convert_param_.nHeight = img_info_.nHeightValue;
-    convert_param_.enDstPixelType = PixelType_Gvsp_RGB8_Packed;
+    convert_param_.enDstPixelType = PixelType_Gvsp_BGR8_Packed;  // 转换为 BGR8
 
     // 设置图像节点数量（缓冲区）
     int nBufferNum = this->declare_parameter("buffer_num", 10);
