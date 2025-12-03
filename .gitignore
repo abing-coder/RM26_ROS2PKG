@@ -117,6 +117,9 @@ build/ros2_armor_can/
 # OpenVINO cache
 ov_cache/
 
+# Video files
+src/rm_auto_aim/detection/video/
+
 # CMake API files
 **/.cmake/
 
