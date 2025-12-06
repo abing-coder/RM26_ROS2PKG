@@ -50,6 +50,10 @@ add_executable(${PROJECT_NAME}
   ${SRC}
 )
 
+add_executable(debug_display_node
+  src/debug_display_node.cpp
+)
+
 target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBS}
   openvino::runtime
@@ -64,10 +68,20 @@ ament_target_dependencies(${PROJECT_NAME}
   cv_bridge
 )
 
+ament_target_dependencies(debug_display_node
+  rclcpp
+  sensor_msgs
+  cv_bridge
+)
+
 # 仅链接必要的第三方库，避免拉入大量不必要模块
 target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBS}
   openvino::runtime
+)
+
+target_link_libraries(debug_display_node
+  ${OpenCV_LIBS}
 )
 
 # 按需链接，避免无用的大量 OpenCV 模块被强行拉入
@@ -78,6 +92,10 @@ endif()
 
 # 安装目标到lib目录
 install(TARGETS ${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS debug_display_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

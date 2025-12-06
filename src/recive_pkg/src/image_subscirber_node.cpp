@@ -28,6 +28,17 @@ namespace armor_detection
         // target_info 也使用同样的持久化 QoS（如果接收方需要历史）
         target_info_publisher_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("target_info", delta_qos);
 
+        // Debug 图像发布（best-effort, depth=1），默认开启
+        publish_debug_image_ = this->declare_parameter<bool>("publish_debug_image", true);
+        debug_image_topic_ = this->declare_parameter<std::string>("debug_image_topic", "/debug/detection_image");
+        if (publish_debug_image_) {
+            auto debug_qos = rclcpp::SensorDataQoS().keep_last(1).best_effort();
+            debug_image_publisher_ = this->create_publisher<sensor_msgs::msg::Image>(debug_image_topic_, debug_qos);
+            RCLCPP_INFO(this->get_logger(), "Debug image publisher enabled on %s", debug_image_topic_.c_str());
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Debug image publisher disabled");
+        }
+
         RCLCPP_INFO(this->get_logger(), "检测节点初始化完成 | 模型路径: %s", model_path.c_str());
     }
 
@@ -98,6 +109,12 @@ namespace armor_detection
                 //     static_cast<float>(target.center_point.x), static_cast<float>(target.center_point.y),
                 //     optical_center_x, optical_center_y, delta_x, delta_y);
                 last_publish_time_ = now; // 记录发布时间
+            }
+
+            // 发布带检测框的调试图像（仅在有订阅者时，best-effort，不反压）
+            if (publish_debug_image_ && debug_image_publisher_ && debug_image_publisher_->get_subscription_count() > 0) {
+                auto dbg_msg = cv_bridge::CvImage(msg->header, "bgr8", image).toImageMsg();
+                debug_image_publisher_->publish(*dbg_msg);
             }
 
         } catch (const cv::Exception& e) {

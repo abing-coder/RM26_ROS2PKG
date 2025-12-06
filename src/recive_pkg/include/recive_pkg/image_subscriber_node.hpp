@@ -32,6 +32,7 @@ namespace armor_detection
         // 添加发布者
         rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr delta_publisher_;
         rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr target_info_publisher_;
+        rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr debug_image_publisher_;
 
         // 发布节流：仅以10Hz发布
         std::chrono::steady_clock::time_point last_publish_time_{};
@@ -40,6 +41,10 @@ namespace armor_detection
         // [TEST] 帧率统计 - 每100帧计算平均帧率
         uint64_t frame_count_{0};
         std::chrono::steady_clock::time_point fps_start_time_{};
+
+        // Debug 配置
+        bool publish_debug_image_{true};
+        std::string debug_image_topic_{"/debug/detection_image"};
     };
 
 }

@@ -79,9 +79,9 @@ public:
       RCLCPP_WARN(this->get_logger(), "Set image node num failed! nRet: [%x]", nRet);
     }
 
-    // 创建图像发布者 - 使用正确的 QoS 配置
+    // 创建图像发布者 - 采用 sensor_data 默认 QoS，避免对慢订阅者反压
     auto qos = rclcpp::QoS(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_sensor_data));
-    qos.reliability(rclcpp::ReliabilityPolicy::Reliable);  // 改为 Reliable
+    qos.reliability(rclcpp::ReliabilityPolicy::BestEffort);
     qos.durability(rclcpp::DurabilityPolicy::Volatile);
     qos.avoid_ros_namespace_conventions(false);
 
