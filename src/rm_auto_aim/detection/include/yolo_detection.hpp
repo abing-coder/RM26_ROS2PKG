@@ -2,6 +2,7 @@
 #define YOLO_DETECTION_HPP_
 
 #include <iostream>
+#include <memory>
 #include <opencv2/opencv.hpp>
 #include "timeCounter.hpp"
 #include "traditional_detector.hpp"
@@ -142,6 +143,8 @@ namespace detection
 
         /// 性能分析器
         OpenVINOProfiler m_profiler;
+        /// 传统视觉检测器
+        std::unique_ptr<Detector> m_traditional_detector;
 
         /**
          * @brief 推理过程

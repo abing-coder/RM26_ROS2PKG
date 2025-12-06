@@ -1,8 +1,60 @@
 #include "yolo_detection.hpp"
+#include <algorithm>
 #include <iomanip>
 #include <thread>
+#include <cmath>
+
+// 来自 traditional_detector.cpp，用于在传统视觉流程前同步阵营颜色
+extern int detect_color;
 
 using namespace detection;
+
+namespace {
+
+// 将传统视觉的 Armor 结果转换为通用 ArmorData
+ArmorData convertTraditionalArmor(const Armor& armor, int current_color)
+{
+    ArmorData data;
+
+    cv::Point2f left_pts[4];
+    cv::Point2f right_pts[4];
+    armor.left_light.points(left_pts);
+    armor.right_light.points(right_pts);
+
+    float min_x = std::min({left_pts[0].x, left_pts[1].x, left_pts[2].x, left_pts[3].x,
+                            right_pts[0].x, right_pts[1].x, right_pts[2].x, right_pts[3].x});
+    float min_y = std::min({left_pts[0].y, left_pts[1].y, left_pts[2].y, left_pts[3].y,
+                            right_pts[0].y, right_pts[1].y, right_pts[2].y, right_pts[3].y});
+    float max_x = std::max({left_pts[0].x, left_pts[1].x, left_pts[2].x, left_pts[3].x,
+                            right_pts[0].x, right_pts[1].x, right_pts[2].x, right_pts[3].x});
+    float max_y = std::max({left_pts[0].y, left_pts[1].y, left_pts[2].y, left_pts[3].y,
+                            right_pts[0].y, right_pts[1].y, right_pts[2].y, right_pts[3].y});
+
+    data.p1 = cv::Point(static_cast<int>(min_x), static_cast<int>(min_y));
+    data.p2 = cv::Point(static_cast<int>(max_x), static_cast<int>(min_y));
+    data.p3 = cv::Point(static_cast<int>(max_x), static_cast<int>(max_y));
+    data.p4 = cv::Point(static_cast<int>(min_x), static_cast<int>(max_y));
+
+    data.center_point = cv::Point(static_cast<int>(armor.center.x), static_cast<int>(armor.center.y));
+    data.ID = 0;  // 传统视觉当前未识别数字，设为0占位
+    data.color = (current_color == 0) ? Color::RED : Color::BLUE;
+
+    return data;
+}
+
+// 简单的中心点去重，防止与 YOLO 结果重复返回
+bool isDuplicate(const std::vector<ArmorData>& existing, const cv::Point2f& center, double threshold = 15.0)
+{
+    for (const auto& item : existing) {
+        if (cv::norm(center - cv::Point2f(static_cast<float>(item.center_point.x),
+                                          static_cast<float>(item.center_point.y))) < threshold) {
+            return true;
+        }
+    }
+    return false;
+}
+
+}  // namespace
 
 // 静态成员变量定义（共享变量，其他节点可能使用）
 int detection::DetectionArmor::detect_color = 0;  // 0: 红色，1: 蓝色
@@ -17,6 +69,12 @@ DetectionArmor::DetectionArmor(std::string& model_path, bool if_count_time, std:
     : m_inference_engine(model_path, INPUT_SIZE, INFERENCE_THREADS),
       m_if_count_time(if_count_time), fps(0.0), m_profiler("openvino_performance.log")
 {
+    // 初始化传统视觉检测器（使用默认参数）
+    Detector::LightParams light_params;
+    Detector::ArmorParams armor_params;
+    int binary_threshold = 100;  // 默认二值化阈值
+    m_traditional_detector = std::make_unique<Detector>(binary_threshold, light_params, armor_params);
+
     // 如果提供了视频路径，则初始化视频捕获
     if (!video_path.empty()) {
         m_cap = cv::VideoCapture(video_path);
@@ -85,6 +143,7 @@ void get_roi(cv::Mat& image, std::vector<cv::Point>& points, cv::Mat& ROI)
     cv::fillConvexPoly(mask, roi_points, cv::Scalar(255, 0, 0));
     cv::bitwise_and(image, image, ROI, mask);
 }
+
 void DetectionArmor::drawObject(cv::Mat& image, std::vector<ArmorData>& datas)
 {
     // 绘制装甲板的边界框
@@ -311,6 +370,10 @@ void DetectionArmor::infer()
 
     // 5. 构建装甲板数据
     buildArmorData(indices, fourPointModel, num_class, color_class);
+
+
+    std::vector<Armor> traditional_armors = m_traditional_detector->detect(m_img);
+
 }
 
 
