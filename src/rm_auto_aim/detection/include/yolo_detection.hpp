@@ -3,11 +3,10 @@
 
 #include <iostream>
 #include <memory>
+#include <string>
 #include <opencv2/opencv.hpp>
-#include "timeCounter.hpp"
 #include "traditional_detector.hpp"
 #include "armor.hpp"
-#include "openvino_profiler.hpp"
 #include "inference_engine.hpp"
 
 // 测试模式宏定义
@@ -67,12 +66,13 @@ namespace detection
         /**
          * @brief 构造函数
          * @param model_path 模型路径
-         * @param if_count_time 是否计时
          * @param video_path 视频路径（可选）
          */
-        DetectionArmor(std::string& model_path, bool if_count_time, std::string video_path = "");
+        DetectionArmor(std::string& model_path, std::string video_path = "");
         
         ~DetectionArmor();
+
+        std::vector<ArmorData>& detect(const cv::Mat& inputMat);
 
         /**
          * @brief 在图像上绘制检测结果
@@ -87,23 +87,23 @@ namespace detection
          * @return Sigmoid计算结果
          */
         static double sigmoid(double x);
-
-        /**
-         * @brief 开始检测（使用视频源）
-         */
-        void start_detection();
-        
-        /**
-         * @brief 开始检测（使用输入图像）
-         * @param input_image 输入图像
-         */
-        void start_detection(const cv::Mat& input_image);
         
         /**
          * @brief 获取当前帧的装甲板数据
          * @return 装甲板数据引用
          */
         std::vector<ArmorData>& getdata();
+
+        /**
+         * @brief 开始持续检测（使用视频或默认摄像头）
+         */
+        void start_detection();
+        
+        /**
+         * @brief 开始检测单帧图像
+         * @param input_image 单帧输入
+         */
+        void start_detection(const cv::Mat& input_image);
 
         #ifdef TEST_MODE
         /**
@@ -133,16 +133,10 @@ namespace detection
         /// 处理后的图像
         cv::Mat m_img;
 
-        /// 计时器
-        timeCounter m_counter = timeCounter("run a frame");
-        /// 是否计时标志
-        bool m_if_count_time = false;
 
         /// 当前帧的装甲板数据
         std::vector<ArmorData> m_armors_datas;
 
-        /// 性能分析器
-        OpenVINOProfiler m_profiler;
         /// 传统视觉检测器
         std::unique_ptr<Detector> m_traditional_detector;
 

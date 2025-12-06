@@ -65,9 +65,9 @@ constexpr float CONFIDENCE_THRESHOLD = 0.6f;
 constexpr float NMS_THRESHOLD = 0.4f;
 constexpr int INFERENCE_THREADS = 14;
 
-DetectionArmor::DetectionArmor(std::string& model_path, bool if_count_time, std::string video_path)
+DetectionArmor::DetectionArmor(std::string& model_path, std::string video_path)
     : m_inference_engine(model_path, INPUT_SIZE, INFERENCE_THREADS),
-      m_if_count_time(if_count_time), fps(0.0), m_profiler("openvino_performance.log")
+      fps(0.0)
 {
     // 初始化传统视觉检测器（使用默认参数）
     Detector::LightParams light_params;
@@ -349,8 +349,6 @@ void DetectionArmor::buildArmorData(const std::vector<int>& indices,
 
 void DetectionArmor::infer()
 {
-    Timer t(m_counter);
-
     // 1. 使用推理引擎执行推理
     cv::Mat output_buffer = m_inference_engine.infer(m_img);
 
@@ -371,9 +369,6 @@ void DetectionArmor::infer()
     // 5. 构建装甲板数据
     buildArmorData(indices, fourPointModel, num_class, color_class);
 
-
-    std::vector<Armor> traditional_armors = m_traditional_detector->detect(m_img);
-
 }
 
 
@@ -383,17 +378,12 @@ std::vector<ArmorData>& DetectionArmor::getdata()
     return m_armors_datas;  // 返回当前帧的装甲板数据
 }
 
-void DetectionArmor::start_detection()
-{
-    run();
-}
-
-void DetectionArmor::start_detection(const cv::Mat& input_image)
+std::vector<ArmorData>& DetectionArmor::detect(const cv::Mat& input_image)
 {
     if (input_image.empty())
     {
         m_armors_datas.clear();
-        return;
+        return m_armors_datas;
     }
 
     m_armors_datas.clear();
@@ -412,6 +402,18 @@ void DetectionArmor::start_detection(const cv::Mat& input_image)
     }
     
     drawObject(m_img, m_armors_datas);
+
+    return m_armors_datas;
+}
+
+void DetectionArmor::start_detection()
+{
+    run();
+}
+
+void DetectionArmor::start_detection(const cv::Mat& input_image)
+{
+    detect(input_image);
 }
 
 #ifdef TEST_MODE

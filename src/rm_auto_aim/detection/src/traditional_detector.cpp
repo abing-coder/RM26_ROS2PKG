@@ -19,7 +19,7 @@ cv::Mat Detector::preprocessImage(const cv::Mat & rgb_img)
     
   }
   
-  if(detect_color==0)
+  else if(detect_color==0)
   {
     int flag = 2; // 0-蓝色通道，1-绿色通道，2-红色通道
     std::vector<cv::Mat> channels;
@@ -128,7 +128,7 @@ std::vector<Armor> Detector::matchLights(const std::vector<Light> & lights)
       }
     }
   }
-  std::cout << "Detected armors: " << armors.size() << std::endl;
+  // std::cout << "Detected armors: " << armors.size() << std::endl;
   return armors;
 }
 
@@ -277,11 +277,5 @@ std::vector<Armor> Detector::detect(const cv::Mat & input)
     binary_img = preprocessImage(input);
     lights_ = findLights(input, binary_img);
     armors_ = matchLights(lights_);
-
-    // if (!armors_.empty()) {
-    //     classifier->extractNumbers(input, armors_);
-    //     classifier->classify(armors_);
-    // }
-
     return armors_;
 }

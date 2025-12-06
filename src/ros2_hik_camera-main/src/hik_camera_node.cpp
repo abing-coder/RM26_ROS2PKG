@@ -123,7 +123,7 @@ public:
       MV_FRAME_OUT out_frame;
 
       while (rclcpp::ok()) {
-        nRet = MV_CC_GetImageBuffer(camera_handle_, &out_frame, 1000);
+        nRet = MV_CC_GetImageBuffer(camera_handle_, &out_frame, 500);
         
         if (MV_OK == nRet) {
           // 准备转换参数

@@ -48,7 +48,7 @@ int main(int argc, char** argv)
     std::string current_path = cwd;
     
     // 设置模型路径和视频路径
-    std::string model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/new.xml";
+    std::string model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/3_int8_new.xml";
     std::string video_dir = current_path + "/src/rm_auto_aim/detection/video/";
     
     // 检查视频目录是否存在
@@ -112,7 +112,7 @@ int main(int argc, char** argv)
     try {
         // 创建检测器实例
         std::cout << "初始化检测器..." << std::endl;
-        detection::DetectionArmor detectionArmor(model_path, true, selected_video);
+        detection::DetectionArmor detectionArmor(model_path, selected_video);
 
         std::cout << "开始目标检测..." << std::endl;
         std::cout << "按 'q' 键退出，按 'n' 键切换到下一个视频" << std::endl;
@@ -139,7 +139,7 @@ int main(int argc, char** argv)
             }
 
             // 执行检测
-            detectionArmor.start_detection(frame);
+            detectionArmor.detect(frame);
 
             // 帧数计数
             frame_count++;

@@ -14,7 +14,6 @@ include_directories(
 )
 
 include_directories(./include)
-include_directories(./TimeCounter)
 
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_executable(${PROJECT_NAME} main.cpp ${SOURCES})

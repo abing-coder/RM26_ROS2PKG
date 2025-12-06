@@ -6,7 +6,7 @@ namespace armor_detection
     ImageSubscriber::ImageSubscriber(const std::string& model_path)
         : Node("image_subscriber"),
         model_path_copy_(model_path),
-        detectionArmor_(model_path_copy_, false)
+        detectionArmor_(model_path_copy_, std::string{})
     {
         // 设置检测颜色: 0 = 红色, 1 = 蓝色
         detection::DetectionArmor::detect_color = 0;
@@ -44,7 +44,14 @@ namespace armor_detection
             } else if (frame_count_ % 100 == 0) {
                 auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - fps_start_time_).count();
                 double avg_fps = 100.0 * 1000.0 / elapsed;
-                RCLCPP_INFO(this->get_logger(), "[TEST] 帧率统计: 最近100帧平均帧率 = %.2f FPS (耗时 %ld ms)", avg_fps, elapsed);
+                double avg_frame_ms = static_cast<double>(elapsed) / 100.0;  // 每帧耗时
+
+                RCLCPP_INFO(
+                    this->get_logger(),
+                    "[TEST] 帧率统计: 最近100帧平均帧率 = %.2f FPS, 平均每帧耗时 = %.2f ms",
+                    avg_fps,
+                    avg_frame_ms
+                );
                 fps_start_time_ = now;  // 重置起始时间
             }
             if (last_publish_time_.time_since_epoch().count() != 0) {
@@ -52,12 +59,13 @@ namespace armor_detection
                     return; // 跳过本次发布
                 }
             }
-            // 转为 OpenCV 格式
-            cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
-            cv::Mat image = cv_ptr->image;
-            detectionArmor_.start_detection(image);
+            
+            // 转为 OpenCV 格式（零拷贝）
+            auto cv_ptr = cv_bridge::toCvShare(msg, "bgr8");
+            const cv::Mat& image = cv_ptr->image;
 
-            std::vector<detection::ArmorData> armors = detectionArmor_.getdata();
+            
+            std::vector<detection::ArmorData> armors = detectionArmor_.detect(image);
 
             if (!armors.empty()) {
                 detection::ArmorData target = armors[0];

@@ -18,7 +18,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SRC
       /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp
       /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp
-      /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/openvino_profiler.cpp
       /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp)
 
 # find dependencies
@@ -40,7 +39,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include
                     ${std_msgs_INCLUDE_DIRS}
                     /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/include
                     /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/recive_pkg/include
-                    /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/TimeCounter
                     )
 
 
