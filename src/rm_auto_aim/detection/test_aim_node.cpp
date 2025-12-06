@@ -161,13 +161,6 @@ int main(int argc, char** argv)
             #ifdef TEST_MODE
             detectionArmor.showImage();
             #endif
-
-            // 检查按键
-            int key = cv::waitKey(1);
-            if (key == 'q' || key == 'Q') {
-                std::cout << "用户退出" << std::endl;
-                break;
-            }
         }
 
         // 输出总体统计

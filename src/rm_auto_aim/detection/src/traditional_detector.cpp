@@ -14,7 +14,6 @@ cv::Mat Detector::preprocessImage(const cv::Mat & rgb_img)
 
     cv::Mat binary_img;
     cv::threshold(gray_img, binary_img, binary_thres, 255, cv::THRESH_BINARY);
-    // cv::imshow("binary_img", binary_img);
     return binary_img;
     
   }
@@ -30,8 +29,6 @@ cv::Mat Detector::preprocessImage(const cv::Mat & rgb_img)
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5)); 
     cv::morphologyEx(thresh_img, binary_img, cv::MORPH_OPEN, kernel); //开运算，去除灯条边缘噪点
 
-    // cv::imshow("binary_img",binary_img);
-      
     return binary_img;
   }
   return cv::Mat();

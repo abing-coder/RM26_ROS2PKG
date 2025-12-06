@@ -100,8 +100,6 @@ namespace armor_detection
                 last_publish_time_ = now; // 记录发布时间
             }
 
-            cv::imshow("原始图像", cv_ptr->image);
-            cv::waitKey(1);
         } catch (const cv::Exception& e) {
             RCLCPP_ERROR(this->get_logger(), "OpenCV异常: %s", e.what());
         } catch (const std::exception& e) {

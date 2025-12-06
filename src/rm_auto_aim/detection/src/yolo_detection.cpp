@@ -180,8 +180,6 @@ void DetectionArmor::drawObject(cv::Mat& image, std::vector<ArmorData>& datas)
 
     cv::putText(image, "fps:" + std::to_string(static_cast<int>(fps)), cv::Point(10, 30),
                 cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
-
-    cv::imshow("Detection", image);
 }
 
 inline double DetectionArmor::sigmoid(double x) 
@@ -227,11 +225,6 @@ void DetectionArmor::run()
         showImage();
         #endif
 
-        if (cv::waitKey(1) == 27)  // 按下ESC键退出
-        {
-            clearHeap();
-            break;
-        }
     }
 }
 
