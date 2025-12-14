@@ -6,7 +6,7 @@
 #include <geometry_msgs/msg/point.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
 #include <opencv2/opencv.hpp>
-#include "yolo_detection.hpp"  // 确保包含检测头文件
+#include "detect.hpp"  // 统一检测入口
 #include <string>
 #include <chrono>
 #include <rclcpp/qos.hpp>
@@ -24,15 +24,18 @@ namespace armor_detection
 
     private:
         void imageCallback(const sensor_msgs::msg::Image::SharedPtr msg);
-        // 修改3：将检测器作为成员变量       
-        std::string model_path_copy_; // 保存可修改的模型路径，满足非 const 引用需求
-        detection::DetectionArmor detectionArmor_;
+        // 统一检测器
+        detection::Detect detector_;
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;
         
         // 添加发布者
         rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr delta_publisher_;
         rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr target_info_publisher_;
         rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr debug_image_publisher_;
+
+        // ROS 消息对象成员变量（重用）
+        geometry_msgs::msg::Point delta_msg_;
+        std_msgs::msg::Float32MultiArray target_info_msg_;
 
         // 发布节流：仅以10Hz发布
         std::chrono::steady_clock::time_point last_publish_time_{};
@@ -45,6 +48,15 @@ namespace armor_detection
         // Debug 配置
         bool publish_debug_image_{true};
         std::string debug_image_topic_{"/debug/detection_image"};
+
+        // 目标检测数据成员变量
+        float optical_center_x_{0.0f};
+        float optical_center_y_{0.0f};
+        float delta_x_{0.0f};
+        float delta_y_{0.0f};
+        float flag_{0.0f};
+        float target_x_{0.0f};
+        float target_y_{0.0f};
     };
 
 }

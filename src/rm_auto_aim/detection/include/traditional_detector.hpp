@@ -6,7 +6,10 @@
 // #include "number_classifier.hpp"
 #include <vector>
 
-class Detector
+// 前向声明，避免循环依赖
+namespace detection { struct ArmorData; }
+
+class TraditionalDetector
 {
 public:
   struct LightParams
@@ -30,9 +33,17 @@ public:
     double max_angle = 40.0;
   };
 
-  Detector(const int & bin_thres, const LightParams & l, const ArmorParams & a); 
+  TraditionalDetector(const int & bin_thres, const LightParams & l, const ArmorParams & a); 
 
   std::vector<Armor> detect(const cv::Mat & input); 
+
+  /**
+   * @brief 结合 YOLO 结果的检测入口；若 YOLO 为空则回退到纯传统检测
+   * @param input 原始图像
+   * @param yolo_armors YOLO 检测结果
+   */
+  std::vector<detection::ArmorData> detect(const cv::Mat & input,
+                                           const std::vector<detection::ArmorData> & yolo_armors);
 
   cv::Mat preprocessImage(const cv::Mat & input); //预处理，得到二值图
   std::vector<Light> findLights(const cv::Mat & rbg_img, const cv::Mat & binary_img); //检测灯条
@@ -41,6 +52,14 @@ public:
   //调试
   cv::Mat getAllNumbersImage(); //获取所有装甲板数字图像的拼接图
   void drawResults(cv::Mat & img,cv::Point2f &center_point); //在图像上绘制检测结果
+
+  /**
+   * @brief 获取图像中的感兴趣区域(ROI)
+   * @param image 输入图像
+   * @param points 四个角点坐标
+   * @param ROI 输出的感兴趣区域
+   */
+  void get_roi(cv::Mat& image, std::vector<cv::Point>& points, cv::Mat& ROI);
 
   int binary_thres;
   //int detect_color;

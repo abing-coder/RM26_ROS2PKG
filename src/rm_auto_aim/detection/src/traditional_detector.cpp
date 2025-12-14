@@ -1,12 +1,11 @@
 #include "traditional_detector.hpp"
 #include "yolo_detection.hpp"
-
-int detect_color = detection::DetectionArmor::detect_color;//0-红色，1-蓝色
-Detector::Detector(const int & bin_thres, const LightParams & l, const ArmorParams & a)
+TraditionalDetector::TraditionalDetector(const int & bin_thres, const LightParams & l, const ArmorParams & a)
 : binary_thres(bin_thres), l(l), a(a){};
 
-cv::Mat Detector::preprocessImage(const cv::Mat & rgb_img)
+cv::Mat TraditionalDetector::preprocessImage(const cv::Mat & rgb_img)
 {
+  const int detect_color = detection::DetectionArmor::detect_color;
   if(detect_color==1)
   {
     cv::Mat gray_img;
@@ -34,7 +33,7 @@ cv::Mat Detector::preprocessImage(const cv::Mat & rgb_img)
   return cv::Mat();
   
 }
-bool Detector::isLight(const Light & light)
+bool TraditionalDetector::isLight(const Light & light)
 {
   // The ratio of light (short side / long side)
   float ratio = light.width / light.length;
@@ -56,7 +55,7 @@ bool Detector::isLight(const Light & light)
   return is_light;
 }
 
-std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat & binary_img)
+std::vector<Light> TraditionalDetector::findLights(const cv::Mat & rbg_img, const cv::Mat & binary_img)
 {
   using std::vector;
   vector<vector<cv::Point>> contours;
@@ -103,10 +102,11 @@ std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat &
   return lights;
 }
 
-std::vector<Armor> Detector::matchLights(const std::vector<Light> & lights)
+std::vector<Armor> TraditionalDetector::matchLights(const std::vector<Light> & lights)
 {
   std::vector<Armor> armors;
   // this->debug_armors.data.clear();
+  const int detect_color = detection::DetectionArmor::detect_color;
 
   // Loop all the pairing of lights
   for (auto light_1 = lights.begin(); light_1 != lights.end(); light_1++) {
@@ -129,7 +129,7 @@ std::vector<Armor> Detector::matchLights(const std::vector<Light> & lights)
   return armors;
 }
 
-bool Detector::containLight(
+bool TraditionalDetector::containLight(
   const Light & light_1, const Light & light_2, const std::vector<Light> & lights)
 {
   auto points = std::vector<cv::Point2f>{light_1.top, light_1.bottom, light_2.top, light_2.bottom};
@@ -149,7 +149,7 @@ bool Detector::containLight(
   return false;
 }
 
-ArmorType Detector::isArmor(const Light & light_1, const Light & light_2)//判断是否为装甲板及类型
+ArmorType TraditionalDetector::isArmor(const Light & light_1, const Light & light_2)//判断是否为装甲板及类型
 {
   // Ratio of the length of 2 lights (short side / long side)
   float light_length_ratio = light_1.length < light_2.length ? light_1.length / light_2.length
@@ -190,7 +190,7 @@ ArmorType Detector::isArmor(const Light & light_1, const Light & light_2)//判�
 
   return type;
 }
-cv::Mat Detector::getAllNumbersImage() ///获取所有数字图片
+cv::Mat TraditionalDetector::getAllNumbersImage() ///获取所有数字图片
 {
   if (armors_.empty()) {
     return cv::Mat(cv::Size(20, 28), CV_8UC1);
@@ -240,7 +240,7 @@ cv::Point2f getLineIntersection(const std::pair<cv::Point2f, cv::Point2f>& line1
 }
 
 
-void Detector::drawResults(cv::Mat & img,cv::Point2f &center_point)
+void TraditionalDetector::drawResults(cv::Mat & img,cv::Point2f &center_point)
 {
   // Draw Lights
   for (const auto & light : lights_) {
@@ -268,11 +268,70 @@ void Detector::drawResults(cv::Mat & img,cv::Point2f &center_point)
       cv::Scalar(0, 255, 255), 2);
   }
 }
-std::vector<Armor> Detector::detect(const cv::Mat & input)
+
+void TraditionalDetector::get_roi(cv::Mat& image, std::vector<cv::Point>& points, cv::Mat& ROI)
+{
+    cv::Mat mask = cv::Mat::zeros(image.size(), CV_8UC1);
+
+    cv::Point lt = points[0];  // 左上角
+    cv::Point rb = points[2];  // 右下角
+    cv::Point lb = points[1];  // 左下角
+    cv::Point rt = points[3];  // 右上角
+
+    cv::polylines(image, std::vector<cv::Point>{lt, rt, rb, lb}, true, cv::Scalar(255, 0, 0), 2);
+    std::vector<cv::Point> roi_points = {lt, rt, rb, lb};
+    cv::fillConvexPoly(mask, roi_points, cv::Scalar(255, 0, 0));
+    cv::bitwise_and(image, image, ROI, mask);
+}
+std::vector<Armor> TraditionalDetector::detect(const cv::Mat & input)
 {
     cv::Mat binary_img;
     binary_img = preprocessImage(input);
     lights_ = findLights(input, binary_img);
     armors_ = matchLights(lights_);
     return armors_;
+}
+
+std::vector<detection::ArmorData> TraditionalDetector::detect(
+    const cv::Mat & input,
+    const std::vector<detection::ArmorData> & yolo_armors)
+{
+    std::vector<detection::ArmorData> results;
+    if (!input.empty()) {
+        const cv::Point optical_center(input.cols / 2, input.rows / 2);
+
+        // 优先复用 YOLO 结果
+        if (!yolo_armors.empty()) {
+            results.reserve(yolo_armors.size());
+            for (const auto & armor : yolo_armors) {
+                detection::ArmorData enriched = armor;
+                enriched.optical_center = optical_center;
+                enriched.delta_x = (enriched.center_point.x - optical_center.x) + GUN_CAM_DISTANCE_X;
+                enriched.delta_y = (optical_center.y - enriched.center_point.y) + GUN_CAM_DISTANCE_Y;
+                enriched.flag = 1;
+                results.push_back(enriched);
+            }
+            return results;
+        }
+
+        // 回退到纯传统检测
+        const auto armors_only_traditional = detect(input);
+        results.reserve(armors_only_traditional.size());
+        for (const auto & armor : armors_only_traditional) {
+            detection::ArmorData data{};
+            data.center_point = armor.center;
+            data.optical_center = optical_center;
+            data.delta_x = (data.center_point.x - optical_center.x) + GUN_CAM_DISTANCE_X;
+            data.delta_y = (optical_center.y - data.center_point.y) + GUN_CAM_DISTANCE_Y;
+            data.flag = 1;
+            data.p1 = armor.left_light.top;
+            data.p2 = armor.right_light.top;
+            data.p3 = armor.right_light.bottom;
+            data.p4 = armor.left_light.bottom;
+            data.ID = 0;
+            data.color = detection::DetectionArmor::detect_color == 0 ? detection::Color::RED : detection::Color::BLUE;
+            results.push_back(data);
+        }
+    }
+    return results;
 }

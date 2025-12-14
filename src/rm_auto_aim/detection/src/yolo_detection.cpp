@@ -4,17 +4,7 @@
 #include <thread>
 #include <cmath>
 
-// 来自 traditional_detector.cpp，用于在传统视觉流程前同步阵营颜色
-extern int detect_color;
-
 using namespace detection;
-
-// 传统检测器实例（使用 TX2 的方式）
-namespace {
-    Detector::LightParams l_params;
-    Detector::ArmorParams a_params;
-    Detector detector(70, l_params, a_params);
-}  // namespace
 
 // 静态成员变量定义（共享变量，其他节点可能使用）
 int detection::DetectionArmor::detect_color = 0;  // 0: 红色，1: 蓝色
@@ -30,10 +20,10 @@ DetectionArmor::DetectionArmor(std::string& model_path, std::string video_path)
       fps(0.0)
 {
     // 初始化传统视觉检测器（使用默认参数）
-    Detector::LightParams light_params;
-    Detector::ArmorParams armor_params;
+    TraditionalDetector::LightParams light_params;
+    TraditionalDetector::ArmorParams armor_params;
     int binary_threshold = 100;  // 默认二值化阈值
-    m_traditional_detector = std::make_unique<Detector>(binary_threshold, light_params, armor_params);
+    m_traditional_detector = std::make_unique<TraditionalDetector>(binary_threshold, light_params, armor_params);
 
     // 如果提供了视频路径，则初始化视频捕获
     if (!video_path.empty()) {
@@ -47,10 +37,10 @@ DetectionArmor::DetectionArmor(std::string& model_path, bool ifcountTime)
       fps(0.0)
 {
     // 初始化传统视觉检测器（使用默认参数）
-    Detector::LightParams light_params;
-    Detector::ArmorParams armor_params;
+    TraditionalDetector::LightParams light_params;
+    TraditionalDetector::ArmorParams armor_params;
     int binary_threshold = 100;  // 默认二值化阈值
-    m_traditional_detector = std::make_unique<Detector>(binary_threshold, light_params, armor_params);
+    m_traditional_detector = std::make_unique<TraditionalDetector>(binary_threshold, light_params, armor_params);
 }
 
 /**
@@ -83,7 +73,7 @@ void getAngle(cv::Point2f point, float &yaw, float &pitch,
     yaw = std::atan(tan_yaw);
 }
 
-DetectionArmor::~DetectionArmor() 
+DetectionArmor::~DetectionArmor()
 {
     // std::cout << "quit from detection" << std::endl;
     clearHeap();
@@ -95,27 +85,6 @@ void DetectionArmor::clearHeap()
     cv::destroyAllWindows();
 }
 
-/**
- * @brief 获取图像中的感兴趣区域(ROI)
- * @param image 输入图像
- * @param points 四个角点坐标
- * @param ROI 输出的感兴趣区域
- */
-void get_roi(cv::Mat& image, std::vector<cv::Point>& points, cv::Mat& ROI)
-{ 
-    cv::Mat mask = cv::Mat::zeros(image.size(), CV_8UC1);
-    
-    cv::Point lt = points[0];  // 左上角
-    cv::Point rb = points[2];  // 右下角
-    cv::Point lb = points[1];  // 左下角
-    cv::Point rt = points[3];  // 右上角
-    
-    cv::polylines(image, std::vector<cv::Point>{lt, rt, rb, lb}, true, cv::Scalar(255, 0, 0), 2);
-    std::vector<cv::Point> roi_points = {lt, rt, rb, lb};
-    cv::fillConvexPoly(mask, roi_points, cv::Scalar(255, 0, 0));
-    cv::bitwise_and(image, image, ROI, mask);
-}
-
 void DetectionArmor::drawObject(cv::Mat& image, std::vector<ArmorData>& datas)
 {
     // 计算并绘制光心点（图像中心）
@@ -123,37 +92,17 @@ void DetectionArmor::drawObject(cv::Mat& image, std::vector<ArmorData>& datas)
 
     for (ArmorData& d : datas)
     {
-        // 扩展边界，创建 ROI（TX2 分支逻辑）
-        cv::Point lt = cv::Point(d.p1.x - 20, d.p1.y - 20);  // 左上角
-        cv::Point rb = cv::Point(d.p3.x + 20, d.p3.y + 20);  // 右下角
-        cv::Point lb = cv::Point(d.p2.x - 20, d.p2.y + 20);  // 左下角
-        cv::Point rt = cv::Point(d.p4.x + 20, d.p4.y - 20);  // 右上角
-        std::vector<cv::Point> points = {lt, rt, rb, lb};
-
-        // 提取 ROI 并运行传统检测器
-        cv::Mat ROI;
-        get_roi(image, points, ROI);
-        detector.detect(ROI);
-        cv::Point2f detected_center;
-        detector.drawResults(image, detected_center);
-
-        // 更新中心点为传统检测器的结果
-        d.center_point = cv::Point(static_cast<int>(detected_center.x), static_cast<int>(detected_center.y));
-
-        // 设置标志位
-        if (!datas.empty()) {
-            d.flag = 1;
-        } else {
-            d.flag = 0;
-        }
-
-        d.optical_center = optical_center;
-        d.delta_x = (d.center_point.x - d.optical_center.x) + GUN_CAM_DISTANCE_X;
-        d.delta_y = (d.optical_center.y - d.center_point.y) + GUN_CAM_DISTANCE_Y;
-
         // 绘制四个角点
         std::vector<cv::Point> armor_points = {d.p1, d.p2, d.p3, d.p4};
         cv::polylines(image, armor_points, true, cv::Scalar(0, 255, 0), 2);
+
+        // 计算YOLO检测的中心点
+        d.center_point.x = (d.p1.x + d.p2.x + d.p3.x + d.p4.x) / 4;
+        d.center_point.y = (d.p1.y + d.p2.y + d.p3.y + d.p4.y) / 4;
+        d.optical_center = optical_center;
+        d.delta_x = (d.center_point.x - d.optical_center.x) + GUN_CAM_DISTANCE_X;
+        d.delta_y = (d.optical_center.y - d.center_point.y) + GUN_CAM_DISTANCE_Y;
+        d.flag = 1;
 
         // 绘制中心点
         cv::circle(image, d.center_point, 3, cv::Scalar(0, 0, 255), -1);
@@ -172,6 +121,9 @@ void DetectionArmor::drawObject(cv::Mat& image, std::vector<ArmorData>& datas)
 
     cv::putText(image, "fps:" + std::to_string(static_cast<int>(fps)), cv::Point(10, 30),
                 cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+
+    // 显示图像
+    cv::imshow("Detection", image);
 }
 
 inline double DetectionArmor::sigmoid(double x) 
@@ -251,7 +203,8 @@ void DetectionArmor::parseDetections(const cv::Mat& output_buffer,
         color_class.push_back(color_id.x);
 
         // 检测颜色过滤
-        if ((detect_color == 0 && color_id.x == 1) || (detect_color == 1 && color_id.x == 0)) continue;
+        if ((DetectionArmor::detect_color == 0 && color_id.x == 1) ||
+            (DetectionArmor::detect_color == 1 && color_id.x == 0)) continue;
 
         // 获取第一个输出向量的指针
         const float* f_ptr = output_buffer.ptr<float>(i);

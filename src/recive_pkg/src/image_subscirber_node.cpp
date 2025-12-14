@@ -5,11 +5,10 @@ namespace armor_detection
     // 构造函数接收模型路径
     ImageSubscriber::ImageSubscriber(const std::string& model_path)
         : Node("image_subscriber"),
-        model_path_copy_(model_path),
-        detectionArmor_(model_path_copy_, false)
+        detector_(model_path)
     {
         // 设置检测颜色: 0 = 红色, 1 = 蓝色
-        detection::DetectionArmor::detect_color = 0;
+        detector_.set_detect_color(0);
         // 使用 sensor_data 初始化的 QoS（但我们显式将发布 target_delta 的 QoS 设为 reliable + transient_local）
         auto image_qos = rclcpp::QoS(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_sensor_data));
         image_qos.best_effort(); // 保持摄像头订阅为 sensor_data 风格（通常 best-effort）
@@ -65,6 +64,7 @@ namespace armor_detection
                 );
                 fps_start_time_ = now;  // 重置起始时间
             }
+            
             if (last_publish_time_.time_since_epoch().count() != 0) {
                 if (now - last_publish_time_ < publish_interval_) {
                     return; // 跳过本次发布
@@ -74,49 +74,38 @@ namespace armor_detection
             // 转为 OpenCV 格式（零拷贝）
             auto cv_ptr = cv_bridge::toCvShare(msg, "bgr8");
             const cv::Mat& image = cv_ptr->image;
-            detectionArmor_.start_detection(image);
-
-            std::vector<detection::ArmorData> armors = detectionArmor_.getdata();
-
-            float optical_center_x = 0.0f;
-            float optical_center_y = 0.0f;
-            float delta_x = 0.0f;
-            float delta_y = 0.0f;
-            float flag = 0.0f;
-            float target_x = 0.0f;
-            float target_y = 0.0f;
+            
+            auto armors = detector_.detect(image);
 
             if (!armors.empty()) {
                 detection::ArmorData target = armors[0];
-                optical_center_x = target.optical_center.x;
-                optical_center_y = target.optical_center.y;
-                delta_x = target.delta_x;
-                delta_y = target.delta_y;
-                flag = float(target.flag);
-                target_x = static_cast<float>(target.center_point.x);
-                target_y = static_cast<float>(target.center_point.y);
+                optical_center_x_ = target.optical_center.x;
+                optical_center_y_ = target.optical_center.y;
+                delta_x_ = target.delta_x;
+                delta_y_ = target.delta_y;
+                flag_ = float(target.flag);
+                target_x_ = static_cast<float>(target.center_point.x);
+                target_y_ = static_cast<float>(target.center_point.y);
 
-                auto delta_msg = geometry_msgs::msg::Point();
-                delta_msg.x = delta_x;
-                delta_msg.y = delta_y;
-                delta_msg.z = 0.0f;
-                delta_publisher_->publish(delta_msg);
+                delta_msg_.x = delta_x_;
+                delta_msg_.y = delta_y_;
+                delta_msg_.z = 0.0f;
+                delta_publisher_->publish(delta_msg_);
 
-                auto target_info_msg = std_msgs::msg::Float32MultiArray();
-                target_info_msg.data = {
-                    target_x,
-                    target_y,
-                    optical_center_x,
-                    optical_center_y,
-                    delta_x,
-                    delta_y,
-                    flag
+                target_info_msg_.data = {
+                    target_x_,
+                    target_y_,
+                    optical_center_x_,
+                    optical_center_y_,
+                    delta_x_,
+                    delta_y_,
+                    flag_
                 };
-                target_info_publisher_->publish(target_info_msg);
+                target_info_publisher_->publish(target_info_msg_);
 
                 RCLCPP_INFO(this->get_logger(),
                     "目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f) | 标志: %.1f",
-                    target_x, target_y, optical_center_x, optical_center_y, delta_x, delta_y, flag);
+                    target_x_, target_y_, optical_center_x_, optical_center_y_, delta_x_, delta_y_, flag_);
                 last_publish_time_ = now; // 记录发布时间
             }
 

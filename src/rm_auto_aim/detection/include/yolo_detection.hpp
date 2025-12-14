@@ -146,7 +146,7 @@ namespace detection
         std::vector<ArmorData> m_armors_datas;
 
         /// 传统视觉检测器
-        std::unique_ptr<Detector> m_traditional_detector;
+        std::unique_ptr<TraditionalDetector> m_traditional_detector;
 
         /**
          * @brief 推理过程

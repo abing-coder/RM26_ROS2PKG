@@ -18,6 +18,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SRC
       /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp
       /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp
+      /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/detect.cpp
       /home/ubuntu/桌面/Robomaster/RM26_ROS2PKG/src/rm_auto_aim/detection/src/inference_engine.cpp)
 
 # find dependencies
