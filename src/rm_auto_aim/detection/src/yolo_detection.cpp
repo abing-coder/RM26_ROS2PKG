@@ -9,51 +9,11 @@ extern int detect_color;
 
 using namespace detection;
 
+// 传统检测器实例（使用 TX2 的方式）
 namespace {
-
-// 将传统视觉的 Armor 结果转换为通用 ArmorData
-ArmorData convertTraditionalArmor(const Armor& armor, int current_color)
-{
-    ArmorData data;
-
-    cv::Point2f left_pts[4];
-    cv::Point2f right_pts[4];
-    armor.left_light.points(left_pts);
-    armor.right_light.points(right_pts);
-
-    float min_x = std::min({left_pts[0].x, left_pts[1].x, left_pts[2].x, left_pts[3].x,
-                            right_pts[0].x, right_pts[1].x, right_pts[2].x, right_pts[3].x});
-    float min_y = std::min({left_pts[0].y, left_pts[1].y, left_pts[2].y, left_pts[3].y,
-                            right_pts[0].y, right_pts[1].y, right_pts[2].y, right_pts[3].y});
-    float max_x = std::max({left_pts[0].x, left_pts[1].x, left_pts[2].x, left_pts[3].x,
-                            right_pts[0].x, right_pts[1].x, right_pts[2].x, right_pts[3].x});
-    float max_y = std::max({left_pts[0].y, left_pts[1].y, left_pts[2].y, left_pts[3].y,
-                            right_pts[0].y, right_pts[1].y, right_pts[2].y, right_pts[3].y});
-
-    data.p1 = cv::Point(static_cast<int>(min_x), static_cast<int>(min_y));
-    data.p2 = cv::Point(static_cast<int>(max_x), static_cast<int>(min_y));
-    data.p3 = cv::Point(static_cast<int>(max_x), static_cast<int>(max_y));
-    data.p4 = cv::Point(static_cast<int>(min_x), static_cast<int>(max_y));
-
-    data.center_point = cv::Point(static_cast<int>(armor.center.x), static_cast<int>(armor.center.y));
-    data.ID = 0;  // 传统视觉当前未识别数字，设为0占位
-    data.color = (current_color == 0) ? Color::RED : Color::BLUE;
-
-    return data;
-}
-
-// 简单的中心点去重，防止与 YOLO 结果重复返回
-bool isDuplicate(const std::vector<ArmorData>& existing, const cv::Point2f& center, double threshold = 15.0)
-{
-    for (const auto& item : existing) {
-        if (cv::norm(center - cv::Point2f(static_cast<float>(item.center_point.x),
-                                          static_cast<float>(item.center_point.y))) < threshold) {
-            return true;
-        }
-    }
-    return false;
-}
-
+    Detector::LightParams l_params;
+    Detector::ArmorParams a_params;
+    Detector detector(70, l_params, a_params);
 }  // namespace
 
 // 静态成员变量定义（共享变量，其他节点可能使用）
@@ -79,6 +39,18 @@ DetectionArmor::DetectionArmor(std::string& model_path, std::string video_path)
     if (!video_path.empty()) {
         m_cap = cv::VideoCapture(video_path);
     }
+}
+
+// 匹配 TX2 分支的构造函数重载
+DetectionArmor::DetectionArmor(std::string& model_path, bool ifcountTime)
+    : m_inference_engine(model_path, INPUT_SIZE, INFERENCE_THREADS),
+      fps(0.0)
+{
+    // 初始化传统视觉检测器（使用默认参数）
+    Detector::LightParams light_params;
+    Detector::ArmorParams armor_params;
+    int binary_threshold = 100;  // 默认二值化阈值
+    m_traditional_detector = std::make_unique<Detector>(binary_threshold, light_params, armor_params);
 }
 
 /**
@@ -146,14 +118,34 @@ void get_roi(cv::Mat& image, std::vector<cv::Point>& points, cv::Mat& ROI)
 
 void DetectionArmor::drawObject(cv::Mat& image, std::vector<ArmorData>& datas)
 {
-    // 绘制装甲板的边界框
     // 计算并绘制光心点（图像中心）
     cv::Point optical_center(image.cols / 2, image.rows / 2);
 
     for (ArmorData& d : datas)
     {
-        // 使用YOLO检测的中心点，不要覆盖它！
-        // d.center_point 已经在 infer() 中计算好了
+        // 扩展边界，创建 ROI（TX2 分支逻辑）
+        cv::Point lt = cv::Point(d.p1.x - 20, d.p1.y - 20);  // 左上角
+        cv::Point rb = cv::Point(d.p3.x + 20, d.p3.y + 20);  // 右下角
+        cv::Point lb = cv::Point(d.p2.x - 20, d.p2.y + 20);  // 左下角
+        cv::Point rt = cv::Point(d.p4.x + 20, d.p4.y - 20);  // 右上角
+        std::vector<cv::Point> points = {lt, rt, rb, lb};
+
+        // 提取 ROI 并运行传统检测器
+        cv::Mat ROI;
+        get_roi(image, points, ROI);
+        detector.detect(ROI);
+        cv::Point2f detected_center;
+        detector.drawResults(image, detected_center);
+
+        // 更新中心点为传统检测器的结果
+        d.center_point = cv::Point(static_cast<int>(detected_center.x), static_cast<int>(detected_center.y));
+
+        // 设置标志位
+        if (!datas.empty()) {
+            d.flag = 1;
+        } else {
+            d.flag = 0;
+        }
 
         d.optical_center = optical_center;
         d.delta_x = (d.center_point.x - d.optical_center.x) + GUN_CAM_DISTANCE_X;
@@ -382,20 +374,8 @@ std::vector<ArmorData>& DetectionArmor::detect(const cv::Mat& input_image)
     m_armors_datas.clear();
     m_img = input_image;  // 直接使用输入图像，PPP自动处理BGR→RGB、u8→f32、归一化
 
-    auto start = std::chrono::high_resolution_clock::now();
     infer();
-    auto end = std::chrono::high_resolution_clock::now();
     
-    // fps 计算
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    if (duration > 0) {
-        fps = 1000000.0 / duration;  
-    } else {
-        fps = 0.0;  
-    }
-    
-    drawObject(m_img, m_armors_datas);
-
     return m_armors_datas;
 }
 

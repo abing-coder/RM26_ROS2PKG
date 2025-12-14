@@ -47,9 +47,11 @@ int main(int argc, char** argv)
     
     std::string current_path = cwd;
     
-    // 设置模型路径和视频路径
-    std::string model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/3_int8_new.xml";
-    std::string video_dir = current_path + "/src/rm_auto_aim/detection/video/";
+    // 设置模型路径和视频路径 - 使用new.xml（可根据需要替换）
+    std::string model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/new.xml";
+    // model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/new_fp16.xml";
+    // model_path = current_path + "/src/rm_auto_aim/detection/model/IR_MODEL/new_int8.xml";
+    std::string video_dir = current_path + "/src/rm_auto_aim/detection/video/resized_640/";
     
     // 检查视频目录是否存在
     if (!file_exists(video_dir)) {
@@ -159,7 +161,7 @@ int main(int argc, char** argv)
 
             // 显示结果
             #ifdef TEST_MODE
-            detectionArmor.showImage();
+            // detectionArmor.showImage();
             #endif
         }
 

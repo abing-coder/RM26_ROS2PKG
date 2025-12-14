@@ -6,7 +6,7 @@ namespace armor_detection
     ImageSubscriber::ImageSubscriber(const std::string& model_path)
         : Node("image_subscriber"),
         model_path_copy_(model_path),
-        detectionArmor_(model_path_copy_, std::string{})
+        detectionArmor_(model_path_copy_, false)
     {
         // 设置检测颜色: 0 = 红色, 1 = 蓝色
         detection::DetectionArmor::detect_color = 0;
@@ -74,18 +74,27 @@ namespace armor_detection
             // 转为 OpenCV 格式（零拷贝）
             auto cv_ptr = cv_bridge::toCvShare(msg, "bgr8");
             const cv::Mat& image = cv_ptr->image;
+            detectionArmor_.start_detection(image);
 
-            
-            std::vector<detection::ArmorData> armors = detectionArmor_.detect(image);
+            std::vector<detection::ArmorData> armors = detectionArmor_.getdata();
+
+            float optical_center_x = 0.0f;
+            float optical_center_y = 0.0f;
+            float delta_x = 0.0f;
+            float delta_y = 0.0f;
+            float flag = 0.0f;
+            float target_x = 0.0f;
+            float target_y = 0.0f;
 
             if (!armors.empty()) {
                 detection::ArmorData target = armors[0];
-
-                // 计算差值
-                float optical_center_x = target.optical_center.x;
-                float optical_center_y = target.optical_center.y;
-                float delta_x = target.delta_x;
-                float delta_y = target.delta_y;
+                optical_center_x = target.optical_center.x;
+                optical_center_y = target.optical_center.y;
+                delta_x = target.delta_x;
+                delta_y = target.delta_y;
+                flag = float(target.flag);
+                target_x = static_cast<float>(target.center_point.x);
+                target_y = static_cast<float>(target.center_point.y);
 
                 auto delta_msg = geometry_msgs::msg::Point();
                 delta_msg.x = delta_x;
@@ -95,19 +104,19 @@ namespace armor_detection
 
                 auto target_info_msg = std_msgs::msg::Float32MultiArray();
                 target_info_msg.data = {
-                    static_cast<float>(target.center_point.x),
-                    static_cast<float>(target.center_point.y),
+                    target_x,
+                    target_y,
                     optical_center_x,
                     optical_center_y,
                     delta_x,
-                    delta_y
+                    delta_y,
+                    flag
                 };
                 target_info_publisher_->publish(target_info_msg);
 
-                // RCLCPP_INFO(this->get_logger(),
-                //     "检测到目标 - 目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f)",
-                //     static_cast<float>(target.center_point.x), static_cast<float>(target.center_point.y),
-                //     optical_center_x, optical_center_y, delta_x, delta_y);
+                RCLCPP_INFO(this->get_logger(),
+                    "目标: (%.1f, %.1f) | 光心: (%.1f, %.1f) | 差值: (%.1f, %.1f) | 标志: %.1f",
+                    target_x, target_y, optical_center_x, optical_center_y, delta_x, delta_y, flag);
                 last_publish_time_ = now; // 记录发布时间
             }
 

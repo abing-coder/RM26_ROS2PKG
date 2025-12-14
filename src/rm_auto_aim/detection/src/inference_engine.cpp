@@ -60,16 +60,14 @@ void InferenceEngine::recompile_with_ppp(int height, int width)
     model = ppp.build();
 
 
-    // 针对实时单帧推理的最优配置
+    // 针对实时单帧推理的最优配置（自动混合精度）
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)},
         {ov::inference_num_threads(8)},
         {ov::num_streams(1)},
         {ov::hint::enable_hyper_threading(false)},
         {ov::hint::enable_cpu_pinning(true)},
-        {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 对 12/13/14 代混合核减少抖动
-        // inference_precision 仅接受 f32/f16/bf16/undefined；INT8 模型交由插件自行选择 INT8 路径
-        {ov::hint::inference_precision(is_int8 ? ov::element::undefined : ov::element::bf16)},
+        {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY) }, // 对 12/13/14 代混合核减少抖动
         {ov::log::level(ov::log::Level::WARNING)}
     };
 

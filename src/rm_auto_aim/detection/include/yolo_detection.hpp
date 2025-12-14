@@ -36,9 +36,10 @@ namespace detection
         float delta_y;             ///< 目标中心点与光心点的y差值
         // float length;           ///< 长度
         // float width;            ///< 宽度
+        int flag = 0;              ///< 判断是否有装甲板
 
         cv::Point p1;  ///< 左上角点
-        cv::Point p2;  ///< 右上角点  
+        cv::Point p2;  ///< 右上角点
         cv::Point p3;  ///< 右下角点
         cv::Point p4;  ///< 左下角点
 
@@ -62,14 +63,21 @@ namespace detection
         DetectionArmor& operator=(const DetectionArmor&) = delete;  ///< 禁止拷贝赋值
         DetectionArmor(DetectionArmor&&) = default;  ///< 默认移动构造
         DetectionArmor& operator=(DetectionArmor&&) = default;  ///< 默认移动赋值
-        
+
         /**
          * @brief 构造函数
          * @param model_path 模型路径
          * @param video_path 视频路径（可选）
          */
         DetectionArmor(std::string& model_path, std::string video_path = "");
-        
+
+        /**
+         * @brief 构造函数重载（匹配 TX2 分支）
+         * @param model_path 模型路径
+         * @param ifcountTime 是否计时（TX2 分支参数）
+         */
+        DetectionArmor(std::string& model_path, bool ifcountTime);
+
         ~DetectionArmor();
 
         std::vector<ArmorData>& detect(const cv::Mat& inputMat);

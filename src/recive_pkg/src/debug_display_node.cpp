@@ -33,8 +33,6 @@ private:
       }
       // 使用 CvShare 避免拷贝；源编码默认 bgr8
       auto cv_ptr = cv_bridge::toCvShare(msg, "bgr8");
-      cv::imshow(window_name_, cv_ptr->image);
-      cv::waitKey(1);
     } catch (const std::exception & e) {
       RCLCPP_WARN(this->get_logger(), "Display failed: %s", e.what());
     }
