@@ -20,15 +20,6 @@ InferenceEngine::~InferenceEngine()
 
 void InferenceEngine::initialize_model(const std::string& model_path, int inference_threads)
 {
-    // 实时推理优化：使用较少的线程数以减少调度开销
-    int threads = inference_threads > 0 ? inference_threads : 4;
-    const int hw_threads = static_cast<int>(std::thread::hardware_concurrency());
-    if (hw_threads > 0) {
-        threads = std::min(threads, hw_threads);
-    }
-    threads = std::max(1, threads);
-    m_inference_threads = threads;
-
     // 读取原始模型（延迟编译，等待知道输入尺寸后再使用PPP编译）
     m_network = m_core.read_model(model_path);
 }
@@ -68,13 +59,17 @@ void InferenceEngine::recompile_with_ppp(int height, int width)
     // 构建带预处理的模型
     model = ppp.build();
 
+
     // 针对实时单帧推理的最优配置
     ov::AnyMap config = {
         {ov::hint::performance_mode(ov::hint::PerformanceMode::LATENCY)},
-        {ov::hint::execution_mode(ov::hint::ExecutionMode::PERFORMANCE)},
-        {ov::inference_num_threads(m_inference_threads)},
+        {ov::inference_num_threads(8)},
         {ov::num_streams(1)},
+        {ov::hint::enable_hyper_threading(false)},
         {ov::hint::enable_cpu_pinning(true)},
+        {ov::hint::scheduling_core_type(ov::hint::SchedulingCoreType::PCORE_ONLY)}, // 对 12/13/14 代混合核减少抖动
+        // inference_precision 仅接受 f32/f16/bf16/undefined；INT8 模型交由插件自行选择 INT8 路径
+        {ov::hint::inference_precision(is_int8 ? ov::element::undefined : ov::element::bf16)},
         {ov::log::level(ov::log::Level::WARNING)}
     };
 
