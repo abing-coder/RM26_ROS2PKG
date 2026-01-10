@@ -1,0 +1,2 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera/CMakeCache.txt is different than the directory /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/build/hik_camera where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mWARNING: Target "hik_camera" requests linking to directory "/usr/include/opencv4".  Targets may link only to libraries.  CMake is dropping the item.[0m

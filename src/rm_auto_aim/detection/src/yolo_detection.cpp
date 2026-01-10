@@ -276,11 +276,15 @@ double fx = cam[0];
 double fy = cam[4];
 cv::Mat rev;
 cv::Mat tvc;
-
-
-void calculateGimbalAngles(double delta_x, double delta_y, double fx, double fy,double& yaw, double& pitch) {
-    yaw = atan(delta_x / fx) * 180.0 / M_PI;
-    pitch = atan(delta_y / fy) * 180.0 / M_PI;
+void calculateGimbalAngles(double delta_x, double delta_y, double fx, double fy, double& yaw, double& pitch) {
+    // 归一化像素偏移（将像素差值转换为归一化坐标）
+    double normalized_x = delta_x / fx;
+    double normalized_y = delta_y / fy;
+    
+    // 使用 atan2 获得完整的角度范围（-180° 到 180°），并正确处理符号
+    // 假设目标在归一化平面的深度为1（z=1）
+    yaw = atan2(normalized_x, 1.0) * 180.0 / M_PI;
+    pitch = atan2(normalized_y, 1.0) * 180.0 / M_PI;
 }
 
 void DetectionArmor::drawObject(Mat& image, vector<ArmorData>& datas)

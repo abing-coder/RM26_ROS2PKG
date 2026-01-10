@@ -1,0 +1,64 @@
+[0.010s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera -- -j14 -l14
+[0.011s] [0mCMake Error: The current CMakeCache.txt directory /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera/CMakeCache.txt is different than the directory /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/build/hik_camera where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.022s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.143s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.144s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.148s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.158s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.173s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.174s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.230s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.309s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.319s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.320s] -- Configured cppcheck include dirs: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/include;/home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/hikSDK/include
+[0.320s] -- Configured cppcheck exclude dirs and/or files: 
+[0.321s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.322s] -- Added test 'lint_cmake' to check CMake code style
+[0.323s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.326s] -- Added test 'xmllint' to check XML markup files
+[0.326s] -- Configuring done
+[0.329s] [0mWARNING: Target "hik_camera" requests linking to directory "/usr/include/opencv4".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[0.333s] -- Generating done
+[0.334s] -- Build files have been written to: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/build/hik_camera
+[0.357s] [35m[1mConsolidate compiler generated dependencies of target hik_camera[0m
+[0.358s] [35m[1mConsolidate compiler generated dependencies of target hik_camera_node[0m
+[0.374s] [ 50%] Built target hik_camera_node
+[0.374s] [100%] Built target hik_camera
+[0.385s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera -- -j14 -l14
+[0.391s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera
+[0.394s] -- Install configuration: ""
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMediaProcess.so
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMvCameraControl.so
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMVRender.so
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libFormatConversion.so
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMvUsb3vTL.so
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/hik_camera/hik_camera_node
+[0.394s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/library_path.sh
+[0.395s] -- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/library_path.dsv
+[0.396s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/libhik_camera.so
+[0.396s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/config
+[0.396s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/config/camera_info.yaml
+[0.396s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/config/camera_params.yaml
+[0.396s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/launch
+[0.396s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/launch/hik_camera.launch.py
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/package_run_dependencies/hik_camera
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/parent_prefix_path/hik_camera
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/ament_prefix_path.sh
+[0.397s] -- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/ament_prefix_path.dsv
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/path.sh
+[0.397s] -- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/path.dsv
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.bash
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.sh
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.zsh
+[0.397s] -- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.dsv
+[0.397s] -- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/package.dsv
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/packages/hik_camera
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/rclcpp_components/hik_camera
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig.cmake
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig-version.cmake
+[0.397s] -- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/package.xml
+[0.398s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera

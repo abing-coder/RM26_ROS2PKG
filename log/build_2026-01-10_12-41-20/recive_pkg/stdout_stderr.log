@@ -1,0 +1,50 @@
+Consolidate compiler generated dependencies of target recive_pkg
+[  9%] Building CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o
+[ 18%] Building CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o
+[ 36%] Building CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o
+[ 36%] Building CXX object CMakeFiles/recive_pkg.dir/main.cpp.o
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In function ‘float calculateInterArea(const CircleF&, const RectF&)’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:244:11: warning: unused variable ‘rectArea’ [-Wunused-variable]
+  244 |     float rectArea = (r.x2 - r.x1) * (r.y2 - r.y1);
+      |           ^~~~~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:247:11: warning: unused variable ‘circleArea’ [-Wunused-variable]
+  247 |     float circleArea = M_PI * c.r * c.r;
+      |           ^~~~~~~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::run()’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:375:25: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  375 |         if (frame_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT)))
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::drawTracks(cv::Mat&)’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:550:20: warning: variable ‘color’ set but not used [-Wunused-but-set-variable]
+  550 |             Scalar color = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    ^~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:553:19: warning: variable ‘tl’ set but not used [-Wunused-but-set-variable]
+  553 |             Point tl = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   ^~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:554:19: warning: variable ‘br’ set but not used [-Wunused-but-set-variable]
+  554 |             Point br = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   ^~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::format_print_data_test()’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:630:15: warning: variable ‘d’ set but not used [-Wunused-but-set-variable]
+  630 |     for (auto d : getdata())
+      |               ^
+[ 45%] Linking CXX executable recive_pkg
+[100%] Built target recive_pkg
+-- Install configuration: ""
+-- Installing: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/lib/recive_pkg/recive_pkg
+-- Set runtime path of "/home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/lib/recive_pkg/recive_pkg" to ""
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/package_run_dependencies/recive_pkg
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/parent_prefix_path/recive_pkg
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/path.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.bash
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.zsh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.dsv
+-- Installing: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/package.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/packages/recive_pkg
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig-version.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/package.xml

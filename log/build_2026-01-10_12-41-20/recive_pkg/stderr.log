@@ -1,0 +1,25 @@
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In function ‘float calculateInterArea(const CircleF&, const RectF&)’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:244:11: warning: unused variable ‘rectArea’ [-Wunused-variable]
+  244 |     float rectArea = (r.x2 - r.x1) * (r.y2 - r.y1);
+      |           ^~~~~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:247:11: warning: unused variable ‘circleArea’ [-Wunused-variable]
+  247 |     float circleArea = M_PI * c.r * c.r;
+      |           ^~~~~~~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::run()’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:375:25: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  375 |         if (frame_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT)))
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::drawTracks(cv::Mat&)’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:550:20: warning: variable ‘color’ set but not used [-Wunused-but-set-variable]
+  550 |             Scalar color = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    ^~~~~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:553:19: warning: variable ‘tl’ set but not used [-Wunused-but-set-variable]
+  553 |             Point tl = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   ^~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:554:19: warning: variable ‘br’ set but not used [-Wunused-but-set-variable]
+  554 |             Point br = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   ^~
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::format_print_data_test()’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:630:15: warning: variable ‘d’ set but not used [-Wunused-but-set-variable]
+  630 |     for (auto d : getdata())
+      |               ^
