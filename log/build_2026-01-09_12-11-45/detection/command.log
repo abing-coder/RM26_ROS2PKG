@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection': /usr/bin/cmake /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection -DCMAKE_INSTALL_PREFIX=/home/ubuntu/桌面/RM26_ROS2PKG/install/detection
+Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection' returned '0': /usr/bin/cmake /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection -DCMAKE_INSTALL_PREFIX=/home/ubuntu/桌面/RM26_ROS2PKG/install/detection
+Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14
+Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14

@@ -1,0 +1,18 @@
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)’:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:350:31: error: ‘d’ was not declared in this scope
+  350 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, fy, d.target_yaw, d.target_pitch);
+      |                               ^
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:374:40: error: ‘rt’ was not declared in this scope; did you mean ‘t’?
+  374 |         cv::putText(image, delta_text, rt, cv::FONT_HERSHEY_SIMPLEX, 0.5,
+      |                                        ^~
+      |                                        t
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: At global scope:
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:383:15: error: expected constructor, destructor, or type conversion before ‘(’ token
+  383 |     cv::imshow("Detection", image);
+      |               ^
+/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:387:1: error: expected declaration before ‘}’ token
+  387 | }
+      | ^
+gmake[2]: *** [CMakeFiles/detection.dir/build.make:188：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

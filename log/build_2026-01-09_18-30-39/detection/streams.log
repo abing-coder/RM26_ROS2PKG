@@ -1,0 +1,4 @@
+[0.008s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
+[0.070s] [100%] Built target detection
+[0.099s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14

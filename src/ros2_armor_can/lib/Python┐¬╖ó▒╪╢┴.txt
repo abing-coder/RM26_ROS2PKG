@@ -1,0 +1,12 @@
+0.SDK提供了python-can-3.3.4和python-can-4.0.0两个版本以适应不同客户的需求。以下以3.4.4版本为例进行介绍，4.0.0版本除了路径不同以外其他无实质性区别
+1.需要编辑或调试程序时，请使用VSCODE，执行菜单File->Open Folder直接打开SDK的example/python-can-3.3.4文件夹，按F5即可启动程序，
+  如需调整启动选项，请编辑example/python-can-3.3.4/.vscode/launch.json
+2.如果使用vscode以外的其他IDE打开工程或者直接编辑某个py脚本，请参考本文件夹下的example.run.bat（或sh）制作启动器，初始化PYTHONPATH和PATH（在linux下为LD_LIBRARY_PATH）两个环境变量：
+（1）其中PYTHONPATH指向SDK的example/python-can-3.3.4文件夹
+（2）其中PATH（在Windows下）或LD_LIBRARY_PATH（在linux下）指向SDK的example\python-can-3.3.4\can\interfaces\bmcan子文件夹
+3.如果启动抛出aenum不识别的异常，请先pip install python-can后重试
+4.在Ubuntu下请使用sudo权限执行您的py脚本或sh启动器，否则驱动会报错提示无权限访问设备
+5.请务必确保python-can-3.3.4文件夹已经正确添加至PYTHONPATH，否则由于Python原生的python-can包中不包含bmcan模块，会导致bmcan被识别为invalid bus
+6.SDK的example/python-can-3.3.4/examples文件夹下有一些经典使用案例可以作为开发的基础，关于python-can的更多信息您可参考：https://python-can.readthedocs.io/en/master/
+7.请先插入BUSMUST设备再运行python脚本，否则会抛出加载BMAPI失败的异常
+8.一个物理设备（例如一个X4，或者一个X1PRO）只能被一个进程打开，如果您打开通道失败，请检查是否有其他进程占用（例如Busmaster处于Connected状态）

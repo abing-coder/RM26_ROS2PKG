@@ -1,0 +1,60 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_hik_camera-main/build/hik_camera/CMakeCache.txt is different than the directory /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/build/hik_camera where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/include;/home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/hikSDK/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+[0mWARNING: Target "hik_camera" requests linking to directory "/usr/include/opencv4".  Targets may link only to libraries.  CMake is dropping the item.[0m
+-- Generating done
+-- Build files have been written to: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/build/hik_camera
+[35m[1mConsolidate compiler generated dependencies of target hik_camera_node[0m
+[35m[1mConsolidate compiler generated dependencies of target hik_camera[0m
+[ 50%] Built target hik_camera
+[100%] Built target hik_camera_node
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMediaProcess.so
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMvCameraControl.so
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMVRender.so
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libFormatConversion.so
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/amd64/libMvUsb3vTL.so
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/hik_camera/hik_camera_node
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/library_path.sh
+-- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/library_path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/lib/libhik_camera.so
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/config
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/config/camera_info.yaml
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/config/camera_params.yaml
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/launch
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/launch/hik_camera.launch.py
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/package_run_dependencies/hik_camera
+-- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/parent_prefix_path/hik_camera
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/path.sh
+-- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/environment/path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.bash
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.zsh
+-- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/local_setup.dsv
+-- Installing: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/package.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/packages/hik_camera
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/ament_index/resource_index/rclcpp_components/hik_camera
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig-version.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26/src/ros2_hik_camera-main/install/hik_camera/share/hik_camera/package.xml

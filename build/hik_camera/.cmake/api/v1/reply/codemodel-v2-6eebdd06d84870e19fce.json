@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6f080fcebd6c3312f149.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hik_camera",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera-5bb0af78fce7b95cfefa.json",
+					"name" : "hik_camera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_node-3432689e6211082c817c.json",
+					"name" : "hik_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_uninstall-a75a388f8420e4b89d01.json",
+					"name" : "hik_camera_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-beb99569102b45bfa71f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/\u684c\u9762/RM26_ROS2PKG/build/hik_camera",
+		"source" : "/home/ubuntu/\u684c\u9762/RM26_ROS2PKG/src/ros2_hik_camera-main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,27 @@
+@startuml Application Programming Sequence
+participant App
+participant BMAPI
+participant Device
+App -> BMAPI: BM_Init(): Init library
+App -> BMAPI: BM_Enumerate(): Enumerate all connected devices
+BMAPI -> Device: get device&channel information
+BMAPI --> App: channelinfos list
+App -> BMAPI: BM_OpenEx(): Open target channel using returned channelinfos
+BMAPI -> Device: configure and start bus activities
+BMAPI --> App: channel handle
+App -> BMAPI: BM_Write(): Write any number of messages to the bus
+BMAPI -> Device: Transmit message to the bus using the opened device
+App -> BMAPI: BM_GetNotificationHandle(): Get the notification event handle of the target channel
+BMAPI --> App: notification handle
+App -> BMAPI: BM_WaitForNotifications(): Wait for RX notification
+alt message received
+... ...
+Device -> BMAPI: received message is read and pushed into BMAPI buffer in background
+BMAPI --> App: new notification event
+App -> BMAPI: BM_Read(): Read the received message from BMAPI buffer
+BMAPI --> App: received message data
+end alt
+App -> BMAPI: BM_Close(): close target channel
+BMAPI -> Device: configure and stop bus activities
+App -> BMAPI: BM_UnInit(): clean up the library
+@enduml

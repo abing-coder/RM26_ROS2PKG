@@ -1,0 +1,28 @@
+[  9%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o[0m
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In function ‘[01m[Kfloat calculateInterArea(const CircleF&, const RectF&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:244:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KrectArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  244 |     float [01;35m[KrectArea[m[K = (r.x2 - r.x1) * (r.y2 - r.y1);
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:247:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KcircleArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  247 |     float [01;35m[KcircleArea[m[K = M_PI * c.r * c.r;
+      |           [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:355:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  355 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+      |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawTracks(cv::Mat&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:530:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcolor[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  530 |             Scalar [01;35m[Kcolor[m[K = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:533:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktl[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  533 |             Point [01;35m[Ktl[m[K = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:534:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbr[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  534 |             Point [01;35m[Kbr[m[K = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::format_print_data_test()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:610:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  610 |     for (auto [01;35m[Kd[m[K : getdata())
+      |               [01;35m[K^[m[K
+[ 18%] [32m[1mLinking CXX executable recive_pkg[0m
+[100%] Built target recive_pkg

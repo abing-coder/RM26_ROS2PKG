@@ -1,0 +1,189 @@
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/lapjv.cpp:[m[K In function ‘[01m[Kuint_t _find_dense(uint_t, uint_t, cost_t*, int_t*, int_t*)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/lapjv.cpp:153:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  153 | uint_t _find_dense(const uint_t n, uint_t lo, cost_t *d, int_t *cols, [01;35m[Kint_t *y[m[K)
+      |                                                                       [01;35m[K~~~~~~~^[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kstd::vector<STrack*> BYTETracker::joint_stracks(std::vector<STrack*>&, std::vector<STrack>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+    8 |         for (int i = 0; [01;35m[Ki < tlista.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:13:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   13 |         for (int i = 0; [01;35m[Ki < tlistb.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:[m[K In member function ‘[01m[Kstd::vector<STrack> BYTETracker::update(const std::vector<Object>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:43:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Object>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   43 |                 for (int i = 0; [01;35m[Ki < objects.size()[m[K; i++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:68:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   68 |         for (int i = 0; [01;35m[Ki < this->tracked_stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:88:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   88 |         for (int i = 0; [01;35m[Ki < matches.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:105:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  105 |         for (int i = 0; [01;35m[Ki < u_detection.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:112:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  112 |         for (int i = 0; [01;35m[Ki < u_track.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:128:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  128 |         for (int i = 0; [01;35m[Ki < matches.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:144:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  144 |         for (int i = 0; [01;35m[Ki < u_track.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:166:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  166 |         for (int i = 0; [01;35m[Ki < matches.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:172:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  172 |         for (int i = 0; [01;35m[Ki < u_unconfirmed.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:180:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  180 |         for (int i = 0; [01;35m[Ki < u_detection.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:190:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  190 |         for (int i = 0; [01;35m[Ki < this->lost_stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:199:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  199 |         for (int i = 0; [01;35m[Ki < this->tracked_stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:215:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  215 |         for (int i = 0; [01;35m[Ki < lost_stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:221:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  221 |         for (int i = 0; [01;35m[Ki < removed_stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/BYTETracker.cpp:233:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  233 |         for (int i = 0; [01;35m[Ki < this->tracked_stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kstd::vector<STrack> BYTETracker::joint_stracks(std::vector<STrack>&, std::vector<STrack>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:29:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   29 |         for (int i = 0; [01;35m[Ki < tlista.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:34:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   34 |         for (int i = 0; [01;35m[Ki < tlistb.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kstd::vector<STrack> BYTETracker::sub_stracks(std::vector<STrack>&, std::vector<STrack>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:49:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   49 |         for (int i = 0; [01;35m[Ki < tlista.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:53:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   53 |         for (int i = 0; [01;35m[Ki < tlistb.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kvoid BYTETracker::remove_duplicate_stracks(std::vector<STrack>&, std::vector<STrack>&, std::vector<STrack>&, std::vector<STrack>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:76:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   76 |         for (int i = 0; [01;35m[Ki < pdist.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:78:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   78 |                 for (int j = 0; [01;35m[Kj < pdist[i].size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:88:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   88 |         for (int i = 0; [01;35m[Ki < pairs.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:98:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   98 |         for (int i = 0; [01;35m[Ki < stracksa.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:107:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  107 |         for (int i = 0; [01;35m[Ki < stracksb.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kvoid BYTETracker::linear_assignment(std::vector<std::vector<float> >&, int, int, float, std::vector<std::vector<int> >&, std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:135:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  135 |         for (int i = 0; [01;35m[Ki < rowsol.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:150:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  150 |         for (int i = 0; [01;35m[Ki < colsol.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:134:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |         float [01;35m[Kc[m[K = lapjv(cost_matrix, rowsol, colsol, true, thresh);
+      |               [01;35m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<float> > BYTETracker::ious(std::vector<std::vector<float> >&, std::vector<std::vector<float> >&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:166:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  166 |         for (int i = 0; [01;35m[Ki < ious.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:172:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  172 |         for (int k = 0; [01;35m[Kk < btlbrs.size()[m[K; k++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:176:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  176 |                 for (int n = 0; [01;35m[Kn < atlbrs.size()[m[K; n++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<float> > BYTETracker::iou_distance(std::vector<STrack*>&, std::vector<STrack>&, int&, int&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:212:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  212 |         for (int i = 0; [01;35m[Ki < atracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:216:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  216 |         for (int i = 0; [01;35m[Ki < btracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:226:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  226 |         for (int i = 0; [01;35m[Ki < _ious.size()[m[K;i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:229:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  229 |                 for (int j = 0; [01;35m[Kj < _ious[i].size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<float> > BYTETracker::iou_distance(std::vector<STrack>&, std::vector<STrack>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:242:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  242 |         for (int i = 0; [01;35m[Ki < atracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:246:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  246 |         for (int i = 0; [01;35m[Ki < btracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:253:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  253 |         for (int i = 0; [01;35m[Ki < _ious.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:256:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  256 |                 for (int j = 0; [01;35m[Kj < _ious[i].size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:[m[K In member function ‘[01m[Kdouble BYTETracker::lapjv(const std::vector<std::vector<float> >&, std::vector<int>&, std::vector<int>&, bool, float, bool)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:298:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  298 |                 for (int i = 0; [01;35m[Ki < cost_c_extended.size()[m[K; i++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:303:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  303 |                         for (int i = 0; [01;35m[Ki < cost_c_extended.size()[m[K; i++)
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:305:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  305 |                                 for (int j = 0; [01;35m[Kj < cost_c_extended[i].size()[m[K; j++)
+      |                                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:314:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  314 |                         for (int i = 0; [01;35m[Ki < cost_c.size()[m[K; i++)
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:316:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  316 |                                 for (int j = 0; [01;35m[Kj < cost_c[i].size()[m[K; j++)
+      |                                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:322:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  322 |                         for (int i = 0; [01;35m[Ki < cost_c_extended.size()[m[K; i++)
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:324:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  324 |                                 for (int j = 0; [01;35m[Kj < cost_c_extended[i].size()[m[K; j++)
+      |                                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:331:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  331 |                 for (int i = n_rows; [01;35m[Ki < cost_c_extended.size()[m[K; i++)
+      |                                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:333:48:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  333 |                         for (int j = n_cols; [01;35m[Kj < cost_c_extended[i].size()[m[K; j++)
+      |                                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:396:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  396 |                         for (int i = 0; [01;35m[Ki < rowsol.size()[m[K; i++)
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/utils.cpp:408:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  408 |                 for (int i = 0; [01;35m[Ki < rowsol.size()[m[K; i++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:207:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  207 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+      |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawTracks(cv::Mat&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:382:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcolor[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  382 |             Scalar [01;35m[Kcolor[m[K = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:385:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktl[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  385 |             Point [01;35m[Ktl[m[K = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:386:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbr[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  386 |             Point [01;35m[Kbr[m[K = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::format_print_data_test()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:462:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  462 |     for (auto [01;35m[Kd[m[K : getdata())
+      |               [01;35m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/STrack.cpp:[m[K In static member function ‘[01m[Kstatic void STrack::multi_predict(std::vector<STrack*>&, byte_kalman::KalmanFilter&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/TrackerSource/STrack.cpp:184:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<STrack*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  184 |         for (int i = 0; [01;35m[Ki < stracks.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K

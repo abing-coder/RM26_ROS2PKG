@@ -1,0 +1,53 @@
+[35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[  9%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/main.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o[0m
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In function ‘[01m[Kfloat calculateInterArea(const CircleF&, const RectF&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:244:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KrectArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  244 |     float [01;35m[KrectArea[m[K = (r.x2 - r.x1) * (r.y2 - r.y1);
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:247:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KcircleArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  247 |     float [01;35m[KcircleArea[m[K = M_PI * c.r * c.r;
+      |           [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:304:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor[m[K’ was not declared in this scope; did you mean ‘[01m[KArmor[m[K’?
+  304 |         if ([01;31m[Karmor[m[K.empty()) {
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[KArmor[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:326:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_top[m[K’ was not declared in this scope
+  326 |         [01;31m[Kleft_top[m[K = armor[0].left_light.top;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:326:20:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor[m[K’ was not declared in this scope; did you mean ‘[01m[KArmor[m[K’?
+  326 |         left_top = [01;31m[Karmor[m[K[0].left_light.top;
+      |                    [01;31m[K^~~~~[m[K
+      |                    [32m[KArmor[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:327:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_bottom[m[K’ was not declared in this scope
+  327 |         [01;31m[Kright_bottom[m[K = armor[0].right_light.bottom;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:328:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_bottom[m[K’ was not declared in this scope
+  328 |         [01;31m[Kleft_bottom[m[K = armor[0].left_light.bottom;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:329:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_top[m[K’ was not declared in this scope
+  329 |         [01;31m[Kright_top[m[K = armor[0].right_light.top;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:331:34:[m[K [01;31m[Kerror: [m[K‘[01m[Krev[m[K’ was not declared in this scope
+  331 |         solver.solvePnP(armor[0],[01;31m[Krev[m[K,tvc);
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:331:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ktvc[m[K’ was not declared in this scope
+  331 |         solver.solvePnP(armor[0],rev,[01;31m[Ktvc[m[K);
+      |                                      [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx[m[K’ was not declared in this scope
+  342 |         calculateGimbalAngles(d.delta_x, d.delta_y, [01;31m[Kfx[m[K, fy, d.target_yaw, d.target_pitch);
+      |                                                     [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy[m[K’ was not declared in this scope
+  342 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, [01;31m[Kfy[m[K, d.target_yaw, d.target_pitch);
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:384:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  384 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+      |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:104：CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/recive_pkg.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,43 @@
+[0.010s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target detection[0m
+[0.080s] [ 10%] [32mBuilding CXX object CMakeFiles/detection.dir/main.cpp.o[0m
+[0.100s] [ 20%] [32mBuilding CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o[0m
+[0.100s] [ 30%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[1.529s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[1.529s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:304:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor[m[K’ was not declared in this scope; did you mean ‘[01m[KArmor[m[K’?
+[1.529s]   304 |         if ([01;31m[Karmor[m[K.empty()) {
+[1.529s]       |             [01;31m[K^~~~~[m[K
+[1.530s]       |             [32m[KArmor[m[K
+[1.536s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:326:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_top[m[K’ was not declared in this scope
+[1.536s]   326 |         [01;31m[Kleft_top[m[K = armor[0].left_light.top;
+[1.536s]       |         [01;31m[K^~~~~~~~[m[K
+[1.539s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:326:20:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor[m[K’ was not declared in this scope; did you mean ‘[01m[KArmor[m[K’?
+[1.539s]   326 |         left_top = [01;31m[Karmor[m[K[0].left_light.top;
+[1.539s]       |                    [01;31m[K^~~~~[m[K
+[1.539s]       |                    [32m[KArmor[m[K
+[1.544s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:327:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_bottom[m[K’ was not declared in this scope
+[1.544s]   327 |         [01;31m[Kright_bottom[m[K = armor[0].right_light.bottom;
+[1.544s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[1.553s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:328:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_bottom[m[K’ was not declared in this scope
+[1.553s]   328 |         [01;31m[Kleft_bottom[m[K = armor[0].left_light.bottom;
+[1.553s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[1.578s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:329:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_top[m[K’ was not declared in this scope
+[1.578s]   329 |         [01;31m[Kright_top[m[K = armor[0].right_light.top;
+[1.578s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.591s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:331:34:[m[K [01;31m[Kerror: [m[K‘[01m[Krev[m[K’ was not declared in this scope
+[1.591s]   331 |         solver.solvePnP(armor[0],[01;31m[Krev[m[K,tvc);
+[1.591s]       |                                  [01;31m[K^~~[m[K
+[1.601s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:331:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ktvc[m[K’ was not declared in this scope
+[1.602s]   331 |         solver.solvePnP(armor[0],rev,[01;31m[Ktvc[m[K);
+[1.602s]       |                                      [01;31m[K^~~[m[K
+[1.606s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx[m[K’ was not declared in this scope
+[1.606s]   342 |         calculateGimbalAngles(d.delta_x, d.delta_y, [01;31m[Kfx[m[K, fy, d.target_yaw, d.target_pitch);
+[1.606s]       |                                                     [01;31m[K^~[m[K
+[1.611s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy[m[K’ was not declared in this scope
+[1.611s]   342 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, [01;31m[Kfy[m[K, d.target_yaw, d.target_pitch);
+[1.611s]       |                                                         [01;31m[K^~[m[K
+[2.142s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:188：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+[2.142s] gmake[2]: *** 正在等待未完成的任务....
+[2.499s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[2.499s] gmake: *** [Makefile:91：all] 错误 2
+[2.502s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection' returned '2': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14

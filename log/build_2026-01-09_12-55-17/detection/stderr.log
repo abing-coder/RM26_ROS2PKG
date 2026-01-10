@@ -1,0 +1,48 @@
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:304:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor[m[K’ was not declared in this scope; did you mean ‘[01m[KArmor[m[K’?
+  304 |         if ([01;31m[Karmor[m[K.empty()) {
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[KArmor[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:326:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_top[m[K’ was not declared in this scope
+  326 |         [01;31m[Kleft_top[m[K = armor[0].left_light.top;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:326:20:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor[m[K’ was not declared in this scope; did you mean ‘[01m[KArmor[m[K’?
+  326 |         left_top = [01;31m[Karmor[m[K[0].left_light.top;
+      |                    [01;31m[K^~~~~[m[K
+      |                    [32m[KArmor[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:327:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_bottom[m[K’ was not declared in this scope
+  327 |         [01;31m[Kright_bottom[m[K = armor[0].right_light.bottom;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:328:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_bottom[m[K’ was not declared in this scope
+  328 |         [01;31m[Kleft_bottom[m[K = armor[0].left_light.bottom;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:329:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_top[m[K’ was not declared in this scope
+  329 |         [01;31m[Kright_top[m[K = armor[0].right_light.top;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:331:34:[m[K [01;31m[Kerror: [m[K‘[01m[Krev[m[K’ was not declared in this scope
+  331 |         solver.solvePnP(armor[0],[01;31m[Krev[m[K,tvc);
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:331:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ktvc[m[K’ was not declared in this scope
+  331 |         solver.solvePnP(armor[0],rev,[01;31m[Ktvc[m[K);
+      |                                      [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx[m[K’ was not declared in this scope
+  342 |         calculateGimbalAngles(d.delta_x, d.delta_y, [01;31m[Kfx[m[K, fy, d.target_yaw, d.target_pitch);
+      |                                                     [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy[m[K’ was not declared in this scope
+  342 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, [01;31m[Kfy[m[K, d.target_yaw, d.target_pitch);
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection::ArmorData[m[K’ {aka ‘[01m[Kstruct detection::ArmorData[m[K’} has no member named ‘[01m[Ktarget_yaw[m[K’
+  342 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, fy, d.[01;31m[Ktarget_yaw[m[K, d.target_pitch);
+      |                                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:342:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection::ArmorData[m[K’ {aka ‘[01m[Kstruct detection::ArmorData[m[K’} has no member named ‘[01m[Ktarget_pitch[m[K’
+  342 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, fy, d.target_yaw, d.[01;31m[Ktarget_pitch[m[K);
+      |                                                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:343:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection::ArmorData[m[K’ {aka ‘[01m[Kstruct detection::ArmorData[m[K’} has no member named ‘[01m[Ktarget_yaw[m[K’
+  343 |         cout << "target_yaw: " << d.[01;31m[Ktarget_yaw[m[K << " target_pitch: " << d.target_pitch << endl;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:343:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection::ArmorData[m[K’ {aka ‘[01m[Kstruct detection::ArmorData[m[K’} has no member named ‘[01m[Ktarget_pitch[m[K’
+  343 |         cout << "target_yaw: " << d.target_yaw << " target_pitch: " << d.[01;31m[Ktarget_pitch[m[K << endl;
+      |                                                                          [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/detection.dir/build.make:188：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

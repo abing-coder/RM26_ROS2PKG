@@ -1,0 +1,22 @@
+[0.007s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14
+[0.050s] Consolidate compiler generated dependencies of target detection
+[0.066s] [ 10%] Building CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o
+[1.408s] /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: In member function ‘void detection::DetectionArmor::drawObject(cv::Mat&, std::vector<detection::ArmorData>&)’:
+[1.409s] /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:350:31: error: ‘d’ was not declared in this scope
+[1.409s]   350 |         calculateGimbalAngles(d.delta_x, d.delta_y, fx, fy, d.target_yaw, d.target_pitch);
+[1.409s]       |                               ^
+[1.413s] /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:374:40: error: ‘rt’ was not declared in this scope; did you mean ‘t’?
+[1.413s]   374 |         cv::putText(image, delta_text, rt, cv::FONT_HERSHEY_SIMPLEX, 0.5,
+[1.413s]       |                                        ^~
+[1.413s]       |                                        t
+[1.413s] /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp: At global scope:
+[1.413s] /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:383:15: error: expected constructor, destructor, or type conversion before ‘(’ token
+[1.413s]   383 |     cv::imshow("Detection", image);
+[1.413s]       |               ^
+[1.413s] /home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:387:1: error: expected declaration before ‘}’ token
+[1.413s]   387 | }
+[1.414s]       | ^
+[1.856s] gmake[2]: *** [CMakeFiles/detection.dir/build.make:188：CMakeFiles/detection.dir/src/yolo_detection.cpp.o] 错误 1
+[1.856s] gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+[1.857s] gmake: *** [Makefile:91：all] 错误 2
+[1.860s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection' returned '2': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14

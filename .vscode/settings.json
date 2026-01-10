@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "istream": "cpp",
+        "mutex": "cpp",
+        "ostream": "cpp",
+        "stop_token": "cpp",
+        "typeinfo": "cpp",
+        "chrono": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg"
+}

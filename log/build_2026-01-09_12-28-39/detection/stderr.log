@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/detection.dir/src/yolo_detection.cpp.o: in function `__static_initialization_and_destruction_0(int, int)':
+yolo_detection.cpp:(.text+0x4d52): undefined reference to `PnPSolver::PnPSolver(std::array<double, 9ul> const&, std::vector<double, std::allocator<double> > const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/detection.dir/build.make:264：detection] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/detection.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

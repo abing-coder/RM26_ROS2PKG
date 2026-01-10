@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg -- -j14 -l14
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[0.085s] [100%] Built target recive_pkg
+[0.109s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg -- -j14 -l14
+[0.109s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg
+[0.112s] -- Install configuration: ""
+[0.113s] -- Installing: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/lib/recive_pkg/recive_pkg
+[0.117s] -- Set runtime path of "/home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/lib/recive_pkg/recive_pkg" to ""
+[0.117s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/package_run_dependencies/recive_pkg
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/parent_prefix_path/recive_pkg
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.sh
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.dsv
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/path.sh
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/path.dsv
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.bash
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.sh
+[0.118s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.zsh
+[0.119s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.dsv
+[0.119s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/package.dsv
+[0.119s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/packages/recive_pkg
+[0.119s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig.cmake
+[0.119s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig-version.cmake
+[0.119s] -- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/package.xml
+[0.126s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg
