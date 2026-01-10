@@ -379,7 +379,7 @@ void DetectionArmor::drawObject(Mat& image, vector<ArmorData>& datas)
     }
     
 
-    // cv::imshow("Detection", image);
+    cv::imshow("Detection", image);
 
     // cv::rectangle(image, lt, rb, Scalar(0, 255, 0), 2);
 

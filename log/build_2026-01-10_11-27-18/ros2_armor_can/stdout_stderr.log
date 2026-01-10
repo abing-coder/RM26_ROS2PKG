@@ -1,0 +1,36 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/armor_send_node.dir/src/armor_send.cpp.o[0m
+[ 66%] Built target test_send_node
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:[m[K In member function ‘[01m[Kvoid ArmorSend::send_motor_cmd(int16_t, int16_t, int16_t, int16_t)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:84:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor4[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |     void send_motor_cmd(int16_t motor1, int16_t motor2, int16_t motor3, [01;35m[Kint16_t motor4[m[K) {
+      |                                                                         [01;35m[K~~~~~~~~^~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:[m[K In member function ‘[01m[Kvoid ArmorSend::delta_callback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:126:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  126 |     void delta_callback([01;35m[Kconst geometry_msgs::msg::Point::SharedPtr msg[m[K) {
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[ 83%] [32m[1mLinking CXX executable armor_send_node[0m
+[100%] Built target armor_send_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node
+-- Set runtime path of "/home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/lib/ros2_armor_can/armor_send_node" to ""
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/lib/ros2_armor_can/test_send_node
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can//launch
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can//launch/__pycache__/motor_all.launch.cpython-310.pyc
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can//launch/test.launch.py
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can//launch/motor_all.launch.py
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ament_index/resource_index/package_run_dependencies/ros2_armor_can
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ament_index/resource_index/parent_prefix_path/ros2_armor_can
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/environment/path.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/environment/path.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/local_setup.bash
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/local_setup.sh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/local_setup.zsh
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/local_setup.dsv
+-- Installing: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/package.dsv
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ament_index/resource_index/packages/ros2_armor_can
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/cmake/ros2_armor_canConfig-version.cmake
+-- Up-to-date: /home/ubuntu/桌面/RM26_ROS2PKG/install/ros2_armor_can/share/ros2_armor_can/package.xml

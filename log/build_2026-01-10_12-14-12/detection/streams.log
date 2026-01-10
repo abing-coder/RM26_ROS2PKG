@@ -1,0 +1,7 @@
+[0.013s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14
+[0.052s] [ 10%] [32mBuilding CXX object CMakeFiles/detection.dir/main.cpp.o[0m
+[0.052s] [ 30%] [32mBuilding CXX object CMakeFiles/detection.dir/src/yolo_detection.cpp.o[0m
+[0.052s] [ 30%] [32mBuilding CXX object CMakeFiles/detection.dir/src/traditional_detector.cpp.o[0m
+[2.919s] [ 40%] [32m[1mLinking CXX executable detection[0m
+[3.399s] [100%] Built target detection
+[3.416s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/detection' returned '0': /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/detection -- -j14 -l14

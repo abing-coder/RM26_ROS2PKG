@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[  9%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/main.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o[0m
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In function ‘[01m[Kfloat calculateInterArea(const CircleF&, const RectF&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:244:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KrectArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  244 |     float [01;35m[KrectArea[m[K = (r.x2 - r.x1) * (r.y2 - r.y1);
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:247:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KcircleArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  247 |     float [01;35m[KcircleArea[m[K = M_PI * c.r * c.r;
+      |           [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::run()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:408:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  408 |         if ([01;35m[Kframe_count == int(cap.get(cv::CAP_PROP_FRAME_COUNT))[m[K)
+      |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::drawTracks(cv::Mat&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:583:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcolor[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  583 |             Scalar [01;35m[Kcolor[m[K = tracker.get_color(track.track_id); // 获取跟踪ID对应的颜色
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:586:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktl[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  586 |             Point [01;35m[Ktl[m[K = Point(tlwh[0], tlwh[1]); // 左上角   1
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:587:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbr[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  587 |             Point [01;35m[Kbr[m[K = Point(tlwh[0] + tlwh[2], tlwh[1] + tlwh[3]); // 右下角  3
+      |                   [01;35m[K^~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:[m[K In member function ‘[01m[Kvoid detection::DetectionArmor::format_print_data_test()[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp:663:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  663 |     for (auto [01;35m[Kd[m[K : getdata())
+      |               [01;35m[K^[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:[m[K In constructor ‘[01m[Karmor_detection::ImageSubscriber::ImageSubscriber(const string&)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_publisher[m[K’?
+   24 |         [01;31m[Kdelta_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Point>("target_delta", delta_qos);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kcreate_publisher[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:[m[K In member function ‘[01m[Kvoid armor_detection::ImageSubscriber::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:37:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_publish_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Klast_process_time_[m[K’?
+   37 |             if ([01;31m[Klast_publish_time_[m[K.time_since_epoch().count() != 0) {
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Klast_process_time_[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:38:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_interval_[m[K’ was not declared in this scope; did you mean ‘[01m[Kprocess_interval_[m[K’?
+   38 |                 if (now - last_publish_time_ < [01;31m[Kpublish_interval_[m[K) {
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kprocess_interval_[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:43:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptr[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_ptr[m[K’?
+   43 |             [01;31m[Kcv_ptr[m[K = cv_bridge::toCvCopy(msg, "bgr8");
+      |             [01;31m[K^~~~~~[m[K
+      |             [32m[Ksi_ptr[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:76:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_publisher[m[K’?
+   76 |             [01;31m[Kdelta_publisher_[m[K->publish(delta_msg);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcreate_publisher[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:93:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_publish_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Klast_process_time_[m[K’?
+   93 |             [01;31m[Klast_publish_time_[m[K = now;
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[Klast_process_time_[m[K
+gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:76：CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/recive_pkg.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

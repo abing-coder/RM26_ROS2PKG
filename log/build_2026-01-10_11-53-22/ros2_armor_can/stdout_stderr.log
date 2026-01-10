@@ -1,0 +1,12 @@
+[ 50%] Built target test_send_node
+[ 66%] [32mBuilding CXX object CMakeFiles/armor_send_node.dir/src/armor_send.cpp.o[0m
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:[m[K In member function ‘[01m[Kvoid ArmorSend::send_motor_cmd(int16_t, int16_t, int16_t, int16_t)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:80:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor4[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   80 |     void send_motor_cmd(int16_t motor1, int16_t motor2, int16_t motor3, [01;35m[Kint16_t motor4[m[K) {
+      |                                                                         [01;35m[K~~~~~~~~^~~~~~[m[K
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:[m[K In member function ‘[01m[Kvoid ArmorSend::delta_callback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/ros2_armor_can/src/armor_send.cpp:123:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  123 |     void delta_callback([01;35m[Kconst geometry_msgs::msg::Point::SharedPtr msg[m[K) {
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[ 83%] [32m[1mLinking CXX executable armor_send_node[0m
+[100%] Built target armor_send_node

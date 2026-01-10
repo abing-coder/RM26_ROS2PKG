@@ -1,0 +1,110 @@
+[0.000000] (-) TimerEvent: {}
+[0.000644] (-) JobUnselected: {'identifier': 'detection'}
+[0.000808] (-) JobUnselected: {'identifier': 'hik_camera'}
+[0.000826] (-) JobUnselected: {'identifier': 'ros2_armor_can'}
+[0.000911] (recive_pkg) JobQueued: {'identifier': 'recive_pkg', 'dependencies': OrderedDict()}
+[0.000995] (recive_pkg) JobStarted: {'identifier': 'recive_pkg'}
+[0.005017] (recive_pkg) JobProgress: {'identifier': 'recive_pkg', 'progress': 'cmake'}
+[0.005985] (recive_pkg) JobProgress: {'identifier': 'recive_pkg', 'progress': 'build'}
+[0.007012] (recive_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg', '--', '-j14', '-l14'], 'cwd': '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ubuntu'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0/nls.messages.json","corruptMarkerFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0","_corruptedFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('TBB_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib/cmake/TBB'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'cursor.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/桌面/RM26_ROS2PKG'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-91260982-2.0.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64'), ('MANAGERPID', '3416'), ('SYSTEMD_EXEC_PID', '3755'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5102'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', 'file:///home/ubuntu/.cursor/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.99.0-universal/translations/extensions/vscode.markdown-language-features.i18n.json'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:24601'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-NUC15CRKU5:@/tmp/.ICE-unix/3726,unix/ubuntu-NUC15CRKU5:/tmp/.ICE-unix/3726'), ('INVOCATION_ID', 'a8e51a4a55ac44aba490c023b6ad76bc'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [2-2]'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '8423a44d26cb48ec94d1846f2cd5a6a9'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ubuntu/.config/Cursor/CachedData/ba90f2f88e4911312761abab9492c42442117cf0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('OpenVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake'), ('VSCODE_PID', '5102'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.054922] (recive_pkg) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target recive_pkg\n'}
+[0.067967] (recive_pkg) StdoutLine: {'line': b'[  9%] Building CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o\n'}
+[0.068326] (recive_pkg) StdoutLine: {'line': b'[ 18%] Building CXX object CMakeFiles/recive_pkg.dir/main.cpp.o\n'}
+[0.100006] (-) TimerEvent: {}
+[0.200442] (-) TimerEvent: {}
+[0.300842] (-) TimerEvent: {}
+[0.401219] (-) TimerEvent: {}
+[0.502236] (-) TimerEvent: {}
+[0.602749] (-) TimerEvent: {}
+[0.703307] (-) TimerEvent: {}
+[0.803633] (-) TimerEvent: {}
+[0.904029] (-) TimerEvent: {}
+[1.004252] (-) TimerEvent: {}
+[1.104561] (-) TimerEvent: {}
+[1.204783] (-) TimerEvent: {}
+[1.304998] (-) TimerEvent: {}
+[1.405272] (-) TimerEvent: {}
+[1.505482] (-) TimerEvent: {}
+[1.606147] (-) TimerEvent: {}
+[1.706519] (-) TimerEvent: {}
+[1.806806] (-) TimerEvent: {}
+[1.907033] (-) TimerEvent: {}
+[2.007886] (-) TimerEvent: {}
+[2.108133] (-) TimerEvent: {}
+[2.209197] (-) TimerEvent: {}
+[2.309421] (-) TimerEvent: {}
+[2.409851] (-) TimerEvent: {}
+[2.510380] (-) TimerEvent: {}
+[2.610901] (-) TimerEvent: {}
+[2.711239] (-) TimerEvent: {}
+[2.812869] (-) TimerEvent: {}
+[2.913208] (-) TimerEvent: {}
+[3.016833] (-) TimerEvent: {}
+[3.117097] (-) TimerEvent: {}
+[3.217725] (-) TimerEvent: {}
+[3.318336] (-) TimerEvent: {}
+[3.418714] (-) TimerEvent: {}
+[3.519368] (-) TimerEvent: {}
+[3.620286] (-) TimerEvent: {}
+[3.720533] (-) TimerEvent: {}
+[3.821219] (-) TimerEvent: {}
+[3.921854] (-) TimerEvent: {}
+[4.022382] (-) TimerEvent: {}
+[4.123113] (-) TimerEvent: {}
+[4.224175] (-) TimerEvent: {}
+[4.324744] (-) TimerEvent: {}
+[4.425241] (-) TimerEvent: {}
+[4.525822] (-) TimerEvent: {}
+[4.626409] (-) TimerEvent: {}
+[4.726767] (-) TimerEvent: {}
+[4.826977] (-) TimerEvent: {}
+[4.927281] (-) TimerEvent: {}
+[5.027668] (-) TimerEvent: {}
+[5.128041] (-) TimerEvent: {}
+[5.228314] (-) TimerEvent: {}
+[5.329182] (-) TimerEvent: {}
+[5.429594] (-) TimerEvent: {}
+[5.530113] (-) TimerEvent: {}
+[5.630613] (-) TimerEvent: {}
+[5.731058] (-) TimerEvent: {}
+[5.831462] (-) TimerEvent: {}
+[5.931856] (-) TimerEvent: {}
+[6.032208] (-) TimerEvent: {}
+[6.132569] (-) TimerEvent: {}
+[6.232899] (-) TimerEvent: {}
+[6.333218] (-) TimerEvent: {}
+[6.433470] (-) TimerEvent: {}
+[6.445841] (recive_pkg) StdoutLine: {'line': b'[ 27%] Linking CXX executable recive_pkg\n'}
+[6.533587] (-) TimerEvent: {}
+[6.633832] (-) TimerEvent: {}
+[6.734117] (-) TimerEvent: {}
+[6.834427] (-) TimerEvent: {}
+[6.936293] (-) TimerEvent: {}
+[7.036545] (-) TimerEvent: {}
+[7.137106] (-) TimerEvent: {}
+[7.170112] (recive_pkg) StdoutLine: {'line': b'[100%] Built target recive_pkg\n'}
+[7.185770] (recive_pkg) CommandEnded: {'returncode': 0}
+[7.186865] (recive_pkg) JobProgress: {'identifier': 'recive_pkg', 'progress': 'install'}
+[7.199141] (recive_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg'], 'cwd': '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/ubuntu'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0/nls.messages.json","corruptMarkerFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/ba90f2f88e4911312761abab9492c42442117cf0","_corruptedFile":"/home/ubuntu/.config/Cursor/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('TBB_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/3rdparty/tbb/lib/cmake/TBB'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'cursor.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/桌面/RM26_ROS2PKG'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-91260982-2.0.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64'), ('MANAGERPID', '3416'), ('SYSTEMD_EXEC_PID', '3755'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5102'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', 'file:///home/ubuntu/.cursor/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.99.0-universal/translations/extensions/vscode.markdown-language-features.i18n.json'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:24601'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-NUC15CRKU5:@/tmp/.ICE-unix/3726,unix/ubuntu-NUC15CRKU5:/tmp/.ICE-unix/3726'), ('INVOCATION_ID', 'a8e51a4a55ac44aba490c023b6ad76bc'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [2-2]'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '8423a44d26cb48ec94d1846f2cd5a6a9'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('VSCODE_CODE_CACHE_PATH', '/home/ubuntu/.config/Cursor/CachedData/ba90f2f88e4911312761abab9492c42442117cf0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python:/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('OpenVINO_DIR', '/opt/intel/openvino_toolkit_ubuntu22_2025.2.0.19140.c01cd93e24d_x86_64/runtime/cmake'), ('VSCODE_PID', '5102'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.210072] (recive_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.210580] (recive_pkg) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/lib/recive_pkg/recive_pkg\n'}
+[7.218470] (recive_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/lib/recive_pkg/recive_pkg" to ""\n'}
+[7.218671] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/package_run_dependencies/recive_pkg\n'}
+[7.218771] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/parent_prefix_path/recive_pkg\n'}
+[7.218841] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.sh\n'}
+[7.218905] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/ament_prefix_path.dsv\n'}
+[7.219058] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/path.sh\n'}
+[7.219122] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/environment/path.dsv\n'}
+[7.219189] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.bash\n'}
+[7.219249] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.sh\n'}
+[7.219306] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.zsh\n'}
+[7.220537] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/local_setup.dsv\n'}
+[7.220702] (recive_pkg) StdoutLine: {'line': b'-- Installing: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/package.dsv\n'}
+[7.220817] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/ament_index/resource_index/packages/recive_pkg\n'}
+[7.221045] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig.cmake\n'}
+[7.221169] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/cmake/recive_pkgConfig-version.cmake\n'}
+[7.221229] (recive_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/\xe6\xa1\x8c\xe9\x9d\xa2/RM26_ROS2PKG/install/recive_pkg/share/recive_pkg/package.xml\n'}
+[7.221478] (recive_pkg) CommandEnded: {'returncode': 0}
+[7.237342] (-) TimerEvent: {}
+[7.237745] (recive_pkg) JobEnded: {'identifier': 'recive_pkg', 'rc': 0}
+[7.238194] (-) EventReactorShutdown: {}

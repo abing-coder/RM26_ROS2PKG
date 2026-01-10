@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target armor_send_node[0m
+[ 50%] Built target test_send_node
+[ 66%] [32mBuilding CXX object CMakeFiles/armor_send_node.dir/src/armor_send.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable armor_send_node[0m
+[100%] Built target armor_send_node

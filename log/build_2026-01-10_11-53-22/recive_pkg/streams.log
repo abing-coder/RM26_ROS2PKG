@@ -1,0 +1,12 @@
+[0.021s] Invoking command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg -- -j14 -l14
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[0.088s] [  9%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/main.cpp.o[0m
+[0.089s] [ 18%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o[0m
+[2.860s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:[m[K In constructor ‘[01m[Karmor_detection::ImageSubscriber::ImageSubscriber(const string&)[m[K’:
+[2.860s] [01m[K/home/ubuntu/桌面/RM26_ROS2PKG/src/recive_pkg/src/image_subscirber_node.cpp:30:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::QoS[m[K’ has no member named ‘[01m[Kvolatile_[m[K’
+[2.861s]    30 |         auto pub_qos = rclcpp::QoS(rclcpp::KeepLast(5)).best_effort().[01;31m[Kvolatile_[m[K();
+[2.861s]       |                                                                       [01;31m[K^~~~~~~~~[m[K
+[4.264s] gmake[2]: *** [CMakeFiles/recive_pkg.dir/build.make:76：CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o] 错误 1
+[4.264s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/recive_pkg.dir/all] 错误 2
+[4.264s] gmake: *** [Makefile:146：all] 错误 2
+[4.266s] Invoked command in '/home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/桌面/RM26_ROS2PKG/build/recive_pkg -- -j14 -l14

@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target recive_pkg[0m
+[  9%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/src/image_subscirber_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/main.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/traditional_detector.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/recive_pkg.dir/home/ubuntu/桌面/RM26_ROS2PKG/src/rm_auto_aim/detection/src/yolo_detection.cpp.o[0m
